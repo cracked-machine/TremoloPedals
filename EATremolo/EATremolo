@@ -35,3 +35,4 @@ Reference, Value, Footprint, Datasheet
 "D2","D_Schottky","Diodes_THT:D_DO-41_SOD81_P10.16mm_Horizontal",""
 "R15","100K","R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1",""
 "R14","100K","R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1",""
+"CHASIS_EARTH1","CONN_01X01","Wire_Pads:SolderWirePad_single_1mmDrill",""
