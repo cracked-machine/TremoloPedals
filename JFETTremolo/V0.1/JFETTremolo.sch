@@ -1,0 +1,837 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:4584
+LIBS:4069
+LIBS:socket_custom
+LIBS:clkgnd
+LIBS:siggnd
+LIBS:nettie
+LIBS:sw_dpdt_on_on
+LIBS:switches
+LIBS:sw_custom
+LIBS:JFETTremolo-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "JFETTremolo"
+Date "2017-09-13"
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4584 U2
+U 1 1 59B55243
+P 4350 1600
+F 0 "U2" H 4200 1750 60  0000 C CNN
+F 1 "4584" H 4450 1750 60  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm" H 4350 1600 60  0001 C CNN
+F 3 "" H 4350 1600 60  0001 C CNN
+	1    4350 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 59B55871
+P 3500 1800
+F 0 "C1" H 3300 1900 50  0000 L CNN
+F 1 "10U" H 3300 1700 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 3538 1650 50  0001 C CNN
+F 3 "" H 3500 1800 50  0001 C CNN
+	1    3500 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV2
+U 1 1 59B558BC
+P 4600 2050
+F 0 "RV2" V 4500 1950 50  0000 C CNN
+F 1 "100K" V 4500 2150 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Omeg_PC16PU_Horizontal" H 4600 2050 50  0001 C CNN
+F 3 "" H 4600 2050 50  0001 C CNN
+	1    4600 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 59B5647E
+P 5050 2050
+F 0 "R5" V 4950 2000 50  0000 C CNN
+F 1 "10K" V 4950 2150 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 4980 2050 50  0001 C CNN
+F 3 "" H 5050 2050 50  0001 C CNN
+	1    5050 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R10
+U 1 1 59B57901
+P 8650 2050
+F 0 "R10" V 8750 2050 50  0000 C CNN
+F 1 "100K" V 8550 2050 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 8580 2050 50  0001 C CNN
+F 3 "" H 8650 2050 50  0001 C CNN
+	1    8650 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R11
+U 1 1 59B579C2
+P 9400 1700
+F 0 "R11" V 9500 1850 50  0000 C CNN
+F 1 "100K" V 9500 1500 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 9330 1700 50  0001 C CNN
+F 3 "" H 9400 1700 50  0001 C CNN
+	1    9400 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C5
+U 1 1 59B57A83
+P 9400 1400
+F 0 "C5" V 9300 1200 50  0000 L CNN
+F 1 "470n" V 9300 1500 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 9438 1250 50  0001 C CNN
+F 3 "" H 9400 1400 50  0001 C CNN
+	1    9400 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 59B58EFB
+P 4450 3650
+F 0 "R2" V 4550 3750 50  0000 C CNN
+F 1 "56K" V 4550 3550 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 4380 3650 50  0001 C CNN
+F 3 "" H 4450 3650 50  0001 C CNN
+	1    4450 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 59B58F76
+P 5000 3650
+F 0 "R4" V 5100 3750 50  0000 C CNN
+F 1 "100K" V 5100 3550 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 4930 3650 50  0001 C CNN
+F 3 "" H 5000 3650 50  0001 C CNN
+	1    5000 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 4584 U2
+U 7 1 59B5AB69
+P 1700 6000
+F 0 "U2" H 1450 6100 60  0000 C CNN
+F 1 "4584" H 1450 5950 60  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm" H 1700 6000 60  0001 C CNN
+F 3 "" H 1700 6000 60  0001 C CNN
+	7    1700 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CD4069 U1
+U 1 1 59B5B36C
+P 9400 2050
+F 0 "U1" H 9400 2200 60  0000 C CNN
+F 1 "CD4069" H 9400 1900 60  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm" H 9400 2050 60  0001 C CNN
+F 3 "" H 9400 2050 60  0001 C CNN
+	1    9400 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CD4069 U1
+U 2 1 59B5B3D7
+P 5000 4100
+F 0 "U1" H 5000 4250 60  0000 C CNN
+F 1 "CD4069" H 5000 3950 60  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm" H 5000 4100 60  0001 C CNN
+F 3 "" H 5000 4100 60  0001 C CNN
+	2    5000 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CD4069 U1
+U 7 1 59B5C0AB
+P 1200 6000
+F 0 "U1" H 950 6100 60  0000 C CNN
+F 1 "CD4069" H 950 5950 60  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm" H 1200 6000 60  0001 C CNN
+F 3 "" H 1200 6000 60  0001 C CNN
+	7    1200 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 59B5EE1D
+P 4800 5850
+F 0 "R3" V 4700 5800 50  0000 C CNN
+F 1 "10K" V 4700 5950 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 4730 5850 50  0001 C CNN
+F 3 "" H 4800 5850 50  0001 C CNN
+	1    4800 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L CP C4
+U 1 1 59B5EEAE
+P 5500 6050
+F 0 "C4" H 5525 6150 50  0000 L CNN
+F 1 "47u" H 5525 5950 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 5538 5900 50  0001 C CNN
+F 3 "" H 5500 6050 50  0001 C CNN
+	1    5500 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 59B65F88
+P 6900 1700
+F 0 "R8" V 6800 1600 50  0000 C CNN
+F 1 "100K" V 6800 1800 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 6830 1700 50  0001 C CNN
+F 3 "" H 6900 1700 50  0001 C CNN
+	1    6900 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L D D3
+U 1 1 59B66175
+P 6100 3400
+F 0 "D3" V 6150 3550 50  0000 C CNN
+F 1 "D" V 6050 3500 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp" H 6100 3400 50  0001 C CNN
+F 3 "" H 6100 3400 50  0001 C CNN
+	1    6100 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 1600 4050 1600
+Wire Wire Line
+	3500 1650 3500 1600
+Wire Wire Line
+	5200 2050 5250 2050
+Wire Wire Line
+	3500 1950 3500 2450
+Wire Wire Line
+	4750 2050 4900 2050
+Connection ~ 3500 2050
+Wire Wire Line
+	4650 1600 5450 1600
+Wire Wire Line
+	3950 2200 4600 2200
+Connection ~ 3950 2050
+Connection ~ 5250 1600
+Wire Wire Line
+	8800 2050 9100 2050
+Wire Wire Line
+	8900 1400 8900 2050
+Wire Wire Line
+	8900 1700 9250 1700
+Connection ~ 8900 2050
+Wire Wire Line
+	9550 1700 9900 1700
+Wire Wire Line
+	9900 1400 9900 2700
+Wire Wire Line
+	9900 2050 9700 2050
+Wire Wire Line
+	9900 1400 9550 1400
+Connection ~ 9900 1700
+Connection ~ 8900 1700
+Connection ~ 9900 2050
+Wire Wire Line
+	2050 4300 2050 4650
+Wire Wire Line
+	9050 4900 9050 5200
+Wire Wire Line
+	4600 3650 4850 3650
+Wire Wire Line
+	4650 3650 4650 4100
+Connection ~ 4650 3650
+Wire Wire Line
+	9900 2700 6100 2700
+Wire Wire Line
+	8900 1400 9250 1400
+Wire Wire Line
+	4650 4100 4700 4100
+Wire Wire Line
+	1200 5400 1200 5750
+Wire Wire Line
+	1700 5400 1700 5750
+Wire Wire Line
+	1700 6650 1700 6250
+Wire Wire Line
+	1200 6650 1200 6250
+Wire Wire Line
+	4450 5850 4650 5850
+Wire Wire Line
+	4950 5850 5500 5850
+Wire Wire Line
+	5500 5550 5500 5900
+Connection ~ 5500 5850
+Wire Wire Line
+	5500 6200 5500 6500
+Connection ~ 5500 6250
+Wire Wire Line
+	7050 1700 7400 1700
+Wire Wire Line
+	5350 4100 5300 4100
+Wire Wire Line
+	5150 3650 5700 3650
+Wire Wire Line
+	5350 3650 5350 4100
+Connection ~ 5350 3650
+Wire Wire Line
+	7300 3650 8200 3650
+Wire Wire Line
+	6450 2050 6450 2550
+$Comp
+L D D1
+U 1 1 59B6980C
+P 3800 5850
+F 0 "D1" H 3750 5750 50  0000 C CNN
+F 1 "D" H 3900 5750 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 3800 5850 50  0001 C CNN
+F 3 "" H 3800 5850 50  0001 C CNN
+	1    3800 5850
+	-1   0    0    1   
+$EndComp
+$Comp
+L POT RV1
+U 1 1 59B69F14
+P 4500 2700
+F 0 "RV1" V 4400 2600 50  0000 C CNN
+F 1 "100K" V 4400 2800 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Omeg_PC16PU_Horizontal" H 4500 2700 50  0001 C CNN
+F 3 "" H 4500 2700 50  0001 C CNN
+	1    4500 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L D D2
+U 1 1 59B69F68
+P 5250 2550
+F 0 "D2" H 5250 2650 50  0000 C CNN
+F 1 "D" H 5250 2450 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp" H 5250 2550 50  0001 C CNN
+F 3 "" H 5250 2550 50  0001 C CNN
+	1    5250 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5250 2700 5200 2850
+Connection ~ 5250 2050
+Wire Wire Line
+	4900 2850 4500 2850
+Wire Wire Line
+	3950 2700 4350 2700
+Connection ~ 3950 2200
+NoConn ~ 4500 2550
+$Comp
+L C C2
+U 1 1 59B6A8E1
+P 3900 3650
+F 0 "C2" V 3800 3500 50  0000 L CNN
+F 1 "1u" V 3800 3700 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 3938 3500 50  0001 C CNN
+F 3 "" H 3900 3650 50  0001 C CNN
+	1    3900 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L CD4069 U1
+U 3 1 59B6AB40
+P 7100 3050
+F 0 "U1" H 7100 3200 60  0000 C CNN
+F 1 "CD4069" H 7100 2900 60  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm" H 7100 3050 60  0001 C CNN
+F 3 "" H 7100 3050 60  0001 C CNN
+	3    7100 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 59B6B2D0
+P 5850 3650
+F 0 "R6" V 5950 3750 50  0000 C CNN
+F 1 "100K" V 5950 3550 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 5780 3650 50  0001 C CNN
+F 3 "" H 5850 3650 50  0001 C CNN
+	1    5850 3650
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6100 3650
+Wire Wire Line
+	7400 3050 7500 3100
+Connection ~ 7500 3650
+Connection ~ 6800 3650
+$Comp
+L R R9
+U 1 1 59B6B7F3
+P 7150 3650
+F 0 "R9" V 7250 3750 50  0000 C CNN
+F 1 "100K" V 7250 3550 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 7080 3650 50  0001 C CNN
+F 3 "" H 7150 3650 50  0001 C CNN
+	1    7150 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R7
+U 1 1 59B6B97A
+P 6550 3650
+F 0 "R7" V 6650 3750 50  0000 C CNN
+F 1 "68K" V 6650 3550 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 6480 3650 50  0001 C CNN
+F 3 "" H 6550 3650 50  0001 C CNN
+	1    6550 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6000 3650 6400 3650
+Wire Wire Line
+	6700 3650 7000 3650
+Wire Wire Line
+	6100 2700 6100 3250
+Text Notes 4750 3450 0    60   ~ 0
+Input Buffer
+Text Notes 6700 3850 0    60   ~ 0
+Output Buffer\n
+Wire Wire Line
+	6100 3650 6100 3550
+Text Notes 5750 3850 0    60   ~ 0
+Mixer
+Text Notes 4500 1350 0    60   ~ 0
+Clock\n
+Text Notes 4450 1900 0    60   ~ 0
+Speed
+Text Notes 4100 2850 0    60   ~ 0
+Width\n
+Text Notes 3750 4000 0    60   ~ 0
+AC \nCoupler\n
+Text Notes 9100 1250 0    60   ~ 0
+Low Pass Filter\n
+$Comp
+L R R1
+U 1 1 59B6F6C1
+P 4300 5850
+F 0 "R1" V 4200 5700 50  0000 C CNN
+F 1 "100R" V 4200 5950 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 4230 5850 50  0001 C CNN
+F 3 "" H 4300 5850 50  0001 C CNN
+	1    4300 5850
+	0    1    1    0   
+$EndComp
+Text Notes 950  3650 0    60   ~ 0
+Input
+Text Notes 9700 3750 0    60   ~ 0
+Output
+Wire Wire Line
+	7600 2050 8500 2050
+Text Notes 7450 1600 0    60   ~ 0
+JFET\n
+Wire Wire Line
+	3650 5850 3350 5850
+Wire Wire Line
+	3600 5950 3600 6600
+Wire Wire Line
+	3600 5950 3350 5950
+Wire Wire Line
+	3950 5850 4150 5850
+Connection ~ 3600 6250
+Wire Wire Line
+	4600 5550 4600 5850
+Connection ~ 4600 5850
+$Comp
+L C C3
+U 1 1 59B7CA61
+P 5200 6050
+F 0 "C3" H 5225 6150 50  0000 L CNN
+F 1 "10n" H 5225 5950 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 5238 5900 50  0001 C CNN
+F 3 "" H 5200 6050 50  0001 C CNN
+	1    5200 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 5900 5200 5850
+Connection ~ 5200 5850
+Wire Wire Line
+	5200 6200 5200 6250
+Connection ~ 5200 6250
+$Comp
+L BARREL_JACK J_DC1
+U 1 1 59B63F2D
+P 3050 5950
+F 0 "J_DC1" H 3050 6145 50  0000 C CNN
+F 1 "BARREL_JACK" H 3050 5795 50  0001 C CNN
+F 2 "Connectors:BARREL_JACK" H 3050 5950 50  0001 C CNN
+F 3 "" H 3050 5950 50  0001 C CNN
+	1    3050 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 6050 3600 6050
+Connection ~ 3600 6050
+$Comp
+L JACK__MONO_2P_NC J_IN1
+U 1 1 59B64CA0
+P 1100 3950
+F 0 "J_IN1" H 750 3750 50  0000 C CNN
+F 1 "JACK__MONO_2P_NC" H 950 4300 50  0001 C CNN
+F 2 "custom_sockets:JackSocket_Mono_PCB" H 1100 3950 50  0001 C CNN
+F 3 "" H 1100 3950 50  0001 C CNN
+	1    1100 3950
+	1    0    0    1   
+$EndComp
+Connection ~ 2050 4500
+$Comp
+L JACK__MONO_2P_NC J_OUT1
+U 1 1 59B6542D
+P 9950 4550
+F 0 "J_OUT1" H 9600 4350 50  0000 C CNN
+F 1 "JACK__MONO_2P_NC" H 9800 4900 50  0001 C CNN
+F 2 "custom_sockets:JackSocket_Mono_PCB" H 9950 4550 50  0001 C CNN
+F 3 "" H 9950 4550 50  0001 C CNN
+	1    9950 4550
+	-1   0    0    1   
+$EndComp
+Connection ~ 9050 5050
+Text Label 4600 5550 0    60   ~ 0
+clk_vdd
+Text Label 5500 5550 0    60   ~ 0
+sig_vdd
+Text Label 1200 5400 0    60   ~ 0
+sig_vdd
+Text Label 1700 5400 0    60   ~ 0
+clk_vdd
+$Comp
+L NetTie W1
+U 1 1 59B6A710
+P 4500 6250
+F 0 "W1" H 4500 6400 60  0000 C CNN
+F 1 "NetTie" H 4500 6150 60  0000 C CNN
+F 2 "NetTies:NetTie" H 4500 6250 60  0001 C CNN
+F 3 "" H 4500 6250 60  0001 C CNN
+	1    4500 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 6250 3600 6250
+Wire Wire Line
+	4750 6250 5500 6250
+$Comp
+L NetTie W2
+U 1 1 59B6B684
+P 4500 6600
+F 0 "W2" H 4500 6750 60  0000 C CNN
+F 1 "NetTie" H 4500 6500 60  0000 C CNN
+F 2 "NetTies:NetTie" H 4500 6600 60  0001 C CNN
+F 3 "" H 4500 6600 60  0001 C CNN
+	1    4500 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 6600 4250 6600
+Wire Wire Line
+	4750 6600 5200 6600
+Text Label 5200 6900 0    60   ~ 0
+clk_gnd
+Text Label 5500 6500 0    60   ~ 0
+sig_gnd
+Text Label 3500 2450 0    60   ~ 0
+clk_gnd
+Text Label 6450 2550 0    60   ~ 0
+clk_gnd
+Text Label 2050 4650 0    60   ~ 0
+sig_gnd
+Text Label 9050 5200 0    60   ~ 0
+sig_gnd
+Text Label 1200 6650 0    60   ~ 0
+sig_gnd
+Text Label 1700 6650 0    60   ~ 0
+clk_gnd
+Text Label 3600 6200 0    60   ~ 0
+gnd
+Wire Wire Line
+	6800 3050 6800 3650
+Wire Wire Line
+	1550 3850 2000 3850
+Wire Wire Line
+	2000 3850 2000 3750
+$Comp
+L SW_3PDT_on_on SW1
+U 1 1 59B752B5
+P 2850 3750
+F 0 "SW1" H 2850 3920 50  0000 C CNN
+F 1 "SW_3PDT_on_on" H 2850 3550 50  0001 C CNN
+F 2 "custom_sw:SW_3PDT_W18MM_L17.3MM_P5.3MM_D2MM" H 2850 3750 50  0001 C CNN
+F 3 "" H 2850 3750 50  0001 C CNN
+	1    2850 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_3PDT_on_on SW1
+U 3 1 59B75360
+P 8400 3650
+F 0 "SW1" H 8400 3820 50  0000 C CNN
+F 1 "SW_3PDT_on_on" H 8400 3450 50  0001 C CNN
+F 2 "custom_sw:SW_3PDT_W18MM_L17.3MM_P5.3MM_D2MM" H 8400 3650 50  0001 C CNN
+F 3 "" H 8400 3650 50  0001 C CNN
+	3    8400 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_3PDT_on_on SW1
+U 2 1 59B7543B
+P 6150 1700
+F 0 "SW1" H 6150 1870 50  0000 C CNN
+F 1 "SW_3PDT_on_on" H 6150 1500 50  0001 C CNN
+F 2 "custom_sw:SW_3PDT_W18MM_L17.3MM_P5.3MM_D2MM" H 6150 1700 50  0001 C CNN
+F 3 "" H 6150 1700 50  0001 C CNN
+	2    6150 1700
+	-1   0    0    -1  
+$EndComp
+Text Label 1650 3850 0    60   ~ 0
+sigin
+Text Label 3300 3650 0    60   ~ 0
+fxin
+Wire Wire Line
+	8850 4450 8850 3550
+Wire Wire Line
+	8850 3550 8600 3550
+Wire Wire Line
+	3050 3850 3500 3850
+Wire Wire Line
+	3500 3850 3500 4450
+Wire Wire Line
+	3500 4450 9500 4450
+Connection ~ 8850 4450
+Text Label 8600 5200 0    60   ~ 0
+sig_gnd
+Wire Wire Line
+	8600 3750 8600 5200
+Wire Wire Line
+	4300 3650 4050 3650
+Wire Wire Line
+	3750 3650 3050 3650
+Text Label 4750 1600 0    60   ~ 0
+clk_ota
+Text Label 8000 2050 0    60   ~ 0
+ota_clk
+Text Label 7750 2700 0    60   ~ 0
+mclk
+$Comp
+L LED D4
+U 1 1 59B69248
+P 5600 1600
+F 0 "D4" V 5600 1750 50  0000 C CNN
+F 1 "LED" V 5500 1750 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm-3" H 5600 1600 50  0001 C CNN
+F 3 "" H 5600 1600 50  0001 C CNN
+	1    5600 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5200 6600 5200 6900
+Wire Wire Line
+	6350 1700 6750 1700
+Wire Wire Line
+	5950 1800 5700 1950
+Wire Wire Line
+	5700 1950 5700 2550
+Text Label 5700 2550 0    60   ~ 0
+clk_gnd
+Text Label 6100 4450 0    60   ~ 0
+sig_out
+Wire Wire Line
+	8100 3650 8100 3650
+Text Label 7750 3650 0    60   ~ 0
+fxout
+Wire Wire Line
+	4450 2050 3950 2050
+Connection ~ 3950 1600
+Wire Wire Line
+	5250 1600 5250 2400
+$Comp
+L R JMP2
+U 1 1 59B9729C
+P 5050 2850
+F 0 "JMP2" V 5130 2850 50  0000 C CNN
+F 1 "0" V 5050 2850 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4980 2850 50  0001 C CNN
+F 3 "" H 5050 2850 50  0001 C CNN
+	1    5050 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L R JMP3
+U 1 1 59B99719
+P 2050 4150
+F 0 "JMP3" V 2130 4150 50  0000 C CNN
+F 1 "0" V 2050 4150 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1980 4150 50  0001 C CNN
+F 3 "" H 2050 4150 50  0001 C CNN
+	1    2050 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R JMP4
+U 1 1 59B99CC1
+P 9050 4750
+F 0 "JMP4" V 9130 4750 50  0000 C CNN
+F 1 "0" V 9050 4750 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8980 4750 50  0001 C CNN
+F 3 "" H 9050 4750 50  0001 C CNN
+	1    9050 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 4750 9400 4750
+Wire Wire Line
+	9400 4750 9400 5050
+Wire Wire Line
+	9400 5050 9050 5050
+Wire Wire Line
+	9500 4650 9300 4650
+Wire Wire Line
+	9300 4650 9300 4950
+Wire Wire Line
+	9300 4950 9050 4950
+Connection ~ 9050 4950
+Wire Wire Line
+	9500 4550 9050 4550
+Wire Wire Line
+	9050 4550 9050 4600
+Wire Wire Line
+	1550 4150 1700 4150
+Wire Wire Line
+	1700 4150 1700 4500
+Wire Wire Line
+	1700 4500 2050 4500
+Wire Wire Line
+	1550 4050 1800 4050
+Wire Wire Line
+	1800 4050 1800 4400
+Wire Wire Line
+	1800 4400 2050 4400
+Connection ~ 2050 4400
+Wire Wire Line
+	2050 4000 2050 3950
+Wire Wire Line
+	2050 3950 1550 3950
+$Comp
+L R JMP5
+U 1 1 59BA3EE7
+P 7500 3350
+F 0 "JMP5" V 7580 3350 50  0000 C CNN
+F 1 "0" V 7500 3350 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7430 3350 50  0001 C CNN
+F 3 "" H 7500 3350 50  0001 C CNN
+	1    7500 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3100 7500 3200
+Wire Wire Line
+	7500 3500 7500 3650
+Text Label 7500 3100 0    60   ~ 0
+fxout
+Text Label 1650 3950 0    60   ~ 0
+sig_gnd
+$Comp
+L R JMP1
+U 1 1 59B76777
+P 3950 2450
+F 0 "JMP1" V 4030 2450 50  0000 C CNN
+F 1 "0" V 3950 2450 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3880 2450 50  0001 C CNN
+F 3 "" H 3950 2450 50  0001 C CNN
+	1    3950 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 1600 3950 2300
+Wire Wire Line
+	3950 2600 3950 2700
+$Comp
+L R JMP6
+U 1 1 59B78630
+P 6900 2050
+F 0 "JMP6" V 6980 2050 50  0000 C CNN
+F 1 "0" V 6900 2050 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6830 2050 50  0001 C CNN
+F 3 "" H 6900 2050 50  0001 C CNN
+	1    6900 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6750 2050 6450 2050
+Wire Wire Line
+	7050 2050 7200 2050
+$Comp
+L R JMP7
+U 1 1 59B79CF2
+P 2350 3750
+F 0 "JMP7" V 2430 3750 50  0000 C CNN
+F 1 "0" V 2350 3750 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2280 3750 50  0001 C CNN
+F 3 "" H 2350 3750 50  0001 C CNN
+	1    2350 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 3750 2200 3750
+Wire Wire Line
+	2500 3750 2650 3750
+$Comp
+L Q_NJFET_DGS Q?
+U 1 1 59BA2D35
+P 7400 1950
+F 0 "Q?" H 7600 2000 50  0000 L CNN
+F 1 "Q_NJFET_DGS" H 7600 1900 50  0000 L CNN
+F 2 "" H 7600 2050 50  0001 C CNN
+F 3 "" H 7400 1950 50  0001 C CNN
+	1    7400 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 1700 7400 1750
+Wire Wire Line
+	5750 1600 5950 1600
+$EndSCHEMATC

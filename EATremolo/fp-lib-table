@@ -1,0 +1,10 @@
+(fp_lib_table
+  (lib (name CP_Radial_D4_P2_PadSize2_Drill1)(type KiCad)(uri "$(KIPRJMOD)/lib/CP_Radial_D4_P2_PadSize2_Drill1.pretty")(options "")(descr ""))
+  (lib (name custom_sockets)(type KiCad)(uri "$(KIPRJMOD)/lib/custom_sockets.pretty")(options "")(descr ""))
+  (lib (name custom_sw)(type KiCad)(uri "$(KIPRJMOD)/lib/custom_sw.pretty")(options "")(descr ""))
+  (lib (name NPN)(type KiCad)(uri "$(KIPRJMOD)/lib/NPN.pretty")(options "")(descr ""))
+  (lib (name Q_NPN_EBC_PadSize2_Drill1)(type KiCad)(uri "$(KIPRJMOD)/lib/Q_NPN_EBC_PadSize2_Drill1.pretty")(options "")(descr ""))
+  (lib (name R_Axial_DIN0207_L6.3mm_D2.5mm_P7)(type KiCad)(uri "$(KIPRJMOD)/lib/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.pretty")(options "")(descr ""))
+  (lib (name C_Disc_2mmPads)(type KiCad)(uri "$(KIPRJMOD)/lib/C_Disc_2mmPads.pretty")(options "")(descr ""))
+  (lib (name TEConnPotentiometer)(type KiCad)(uri "$(KIPRJMOD)/lib/TEConnPotentiometer.pretty")(options "")(descr ""))
+)
