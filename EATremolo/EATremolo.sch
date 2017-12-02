@@ -123,12 +123,6 @@ F 3 "" H 1850 5600 50  0001 C CNN
 	1    1850 5600
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	2150 5500 2500 5500
-Wire Wire Line
-	2150 5700 2400 5700
-Wire Wire Line
-	2400 5700 2400 6000
 Text Label 2400 6000 0    60   ~ 0
 GND
 Text Label 3000 5500 0    60   ~ 0
@@ -139,17 +133,11 @@ U 1 1 5A21B1F5
 P 3250 2100
 F 0 "R1" H 3400 2050 50  0000 C CNN
 F 1 "1M" H 3400 2150 50  0000 C CNN
-F 2 "R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1" V 3180 2100 50  0001 C CNN
+F 2 "R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad" V 3180 2100 50  0001 C CNN
 F 3 "" H 3250 2100 50  0001 C CNN
 	1    3250 2100
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2800 1650 3550 1650
-Wire Wire Line
-	3250 1650 3250 1950
-Wire Wire Line
-	3250 2250 3250 2450
 Text Label 3250 2450 0    60   ~ 0
 GND
 $Comp
@@ -158,15 +146,11 @@ U 1 1 5A21B7E2
 P 4200 3450
 F 0 "R3" H 4350 3400 50  0000 C CNN
 F 1 "1M" H 4350 3500 50  0000 C CNN
-F 2 "R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1" V 4130 3450 50  0001 C CNN
+F 2 "R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad" V 4130 3450 50  0001 C CNN
 F 3 "" H 4200 3450 50  0001 C CNN
 	1    4200 3450
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4200 2550 4200 3300
-Wire Wire Line
-	4200 3600 4200 3800
 Text Label 4200 3800 0    60   ~ 0
 GND
 $Comp
@@ -180,23 +164,17 @@ F 3 "" H 3700 3000 50  0001 C CNN
 	1    3700 3000
 	0    1    1    0   
 $EndComp
-Connection ~ 3250 1650
-Wire Wire Line
-	3850 3000 4400 3000
 $Comp
 L R R2
 U 1 1 5A21BD65
 P 4200 2400
 F 0 "R2" H 4350 2350 50  0000 C CNN
 F 1 "1M" H 4350 2450 50  0000 C CNN
-F 2 "R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1" V 4130 2400 50  0001 C CNN
+F 2 "R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad" V 4130 2400 50  0001 C CNN
 F 3 "" H 4200 2400 50  0001 C CNN
 	1    4200 2400
 	-1   0    0    1   
 $EndComp
-Connection ~ 4200 3000
-Wire Wire Line
-	4200 2250 4200 1900
 Text Label 4200 1900 0    60   ~ 0
 +9V
 $Comp
@@ -205,19 +183,13 @@ U 1 1 5A21BEA6
 P 4700 3450
 F 0 "R5" H 4550 3500 50  0000 C CNN
 F 1 "10K" H 4550 3400 50  0000 C CNN
-F 2 "R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1" V 4630 3450 50  0001 C CNN
+F 2 "R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad" V 4630 3450 50  0001 C CNN
 F 3 "" H 4700 3450 50  0001 C CNN
 	1    4700 3450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4700 3300 4700 3200
-Wire Wire Line
-	4700 3600 4700 3800
 Text Label 4700 3800 0    60   ~ 0
 GND
-Wire Wire Line
-	4700 1900 4700 2800
 Text Label 4700 1900 0    60   ~ 0
 +9V
 $Comp
@@ -231,9 +203,6 @@ F 3 "" H 5150 2700 50  0001 C CNN
 	1    5150 2700
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5000 2700 4700 2700
-Connection ~ 4700 2700
 $Comp
 L C C6
 U 1 1 5A21C77C
@@ -245,15 +214,13 @@ F 3 "" H 5550 2700 50  0001 C CNN
 	1    5550 2700
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5300 2700 5400 2700
 $Comp
 L R R8
 U 1 1 5A21D466
 P 5800 3450
 F 0 "R8" H 5650 3500 50  0000 C CNN
 F 1 "150K" H 5650 3400 50  0000 C CNN
-F 2 "R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1" V 5730 3450 50  0001 C CNN
+F 2 "R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad" V 5730 3450 50  0001 C CNN
 F 3 "" H 5800 3450 50  0001 C CNN
 	1    5800 3450
 	1    0    0    -1  
@@ -266,7 +233,7 @@ U 1 1 5A21D8B9
 P 6200 2150
 F 0 "R10" V 6280 2150 50  0000 C CNN
 F 1 "4.7K" V 6200 2150 50  0000 C CNN
-F 2 "R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1" V 6130 2150 50  0001 C CNN
+F 2 "R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad" V 6130 2150 50  0001 C CNN
 F 3 "" H 6200 2150 50  0001 C CNN
 	1    6200 2150
 	1    0    0    -1  
@@ -277,85 +244,52 @@ U 1 1 5A21D9F2
 P 5800 2250
 F 0 "R7" V 5880 2250 50  0000 C CNN
 F 1 "560K" V 5800 2250 50  0000 C CNN
-F 2 "R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1" V 5730 2250 50  0001 C CNN
+F 2 "R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad" V 5730 2250 50  0001 C CNN
 F 3 "" H 5800 2250 50  0001 C CNN
 	1    5800 2250
 	1    0    0    -1  
 $EndComp
 Text Label 5800 1900 0    60   ~ 0
 +9V
-Wire Wire Line
-	5800 3600 5800 3800
-Wire Wire Line
-	6200 1900 6200 2000
-Wire Wire Line
-	5800 2100 5800 1900
-Wire Wire Line
-	6200 2300 6200 2500
-Connection ~ 5800 2700
-Wire Wire Line
-	5800 2400 5800 3300
-Wire Wire Line
-	5700 2700 5900 2700
 Text Label 6200 1900 0    60   ~ 0
 +9V
 $Comp
 L R R11
 U 1 1 5A21E16D
-P 6450 3000
-F 0 "R11" V 6350 3000 50  0000 C CNN
-F 1 "180R" V 6550 3000 50  0000 C CNN
-F 2 "R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1" V 6380 3000 50  0001 C CNN
-F 3 "" H 6450 3000 50  0001 C CNN
-	1    6450 3000
+P 6850 3000
+F 0 "R11" V 6750 3000 50  0000 C CNN
+F 1 "180R" V 6950 3000 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 6780 3000 50  0001 C CNN
+F 3 "" H 6850 3000 50  0001 C CNN
+	1    6850 3000
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6200 2900 6200 3000
-Wire Wire Line
-	6200 3000 6300 3000
 $Comp
 L R R12
 U 1 1 5A21E691
-P 6700 3450
-F 0 "R12" H 6850 3400 50  0000 C CNN
-F 1 "180R" H 6850 3500 50  0000 C CNN
-F 2 "R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1" V 6630 3450 50  0001 C CNN
-F 3 "" H 6700 3450 50  0001 C CNN
-	1    6700 3450
+P 7100 3450
+F 0 "R12" H 7250 3400 50  0000 C CNN
+F 1 "180R" H 7250 3500 50  0000 C CNN
+F 2 "R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad" V 7030 3450 50  0001 C CNN
+F 3 "" H 7100 3450 50  0001 C CNN
+	1    7100 3450
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	6700 3300 6700 3000
-Wire Wire Line
-	6600 3000 6800 3000
-Wire Wire Line
-	6700 3600 6700 3800
-Text Label 6700 3800 0    60   ~ 0
+Text Label 7100 3800 0    60   ~ 0
 GND
 $Comp
 L CP C9
 U 1 1 5A21E897
-P 6950 3000
-F 0 "C9" V 7100 3000 50  0000 L CNN
-F 1 "10uF" V 6800 3000 50  0000 L CNN
-F 2 "CP_Radial_D4_P2_PadSize2_Drill1:CP_Radial_D4_P2_PadSize2_Drill1" H 6988 2850 50  0001 C CNN
-F 3 "" H 6950 3000 50  0001 C CNN
-	1    6950 3000
+P 7350 3000
+F 0 "C9" V 7500 3000 50  0000 L CNN
+F 1 "10uF" V 7200 3000 50  0000 L CNN
+F 2 "CP_Radial_D4_P2_PadSize2_Drill1:CP_Radial_D4_P2_PadSize2_Drill1" H 7388 2850 50  0001 C CNN
+F 3 "" H 7350 3000 50  0001 C CNN
+	1    7350 3000
 	0    -1   -1   0   
 $EndComp
-Connection ~ 6700 3000
-Wire Wire Line
-	7100 3000 7600 3000
-Wire Wire Line
-	7600 3000 7600 3100
-Wire Wire Line
-	7600 3500 7600 3800
 Text Label 7600 3800 0    60   ~ 0
 GND
-Wire Wire Line
-	6200 2400 6400 2400
-Connection ~ 6200 2400
 $Comp
 L C C7
 U 1 1 5A21F439
@@ -373,36 +307,24 @@ U 1 1 5A21F62F
 P 7000 2400
 F 0 "VOL1" V 6825 2400 50  0000 C CNN
 F 1 "A25K" V 6900 2400 50  0000 C CNN
-F 2 "TEConnPotentiometer:TEConnPot_23mm_20mm" H 7000 2400 50  0001 C CNN
+F 2 "Potentiometers:Potentiometer_Omeg_PC16PU_Horizontal" H 7000 2400 50  0001 C CNN
 F 3 "" H 7000 2400 50  0001 C CNN
 	1    7000 2400
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	7150 2400 7300 2400
-Wire Wire Line
-	7300 2400 7300 2600
 Text Label 7300 2600 0    60   ~ 0
 GND
-Wire Wire Line
-	6850 2400 6700 2400
-Wire Wire Line
-	7000 2250 7000 1650
-Wire Wire Line
-	7900 3300 8200 3300
 $Comp
 L R R13
 U 1 1 5A21FED6
 P 8900 3550
 F 0 "R13" V 8980 3550 50  0000 C CNN
 F 1 "68k" V 8900 3550 50  0000 C CNN
-F 2 "R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1" V 8830 3550 50  0001 C CNN
+F 2 "R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad" V 8830 3550 50  0001 C CNN
 F 3 "" H 8900 3550 50  0001 C CNN
 	1    8900 3550
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	9300 3550 9300 3800
 Text Label 9300 3800 0    60   ~ 0
 GND
 $Comp
@@ -416,45 +338,30 @@ F 3 "" H 6600 5350 50  0001 C CNN
 	1    6600 5350
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	9050 3550 9300 3550
-Wire Wire Line
-	8050 5350 6750 5350
-Wire Wire Line
-	5850 5200 5850 5900
 $Comp
 L R R6
 U 1 1 5A220B24
 P 5600 5350
 F 0 "R6" V 5680 5350 50  0000 C CNN
 F 1 "2.2M" V 5600 5350 50  0000 C CNN
-F 2 "R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1" V 5530 5350 50  0001 C CNN
+F 2 "R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad" V 5530 5350 50  0001 C CNN
 F 3 "" H 5600 5350 50  0001 C CNN
 	1    5600 5350
 	0    -1   -1   0   
 $EndComp
-Connection ~ 5850 5350
 $Comp
 L R R9
 U 1 1 5A220FAF
 P 5850 4600
 F 0 "R9" H 6000 4550 50  0000 C CNN
 F 1 "10K" H 6000 4650 50  0000 C CNN
-F 2 "R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1" V 5780 4600 50  0001 C CNN
+F 2 "R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad" V 5780 4600 50  0001 C CNN
 F 3 "" H 5850 4600 50  0001 C CNN
 	1    5850 4600
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5850 4450 5850 4300
-Text Label 5850 4300 0    60   ~ 0
-+9V
-Wire Wire Line
-	5850 6300 5850 6650
 Text Label 5850 6650 0    60   ~ 0
 GND
-Wire Wire Line
-	5750 5350 6450 5350
 $Comp
 L CP C3
 U 1 1 5A222440
@@ -488,38 +395,17 @@ F 3 "" H 4550 5900 50  0001 C CNN
 	1    4550 5900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5150 5700 5850 5700
-Connection ~ 5850 5700
-Wire Wire Line
-	4350 5700 4850 5700
-Wire Wire Line
-	4550 5700 4550 5750
-Wire Wire Line
-	4550 6050 4550 6200
-Wire Wire Line
-	4550 6100 4850 6100
-Wire Wire Line
-	5450 5350 5350 5350
-Wire Wire Line
-	5350 5350 5350 6100
-Wire Wire Line
-	5150 6100 5550 6100
-Connection ~ 5350 6100
 $Comp
 L R R4
 U 1 1 5A2238A3
 P 4550 6350
 F 0 "R4" H 4700 6300 50  0000 C CNN
 F 1 "15K" H 4700 6400 50  0000 C CNN
-F 2 "R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1" V 4480 6350 50  0001 C CNN
+F 2 "R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad" V 4480 6350 50  0001 C CNN
 F 3 "" H 4550 6350 50  0001 C CNN
 	1    4550 6350
 	-1   0    0    1   
 $EndComp
-Connection ~ 4550 6100
-Wire Wire Line
-	4550 6500 4550 6650
 Text Label 4550 6650 0    60   ~ 0
 GND
 $Comp
@@ -528,23 +414,13 @@ U 1 1 5A224067
 P 4200 5700
 F 0 "RATE1" V 4025 5700 50  0000 C CNN
 F 1 "B100K" V 4100 5700 50  0000 C CNN
-F 2 "TEConnPotentiometer:TEConnPot_23mm_20mm" H 4200 5700 50  0001 C CNN
+F 2 "Potentiometers:Potentiometer_Omeg_PC16PU_Horizontal" H 4200 5700 50  0001 C CNN
 F 3 "" H 4200 5700 50  0001 C CNN
 	1    4200 5700
 	0    -1   -1   0   
 $EndComp
-Connection ~ 4550 5700
-Wire Wire Line
-	4050 5700 3950 5700
 Text Label 3950 6650 0    60   ~ 0
 GND
-Connection ~ 3950 5700
-Wire Wire Line
-	2050 1850 2050 2150
-Wire Wire Line
-	1850 1850 2050 1850
-Wire Wire Line
-	9350 1850 9050 1850
 $Comp
 L SW_3PDT_on_on SW1
 U 2 1 5A226338
@@ -578,14 +454,6 @@ F 3 "" H 8550 1550 50  0001 C CNN
 	3    8550 1550
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	7000 1650 8350 1650
-Wire Wire Line
-	9350 1550 8750 1550
-Wire Wire Line
-	1850 1550 2400 1550
-Wire Wire Line
-	2800 1450 8350 1450
 Text Label 9050 2050 0    60   ~ 0
 GND
 Text Label 2050 2150 0    60   ~ 0
@@ -594,20 +462,8 @@ NoConn ~ 1850 1650
 NoConn ~ 1850 1750
 NoConn ~ 9350 1750
 NoConn ~ 9350 1650
-Wire Wire Line
-	9050 1850 9050 2050
-Wire Wire Line
-	3550 1650 3550 3000
-Wire Wire Line
-	1950 4400 1650 4400
 Text Label 1650 4400 0    60   ~ 0
 +9V
-Wire Wire Line
-	2350 4500 2550 4500
-Wire Wire Line
-	2550 4500 2550 4850
-Wire Wire Line
-	5850 4300 2350 4300
 $Comp
 L LED DRATE1
 U 1 1 5A2316FC
@@ -619,10 +475,6 @@ F 3 "" H 5850 5050 50  0001 C CNN
 	1    5850 5050
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8050 3950 8050 5350
-Wire Wire Line
-	5850 4900 5850 4750
 Text Label 2550 4850 0    60   ~ 0
 GND
 NoConn ~ 2150 5600
@@ -632,20 +484,18 @@ U 1 1 5A23FF69
 P 2650 5500
 F 0 "D2" H 2650 5600 50  0000 C CNN
 F 1 "D_Schottky" H 2650 5400 50  0000 C CNN
-F 2 "Diodes_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2650 5500 50  0001 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp" H 2650 5500 50  0001 C CNN
 F 3 "" H 2650 5500 50  0001 C CNN
 	1    2650 5500
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2800 5500 3000 5500
 $Comp
 L R R15
 U 1 1 5A21FDE8
 P 8500 3550
 F 0 "R15" V 8580 3550 50  0000 C CNN
 F 1 "100K" V 8500 3550 50  0000 C CNN
-F 2 "R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1" V 8430 3550 50  0001 C CNN
+F 2 "R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad" V 8430 3550 50  0001 C CNN
 F 3 "" H 8500 3550 50  0001 C CNN
 	1    8500 3550
 	0    1    1    0   
@@ -656,15 +506,207 @@ U 1 1 5A21FEBC
 P 8050 3800
 F 0 "R14" V 8130 3800 50  0000 C CNN
 F 1 "100K" V 8050 3800 50  0000 C CNN
-F 2 "R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1" V 7980 3800 50  0001 C CNN
+F 2 "R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad" V 7980 3800 50  0001 C CNN
 F 3 "" H 8050 3800 50  0001 C CNN
 	1    8050 3800
 	-1   0    0    1   
 $EndComp
+$Comp
+L CONN_01X01 CHASIS_EARTH1
+U 1 1 5A21E5AB
+P 1900 3000
+F 0 "CHASIS_EARTH1" H 1900 3100 50  0000 C CNN
+F 1 "CONN_01X01" V 2000 3000 50  0001 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_1mmDrill" H 1900 3000 50  0001 C CNN
+F 3 "" H 1900 3000 50  0001 C CNN
+	1    1900 3000
+	-1   0    0    1   
+$EndComp
+Text Label 2400 3000 0    60   ~ 0
+GND
+Wire Wire Line
+	2150 5500 2500 5500
+Wire Wire Line
+	2150 5700 2400 5700
+Wire Wire Line
+	2400 5700 2400 6000
+Wire Wire Line
+	2800 1650 3250 1650
+Wire Wire Line
+	3250 1650 3550 1650
+Wire Wire Line
+	3250 1650 3250 1950
+Wire Wire Line
+	3250 2250 3250 2450
+Wire Wire Line
+	4200 2550 4200 3000
+Wire Wire Line
+	4200 3000 4200 3300
+Wire Wire Line
+	4200 3600 4200 3800
+Connection ~ 3250 1650
+Wire Wire Line
+	3850 3000 4200 3000
+Wire Wire Line
+	4200 3000 4400 3000
+Connection ~ 4200 3000
+Wire Wire Line
+	4200 2250 4200 1900
+Wire Wire Line
+	4700 3300 4700 3200
+Wire Wire Line
+	4700 3600 4700 3800
+Wire Wire Line
+	4700 1900 4700 2700
+Wire Wire Line
+	4700 2700 4700 2800
+Wire Wire Line
+	5000 2700 4700 2700
+Connection ~ 4700 2700
+Wire Wire Line
+	5300 2700 5400 2700
+Wire Wire Line
+	5800 3600 5800 3800
+Wire Wire Line
+	6200 1900 6200 2000
+Wire Wire Line
+	5800 2100 5800 1900
+Wire Wire Line
+	6200 2300 6200 2400
+Wire Wire Line
+	6200 2400 6200 2500
+Connection ~ 5800 2700
+Wire Wire Line
+	5800 2400 5800 2700
+Wire Wire Line
+	5800 2700 5800 3300
+Wire Wire Line
+	5700 2700 5800 2700
+Wire Wire Line
+	5800 2700 5900 2700
+Wire Wire Line
+	6200 2900 6200 3000
+Wire Wire Line
+	6200 3000 6700 3000
+Wire Wire Line
+	7100 3300 7100 3000
+Wire Wire Line
+	7000 3000 7100 3000
+Wire Wire Line
+	7100 3000 7200 3000
+Wire Wire Line
+	7100 3600 7100 3800
+Connection ~ 7100 3000
+Wire Wire Line
+	7500 3000 7600 3000
+Wire Wire Line
+	7600 3000 7600 3100
+Wire Wire Line
+	7600 3500 7600 3800
+Wire Wire Line
+	6200 2400 6400 2400
+Connection ~ 6200 2400
+Wire Wire Line
+	7150 2400 7300 2400
+Wire Wire Line
+	7300 2400 7300 2600
+Wire Wire Line
+	6850 2400 6700 2400
+Wire Wire Line
+	7000 2250 7000 1650
+Wire Wire Line
+	7900 3300 8200 3300
+Wire Wire Line
+	9300 3550 9300 3800
+Wire Wire Line
+	9050 3550 9300 3550
+Wire Wire Line
+	8050 5350 6750 5350
+Wire Wire Line
+	5850 5200 5850 5350
+Wire Wire Line
+	5850 5350 5850 5700
+Wire Wire Line
+	5850 5700 5850 5900
+Connection ~ 5850 5350
+Wire Wire Line
+	5850 4450 5850 4300
+Wire Wire Line
+	5850 6300 5850 6650
+Wire Wire Line
+	5750 5350 5850 5350
+Wire Wire Line
+	5850 5350 6450 5350
+Wire Wire Line
+	5150 5700 5850 5700
+Connection ~ 5850 5700
+Wire Wire Line
+	4350 5700 4450 5700
+Wire Wire Line
+	4450 5700 4550 5700
+Wire Wire Line
+	4550 5700 4850 5700
+Wire Wire Line
+	4550 5700 4550 5750
+Wire Wire Line
+	4550 6050 4550 6100
+Wire Wire Line
+	4550 6100 4550 6200
+Wire Wire Line
+	4550 6100 4850 6100
+Wire Wire Line
+	5450 5350 5350 5350
+Wire Wire Line
+	5350 5350 5350 6100
+Wire Wire Line
+	5150 6100 5350 6100
+Wire Wire Line
+	5350 6100 5550 6100
+Connection ~ 5350 6100
+Connection ~ 4550 6100
+Wire Wire Line
+	4550 6500 4550 6650
+Connection ~ 4550 5700
+Wire Wire Line
+	4050 5700 3950 5700
+Wire Wire Line
+	2050 1850 2050 2150
+Wire Wire Line
+	1850 1850 2050 1850
+Wire Wire Line
+	9350 1850 9050 1850
+Wire Wire Line
+	7000 1650 8350 1650
+Wire Wire Line
+	9350 1550 8750 1550
+Wire Wire Line
+	1850 1550 2400 1550
+Wire Wire Line
+	2800 1450 8350 1450
+Wire Wire Line
+	9050 1850 9050 2050
+Wire Wire Line
+	3550 1650 3550 3000
+Wire Wire Line
+	1950 4400 1650 4400
+Wire Wire Line
+	2350 4500 2550 4500
+Wire Wire Line
+	2550 4500 2550 4850
+Wire Wire Line
+	5850 4300 2350 4300
+Wire Wire Line
+	8050 3950 8050 5350
+Wire Wire Line
+	5850 4900 5850 4750
+Wire Wire Line
+	2800 5500 3000 5500
 Wire Wire Line
 	8750 3550 8650 3550
 Wire Wire Line
-	8350 3550 8050 3550
+	8050 3550 8200 3550
+Wire Wire Line
+	8200 3550 8350 3550
 Wire Wire Line
 	8050 3550 8050 3650
 Wire Wire Line
@@ -679,19 +721,6 @@ Wire Wire Line
 Wire Wire Line
 	4450 5450 4450 5700
 Connection ~ 4450 5700
-$Comp
-L CONN_01X01 CHASIS_EARTH1
-U 1 1 5A21E5AB
-P 1900 3000
-F 0 "CHASIS_EARTH1" H 1900 3100 50  0000 C CNN
-F 1 "CONN_01X01" V 2000 3000 50  0001 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_1mmDrill" H 1900 3000 50  0001 C CNN
-F 3 "" H 1900 3000 50  0001 C CNN
-	1    1900 3000
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	2100 3000 2400 3000
-Text Label 2400 3000 0    60   ~ 0
-GND
 $EndSCHEMATC

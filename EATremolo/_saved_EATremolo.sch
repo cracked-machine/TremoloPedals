@@ -115,17 +115,17 @@ $EndComp
 $Comp
 L BARREL_JACK J2
 U 1 1 5A21B006
-P 1250 5600
-F 0 "J2" H 1250 5795 50  0000 C CNN
-F 1 "BARREL_JACK" H 1250 5445 50  0000 C CNN
-F 2 "Connectors:BARREL_JACK" H 1250 5600 50  0001 C CNN
-F 3 "" H 1250 5600 50  0001 C CNN
-	1    1250 5600
+P 1850 5600
+F 0 "J2" H 1850 5795 50  0000 C CNN
+F 1 "BARREL_JACK" H 1850 5445 50  0000 C CNN
+F 2 "Connectors:BARREL_JACK" H 1850 5600 50  0001 C CNN
+F 3 "" H 1850 5600 50  0001 C CNN
+	1    1850 5600
 	1    0    0    1   
 $EndComp
-Text Label 1800 6000 0    60   ~ 0
+Text Label 2400 6000 0    60   ~ 0
 GND
-Text Label 2200 5500 0    60   ~ 0
+Text Label 3000 5500 0    60   ~ 0
 +9V
 $Comp
 L R R1
@@ -176,14 +176,14 @@ F 3 "" H 4200 2400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text Label 4200 1900 0    60   ~ 0
-Q1_9V
++9V
 $Comp
 L R R5
 U 1 1 5A21BEA6
 P 4700 3450
 F 0 "R5" H 4550 3500 50  0000 C CNN
 F 1 "10K" H 4550 3400 50  0000 C CNN
-F 2 "R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad" V 4630 3450 50  0001 C CNN
+F 2 "R_Axial_DIN0207_P5:R_Axial_DIN0207_P5.08mm_2mmPads" V 4630 3450 50  0001 C CNN
 F 3 "" H 4700 3450 50  0001 C CNN
 	1    4700 3450
 	1    0    0    -1  
@@ -191,14 +191,14 @@ $EndComp
 Text Label 4700 3800 0    60   ~ 0
 GND
 Text Label 4700 1900 0    60   ~ 0
-Q1_9V
++9V
 $Comp
 L CP C5
 U 1 1 5A21C6B2
 P 5150 2700
 F 0 "C5" V 5300 2700 50  0000 L CNN
 F 1 "10uF" V 5000 2650 50  0000 L CNN
-F 2 "CP_Radial_D4_P2_PadSize2_Drill1:CP_Radial_D4_P2_PadSize2_Drill1" H 5188 2550 50  0001 C CNN
+F 2 "C_Disc_P5:C_Disc_P5.0mm_2mmPads" H 5188 2550 50  0001 C CNN
 F 3 "" H 5150 2700 50  0001 C CNN
 	1    5150 2700
 	0    -1   -1   0   
@@ -250,9 +250,9 @@ F 3 "" H 5800 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5800 1900 0    60   ~ 0
-Q3_9V
++9V
 Text Label 6200 1900 0    60   ~ 0
-Q3_9V
++9V
 $Comp
 L R R11
 U 1 1 5A21E16D
@@ -296,7 +296,7 @@ U 1 1 5A21F439
 P 6550 2400
 F 0 "C7" V 6400 2350 50  0000 L CNN
 F 1 "470nF" V 6700 2350 50  0000 L CNN
-F 2 "C_Disc_2mmPads:C_Disc_2mmPads" H 6588 2250 50  0001 C CNN
+F 2 "C_Disc_P5:C_Disc_P5.0mm_2mmPads" H 6588 2250 50  0001 C CNN
 F 3 "" H 6550 2400 50  0001 C CNN
 	1    6550 2400
 	0    1    1    0   
@@ -463,7 +463,7 @@ NoConn ~ 1850 1750
 NoConn ~ 9350 1750
 NoConn ~ 9350 1650
 Text Label 1650 4400 0    60   ~ 0
-Q2_9V
++9V
 $Comp
 L LED DRATE1
 U 1 1 5A2316FC
@@ -477,16 +477,16 @@ F 3 "" H 5850 5050 50  0001 C CNN
 $EndComp
 Text Label 2550 4850 0    60   ~ 0
 GND
-NoConn ~ 1550 5600
+NoConn ~ 2150 5600
 $Comp
 L D_Schottky D2
 U 1 1 5A23FF69
-P 2000 5500
-F 0 "D2" H 2000 5600 50  0000 C CNN
-F 1 "D_Schottky" H 2000 5400 50  0000 C CNN
-F 2 "Diodes_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp" H 2000 5500 50  0001 C CNN
-F 3 "" H 2000 5500 50  0001 C CNN
-	1    2000 5500
+P 2650 5500
+F 0 "D2" H 2650 5600 50  0000 C CNN
+F 1 "D_Schottky" H 2650 5400 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp" H 2650 5500 50  0001 C CNN
+F 3 "" H 2650 5500 50  0001 C CNN
+	1    2650 5500
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -524,23 +524,12 @@ F 3 "" H 1900 3000 50  0001 C CNN
 $EndComp
 Text Label 2400 3000 0    60   ~ 0
 GND
-$Comp
-L Jumper JP_Q1_9V
-U 1 1 5A26042E
-P 3000 5700
-F 0 "JP_Q1_9V" H 3000 5850 50  0000 C CNN
-F 1 "Jumper" H 3000 5620 50  0001 C CNN
-F 2 "" H 3000 5700 50  0001 C CNN
-F 3 "" H 3000 5700 50  0001 C CNN
-	1    3000 5700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	1550 5500 1850 5500
+	2150 5500 2500 5500
 Wire Wire Line
-	1550 5700 1800 5700
+	2150 5700 2400 5700
 Wire Wire Line
-	1800 5700 1800 6000
+	2400 5700 2400 6000
 Wire Wire Line
 	2800 1650 3550 1650
 Wire Wire Line
@@ -681,7 +670,7 @@ Wire Wire Line
 Wire Wire Line
 	5850 4900 5850 4750
 Wire Wire Line
-	2150 5500 2550 5500
+	2800 5500 3000 5500
 Wire Wire Line
 	8750 3550 8650 3550
 Wire Wire Line
@@ -702,48 +691,4 @@ Wire Wire Line
 Connection ~ 4450 5700
 Wire Wire Line
 	2100 3000 2400 3000
-$Comp
-L Jumper JP_Q3_9V
-U 1 1 5A26AC65
-P 3000 5400
-F 0 "JP_Q3_9V" H 3000 5550 50  0000 C CNN
-F 1 "Jumper" H 3000 5320 50  0001 C CNN
-F 2 "" H 3000 5400 50  0001 C CNN
-F 3 "" H 3000 5400 50  0001 C CNN
-	1    3000 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 5400 2550 6000
-Wire Wire Line
-	2550 5400 2700 5400
-Wire Wire Line
-	2550 5700 2700 5700
-Connection ~ 2550 5500
-Wire Wire Line
-	3300 5400 3500 5400
-Wire Wire Line
-	3300 5700 3500 5700
-Text Label 3500 5400 0    60   ~ 0
-Q3_9V
-Text Label 3500 5700 0    60   ~ 0
-Q1_9V
-$Comp
-L Jumper JP_Q2_9V
-U 1 1 5A27491C
-P 3000 6000
-F 0 "JP_Q2_9V" H 3000 6150 50  0000 C CNN
-F 1 "Jumper" H 3000 5920 50  0001 C CNN
-F 2 "" H 3000 6000 50  0001 C CNN
-F 3 "" H 3000 6000 50  0001 C CNN
-	1    3000 6000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 6000 2700 6000
-Connection ~ 2550 5700
-Wire Wire Line
-	3300 6000 3500 6000
-Text Label 3500 6000 0    60   ~ 0
-Q2_9V
 $EndSCHEMATC

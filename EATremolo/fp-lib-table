@@ -7,4 +7,7 @@
   (lib (name R_Axial_DIN0207_L6.3mm_D2.5mm_P7)(type KiCad)(uri "$(KIPRJMOD)/lib/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.pretty")(options "")(descr ""))
   (lib (name C_Disc_2mmPads)(type KiCad)(uri "$(KIPRJMOD)/lib/C_Disc_2mmPads.pretty")(options "")(descr ""))
   (lib (name TEConnPotentiometer)(type KiCad)(uri "$(KIPRJMOD)/lib/TEConnPotentiometer.pretty")(options "")(descr ""))
+  (lib (name R_Axial_DIN0207_Vertical_2mmPad)(type KiCad)(uri "$(KIPRJMOD)/lib/R_Axial_DIN0207_Vertical_2mmPad.pretty")(options "")(descr ""))
+  (lib (name R_Axial_DIN0207_P5)(type KiCad)(uri "$(KIPRJMOD)/lib/R_Axial_DIN0207_P5.pretty")(options "")(descr ""))
+  (lib (name C_Disc_P5)(type KiCad)(uri "$(KIPRJMOD)/lib/C_Disc_P5.pretty")(options "")(descr ""))
 )
