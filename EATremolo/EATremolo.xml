@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>H:/Workspace/ElectronicsProjects/TremoloPedals/EATremolo/EATremolo.sch</source>
-    <date>01-12-2017 11:30:33 PM</date>
+    <source>H:\Workspace\ElectronicsProjects\TremoloPedals\EATremolo\EATremolo.sch</source>
+    <date>04-12-2017 12:14:11 AM</date>
     <tool>Eeschema 4.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -70,14 +70,14 @@
     </comp>
     <comp ref="R1">
       <value>1M</value>
-      <footprint>R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1</footprint>
+      <footprint>R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21B1F5</tstamp>
     </comp>
     <comp ref="R3">
       <value>1M</value>
-      <footprint>R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1</footprint>
+      <footprint>R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21B7E2</tstamp>
@@ -91,21 +91,21 @@
     </comp>
     <comp ref="R2">
       <value>1M</value>
-      <footprint>R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1</footprint>
+      <footprint>R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21BD65</tstamp>
     </comp>
     <comp ref="R5">
       <value>10K</value>
-      <footprint>R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1</footprint>
+      <footprint>R_Axial_DIN0207_P5:R_Axial_DIN0207_P5.08mm_2mmPads</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21BEA6</tstamp>
     </comp>
     <comp ref="C5">
       <value>10uF</value>
-      <footprint>CP_Radial_D4_P2_PadSize2_Drill1:CP_Radial_D4_P2_PadSize2_Drill1</footprint>
+      <footprint>C_Disc_P5:C_Disc_P5.0mm_2mmPads</footprint>
       <libsource lib="device" part="CP"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21C6B2</tstamp>
@@ -119,35 +119,35 @@
     </comp>
     <comp ref="R8">
       <value>150K</value>
-      <footprint>R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1</footprint>
+      <footprint>R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21D466</tstamp>
     </comp>
     <comp ref="R10">
       <value>4.7K</value>
-      <footprint>R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1</footprint>
+      <footprint>R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21D8B9</tstamp>
     </comp>
     <comp ref="R7">
       <value>560K</value>
-      <footprint>R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1</footprint>
+      <footprint>R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21D9F2</tstamp>
     </comp>
     <comp ref="R11">
       <value>180R</value>
-      <footprint>R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1</footprint>
+      <footprint>R_Axial_DIN0207_P5:R_Axial_DIN0207_P5.08mm_2mmPads</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21E16D</tstamp>
     </comp>
     <comp ref="R12">
-      <value>180R</value>
-      <footprint>R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1</footprint>
+      <value>1.2K</value>
+      <footprint>R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21E691</tstamp>
@@ -161,21 +161,21 @@
     </comp>
     <comp ref="C7">
       <value>470nF</value>
-      <footprint>C_Disc_2mmPads:C_Disc_2mmPads</footprint>
+      <footprint>C_Disc_P5:C_Disc_P5.0mm_2mmPads</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21F439</tstamp>
     </comp>
     <comp ref="VOL1">
       <value>A25K</value>
-      <footprint>TEConnPotentiometer:TEConnPot_23mm_20mm</footprint>
+      <footprint>Potentiometers:Potentiometer_Omeg_PC16PU_Horizontal</footprint>
       <libsource lib="device" part="POT"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21F62F</tstamp>
     </comp>
     <comp ref="R13">
       <value>68k</value>
-      <footprint>R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1</footprint>
+      <footprint>R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21FED6</tstamp>
@@ -189,49 +189,49 @@
     </comp>
     <comp ref="R6">
       <value>2.2M</value>
-      <footprint>R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1</footprint>
+      <footprint>R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A220B24</tstamp>
     </comp>
     <comp ref="R9">
       <value>10K</value>
-      <footprint>R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1</footprint>
+      <footprint>R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A220FAF</tstamp>
     </comp>
     <comp ref="C3">
       <value>1uF</value>
-      <footprint>CP_Radial_D4_P2_PadSize2_Drill1:CP_Radial_D4_P2_PadSize2_Drill1</footprint>
+      <footprint>C_Disc_2mmPads:C_Disc_2mmPads</footprint>
       <libsource lib="device" part="CP"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A222440</tstamp>
     </comp>
     <comp ref="C4">
       <value>1uF</value>
-      <footprint>CP_Radial_D4_P2_PadSize2_Drill1:CP_Radial_D4_P2_PadSize2_Drill1</footprint>
+      <footprint>C_Disc_2mmPads:C_Disc_2mmPads</footprint>
       <libsource lib="device" part="CP"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A22251D</tstamp>
     </comp>
     <comp ref="C2">
       <value>1uF</value>
-      <footprint>CP_Radial_D4_P2_PadSize2_Drill1:CP_Radial_D4_P2_PadSize2_Drill1</footprint>
+      <footprint>C_Disc_2mmPads:C_Disc_2mmPads</footprint>
       <libsource lib="device" part="CP"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A2225A5</tstamp>
     </comp>
     <comp ref="R4">
       <value>15K</value>
-      <footprint>R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1</footprint>
+      <footprint>R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A2238A3</tstamp>
     </comp>
     <comp ref="RATE1">
       <value>B100K</value>
-      <footprint>TEConnPotentiometer:TEConnPot_23mm_20mm</footprint>
+      <footprint>Potentiometers:Potentiometer_Omeg_PC16PU_Horizontal</footprint>
       <libsource lib="device" part="POT"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A224067</tstamp>
@@ -252,21 +252,21 @@
     </comp>
     <comp ref="D2">
       <value>D_Schottky</value>
-      <footprint>Diodes_THT:D_DO-41_SOD81_P10.16mm_Horizontal</footprint>
+      <footprint>Diodes_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp</footprint>
       <libsource lib="device" part="D_Schottky"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A23FF69</tstamp>
     </comp>
     <comp ref="R15">
       <value>100K</value>
-      <footprint>R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1</footprint>
+      <footprint>R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21FDE8</tstamp>
     </comp>
     <comp ref="R14">
-      <value>100K</value>
-      <footprint>R_Axial_DIN0207_L6.3mm_D2.5mm_P7:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_PS2_DH1</footprint>
+      <value>180K</value>
+      <footprint>R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21FEBC</tstamp>
@@ -277,6 +277,13 @@
       <libsource lib="conn" part="CONN_01X01"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21E5AB</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>1K</value>
+      <footprint>R_Axial_DIN0207_Vertical_2mmPad:R_Axial_DIN0207_Vertical_2mmPad</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A23D88A</tstamp>
     </comp>
   </components>
   <libparts>
@@ -450,6 +457,9 @@
     </libpart>
   </libparts>
   <libraries>
+    <library logical="device">
+      <uri>H:\Programs\KiCad\share\kicad\library\device.lib</uri>
+    </library>
     <library logical="conn">
       <uri>H:\Programs\KiCad\share\kicad\library\conn.lib</uri>
     </library>
@@ -459,161 +469,166 @@
     <library logical="sw_custom">
       <uri>H:\Workspace\ElectronicsProjects\TremoloPedals\EATremolo\lib\sw_custom.lib</uri>
     </library>
-    <library logical="device">
-      <uri>H:\Programs\KiCad\share\kicad\library\device.lib</uri>
-    </library>
   </libraries>
   <nets>
-    <net code="1" name="Net-(C2-Pad2)">
-      <node ref="C2" pin="2"/>
-      <node ref="C4" pin="1"/>
-      <node ref="R4" pin="2"/>
-    </net>
-    <net code="2" name="Net-(C4-Pad2)">
-      <node ref="C4" pin="2"/>
-      <node ref="R6" pin="1"/>
-      <node ref="Q2" pin="2"/>
-    </net>
-    <net code="3" name="/GND">
-      <node ref="R3" pin="1"/>
-      <node ref="R12" pin="1"/>
-      <node ref="R1" pin="1"/>
-      <node ref="SW1" pin="1"/>
-      <node ref="CHASIS_EARTH1" pin="1"/>
-      <node ref="J2" pin="1"/>
-      <node ref="J3" pin="4"/>
-      <node ref="J1" pin="4"/>
-      <node ref="Q4" pin="2"/>
-      <node ref="Q2" pin="1"/>
-      <node ref="VOL1" pin="3"/>
-      <node ref="R5" pin="2"/>
-      <node ref="R8" pin="2"/>
-      <node ref="RATE1" pin="1"/>
-      <node ref="R13" pin="1"/>
-      <node ref="R4" pin="1"/>
-    </net>
-    <net code="4" name="Net-(C2-Pad1)">
-      <node ref="C2" pin="1"/>
-      <node ref="C3" pin="2"/>
-      <node ref="RATE1" pin="3"/>
-      <node ref="RATE1" pin="2"/>
-    </net>
-    <net code="5" name="Net-(Q4-Pad3)">
-      <node ref="R14" pin="2"/>
-      <node ref="Q4" pin="3"/>
-      <node ref="R15" pin="2"/>
-    </net>
-    <net code="6" name="Net-(R13-Pad2)">
-      <node ref="R13" pin="2"/>
-      <node ref="R15" pin="1"/>
-    </net>
-    <net code="7" name="Net-(C8-Pad1)">
-      <node ref="R14" pin="1"/>
-      <node ref="C8" pin="1"/>
-    </net>
-    <net code="8" name="Net-(C3-Pad1)">
-      <node ref="Q2" pin="3"/>
-      <node ref="R6" pin="2"/>
-      <node ref="C8" pin="2"/>
-      <node ref="DRATE1" pin="2"/>
-      <node ref="C3" pin="1"/>
-    </net>
-    <net code="9" name="Net-(DRATE1-Pad1)">
-      <node ref="DRATE1" pin="1"/>
-      <node ref="R9" pin="1"/>
-    </net>
-    <net code="10" name="Net-(J2-Pad3)">
-      <node ref="J2" pin="3"/>
-    </net>
-    <net code="11" name="Net-(J1-Pad1)">
-      <node ref="J1" pin="1"/>
-      <node ref="SW1" pin="5"/>
-    </net>
-    <net code="12" name="/+9V">
-      <node ref="SW1" pin="3"/>
-      <node ref="SW1" pin="2"/>
-      <node ref="Q1" pin="1"/>
-      <node ref="R7" pin="1"/>
-      <node ref="R10" pin="1"/>
-      <node ref="D2" pin="1"/>
-      <node ref="R2" pin="2"/>
-      <node ref="R9" pin="2"/>
-      <node ref="C5" pin="1"/>
-    </net>
-    <net code="13" name="Net-(SW1-Pad4)">
-      <node ref="SW1" pin="7"/>
-      <node ref="SW1" pin="4"/>
-    </net>
-    <net code="14" name="Net-(J3-Pad1)">
-      <node ref="J3" pin="1"/>
-      <node ref="SW1" pin="8"/>
-    </net>
-    <net code="15" name="Net-(SW1-Pad9)">
-      <node ref="SW1" pin="9"/>
-      <node ref="VOL1" pin="2"/>
-    </net>
-    <net code="16" name="Net-(C7-Pad1)">
-      <node ref="C7" pin="1"/>
-      <node ref="VOL1" pin="1"/>
-    </net>
-    <net code="17" name="Net-(J1-Pad2)">
-      <node ref="J1" pin="2"/>
-    </net>
-    <net code="18" name="Net-(J1-Pad3)">
-      <node ref="J1" pin="3"/>
-    </net>
-    <net code="19" name="Net-(J3-Pad3)">
-      <node ref="J3" pin="3"/>
-    </net>
-    <net code="20" name="Net-(J3-Pad2)">
-      <node ref="J3" pin="2"/>
-    </net>
-    <net code="21" name="Net-(C1-Pad2)">
-      <node ref="C1" pin="2"/>
-      <node ref="R1" pin="2"/>
-      <node ref="SW1" pin="6"/>
-    </net>
-    <net code="22" name="Net-(C1-Pad1)">
-      <node ref="R2" pin="1"/>
-      <node ref="Q1" pin="3"/>
-      <node ref="R3" pin="2"/>
-      <node ref="C1" pin="1"/>
-    </net>
-    <net code="23" name="Net-(Q1-Pad2)">
-      <node ref="R5" pin="1"/>
-      <node ref="Q1" pin="2"/>
-    </net>
-    <net code="24" name="Net-(D2-Pad2)">
-      <node ref="J2" pin="2"/>
-      <node ref="D2" pin="2"/>
-    </net>
-    <net code="25" name="Net-(Q3-Pad1)">
-      <node ref="R11" pin="2"/>
-      <node ref="Q3" pin="1"/>
-    </net>
-    <net code="26" name="Net-(C9-Pad1)">
-      <node ref="R11" pin="1"/>
+    <net code="1" name="Net-(C9-Pad1)">
       <node ref="R12" pin="2"/>
       <node ref="C9" pin="1"/>
+      <node ref="R11" pin="1"/>
     </net>
-    <net code="27" name="Net-(C9-Pad2)">
-      <node ref="C9" pin="2"/>
-      <node ref="Q4" pin="1"/>
-    </net>
-    <net code="28" name="Net-(C7-Pad2)">
-      <node ref="R10" pin="2"/>
-      <node ref="C7" pin="2"/>
-      <node ref="Q3" pin="3"/>
-    </net>
-    <net code="29" name="Net-(C5-Pad2)">
+    <net code="2" name="Net-(C5-Pad2)">
       <node ref="C6" pin="2"/>
       <node ref="C5" pin="2"/>
     </net>
-    <net code="30" name="Net-(C6-Pad1)">
+    <net code="3" name="Net-(C6-Pad1)">
+      <node ref="C6" pin="1"/>
       <node ref="R8" pin="1"/>
       <node ref="R7" pin="2"/>
-      <node ref="C6" pin="1"/>
       <node ref="Q3" pin="2"/>
+    </net>
+    <net code="4" name="Net-(Q3-Pad1)">
+      <node ref="R11" pin="2"/>
+      <node ref="Q3" pin="1"/>
+    </net>
+    <net code="5" name="Net-(C9-Pad2)">
+      <node ref="C9" pin="2"/>
+      <node ref="Q4" pin="1"/>
+    </net>
+    <net code="6" name="Net-(C7-Pad2)">
+      <node ref="C7" pin="2"/>
+      <node ref="R10" pin="2"/>
+      <node ref="Q3" pin="3"/>
+    </net>
+    <net code="7" name="Net-(C7-Pad1)">
+      <node ref="VOL1" pin="1"/>
+      <node ref="C7" pin="1"/>
+    </net>
+    <net code="8" name="Net-(SW1-Pad9)">
+      <node ref="SW1" pin="9"/>
+      <node ref="VOL1" pin="2"/>
+    </net>
+    <net code="9" name="Net-(Q4-Pad3)">
+      <node ref="R14" pin="2"/>
+      <node ref="R15" pin="2"/>
+      <node ref="Q4" pin="3"/>
+    </net>
+    <net code="10" name="Net-(DRATE1-Pad2)">
+      <node ref="DRATE1" pin="2"/>
+      <node ref="R9" pin="1"/>
+    </net>
+    <net code="11" name="Net-(J2-Pad3)">
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="12" name="Net-(D2-Pad2)">
+      <node ref="D2" pin="2"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="13" name="Net-(R13-Pad2)">
+      <node ref="R15" pin="1"/>
+      <node ref="R13" pin="2"/>
+    </net>
+    <net code="14" name="/GND">
+      <node ref="RATE1" pin="1"/>
+      <node ref="VOL1" pin="3"/>
+      <node ref="R1" pin="1"/>
+      <node ref="J2" pin="1"/>
+      <node ref="J3" pin="4"/>
+      <node ref="R4" pin="1"/>
+      <node ref="R13" pin="1"/>
+      <node ref="J1" pin="4"/>
+      <node ref="R3" pin="1"/>
+      <node ref="Q4" pin="2"/>
+      <node ref="Q2" pin="1"/>
+      <node ref="R8" pin="2"/>
+      <node ref="R5" pin="2"/>
+      <node ref="CHASIS_EARTH1" pin="1"/>
+      <node ref="R12" pin="1"/>
+    </net>
+    <net code="15" name="Net-(C8-Pad1)">
+      <node ref="C8" pin="1"/>
+      <node ref="R14" pin="1"/>
+    </net>
+    <net code="16" name="Net-(C1-Pad2)">
+      <node ref="R1" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="SW1" pin="6"/>
+    </net>
+    <net code="17" name="Net-(C1-Pad1)">
+      <node ref="Q1" pin="3"/>
+      <node ref="R2" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="18" name="Net-(SW1-Pad4)">
+      <node ref="SW1" pin="4"/>
+      <node ref="SW1" pin="7"/>
+    </net>
+    <net code="19" name="/+9V">
+      <node ref="D2" pin="1"/>
+      <node ref="R7" pin="1"/>
+      <node ref="Q1" pin="1"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="R10" pin="1"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="20" name="Net-(R9-Pad2)">
+      <node ref="SW1" pin="3"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="21" name="Net-(J1-Pad1)">
+      <node ref="SW1" pin="5"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="22" name="Net-(R16-Pad2)">
+      <node ref="RATE1" pin="2"/>
+      <node ref="RATE1" pin="3"/>
+      <node ref="R16" pin="2"/>
+    </net>
+    <net code="23" name="Net-(C5-Pad1)">
+      <node ref="C5" pin="1"/>
+      <node ref="R5" pin="1"/>
+      <node ref="Q1" pin="2"/>
+    </net>
+    <net code="24" name="Net-(SW1-Pad1)">
+      <node ref="SW1" pin="1"/>
+    </net>
+    <net code="25" name="Net-(C4-Pad2)">
+      <node ref="R6" pin="1"/>
+      <node ref="C4" pin="2"/>
+      <node ref="Q2" pin="2"/>
+    </net>
+    <net code="26" name="Net-(C3-Pad1)">
+      <node ref="Q2" pin="3"/>
+      <node ref="DRATE1" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="R6" pin="2"/>
+      <node ref="C8" pin="2"/>
+    </net>
+    <net code="27" name="Net-(C2-Pad1)">
+      <node ref="C3" pin="2"/>
+      <node ref="R16" pin="1"/>
+      <node ref="C2" pin="1"/>
+    </net>
+    <net code="28" name="Net-(C2-Pad2)">
+      <node ref="C4" pin="1"/>
+      <node ref="R4" pin="2"/>
+      <node ref="C2" pin="2"/>
+    </net>
+    <net code="29" name="Net-(J3-Pad1)">
+      <node ref="J3" pin="1"/>
+      <node ref="SW1" pin="8"/>
+    </net>
+    <net code="30" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="31" name="Net-(J1-Pad3)">
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="32" name="Net-(J3-Pad2)">
+      <node ref="J3" pin="2"/>
+    </net>
+    <net code="33" name="Net-(J3-Pad3)">
+      <node ref="J3" pin="3"/>
     </net>
   </nets>
 </export>
