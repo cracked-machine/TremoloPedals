@@ -368,7 +368,7 @@ U 1 1 5A222440
 P 5000 5700
 F 0 "C3" V 4750 5650 50  0000 L CNN
 F 1 "1uF" V 4850 5650 50  0000 L CNN
-F 2 "CP_Radial_D4_P2_PadSize2_Drill1:CP_Radial_D4_P2_PadSize2_Drill1" H 5038 5550 50  0001 C CNN
+F 2 "C_Disc_2mmPads:C_Disc_2mmPads" H 5038 5550 50  0001 C CNN
 F 3 "" H 5000 5700 50  0001 C CNN
 	1    5000 5700
 	0    1    1    0   
@@ -379,7 +379,7 @@ U 1 1 5A22251D
 P 5000 6100
 F 0 "C4" V 4850 6050 50  0000 L CNN
 F 1 "1uF" V 4750 6050 50  0000 L CNN
-F 2 "CP_Radial_D4_P2_PadSize2_Drill1:CP_Radial_D4_P2_PadSize2_Drill1" H 5038 5950 50  0001 C CNN
+F 2 "C_Disc_2mmPads:C_Disc_2mmPads" H 5038 5950 50  0001 C CNN
 F 3 "" H 5000 6100 50  0001 C CNN
 	1    5000 6100
 	0    -1   -1   0   
@@ -390,7 +390,7 @@ U 1 1 5A2225A5
 P 4550 5900
 F 0 "C2" H 4575 6000 50  0000 L CNN
 F 1 "1uF" H 4575 5800 50  0000 L CNN
-F 2 "CP_Radial_D4_P2_PadSize2_Drill1:CP_Radial_D4_P2_PadSize2_Drill1" H 4588 5750 50  0001 C CNN
+F 2 "C_Disc_2mmPads:C_Disc_2mmPads" H 4588 5750 50  0001 C CNN
 F 3 "" H 4550 5900 50  0001 C CNN
 	1    4550 5900
 	1    0    0    -1  
@@ -475,8 +475,6 @@ F 3 "" H 5850 5050 50  0001 C CNN
 	1    5850 5050
 	0    -1   -1   0   
 $EndComp
-Text Label 2550 4850 0    60   ~ 0
-GND
 NoConn ~ 2150 5600
 $Comp
 L D_Schottky D2
@@ -659,10 +657,6 @@ Wire Wire Line
 Wire Wire Line
 	1950 4400 1650 4400
 Wire Wire Line
-	2350 4500 2550 4500
-Wire Wire Line
-	2550 4500 2550 4850
-Wire Wire Line
 	5850 4300 2350 4300
 Wire Wire Line
 	8050 3950 8050 5350
@@ -708,4 +702,5 @@ Wire Wire Line
 Connection ~ 4700 3250
 Wire Wire Line
 	4900 2700 5000 2700
+NoConn ~ 2350 4500
 $EndSCHEMATC
