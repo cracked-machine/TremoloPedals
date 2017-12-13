@@ -1,15 +1,15 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.6)
 
   (general
-    (links 61)
+    (links 60)
     (no_connects 0)
     (area 45.444999 44.321999 111.273001 144.077)
     (thickness 1.6)
-    (drawings 19)
-    (tracks 394)
+    (drawings 20)
+    (tracks 393)
     (zones 0)
     (modules 38)
-    (nets 33)
+    (nets 34)
   )
 
   (page A4)
@@ -43,7 +43,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.25)
     (user_trace_width 0.5)
     (user_trace_width 0.75)
     (user_trace_width 1)
@@ -133,6 +133,7 @@
   (net 30 "Net-(R16-Pad2)")
   (net 31 "Net-(C5-Pad1)")
   (net 32 "Net-(DRATE1-Pad2)")
+  (net 33 "Net-(SW1-Pad1)")
 
   (net_class Default "This is the default net class."
     (clearance 0.2)
@@ -171,6 +172,7 @@
     (add_net "Net-(R13-Pad2)")
     (add_net "Net-(R16-Pad2)")
     (add_net "Net-(R9-Pad2)")
+    (add_net "Net-(SW1-Pad1)")
     (add_net "Net-(SW1-Pad4)")
     (add_net "Net-(SW1-Pad9)")
   )
@@ -190,7 +192,7 @@
     (fp_line (start 8.89 8.509) (end -8.89 8.509) (layer F.SilkS) (width 0.15))
     (fp_line (start -9.017 8.89) (end -9.017 -8.89) (layer F.SilkS) (width 0.15))
     (pad 1 thru_hole oval (at -5.5 -4.6) (size 3.5 3) (drill 1.5) (layers *.Cu *.Mask)
-      (net 15 /GND))
+      (net 33 "Net-(SW1-Pad1)"))
     (pad 4 thru_hole oval (at 0 -4.6) (size 3.5 3) (drill 1.5) (layers *.Cu *.Mask)
       (net 27 "Net-(SW1-Pad4)"))
     (pad 7 thru_hole oval (at 5.5 -4.6) (size 3.5 3) (drill 1.5) (layers *.Cu *.Mask)
@@ -1547,6 +1549,9 @@
     )
   )
 
+  (gr_text "Hammond 1590G\n" (at 78.232 36.703) (layer F.Cu)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
   (gr_line (start 69.469 44.6405) (end 69.469 44.577) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 66.802 44.6405) (end 69.469 44.6405) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 99.568 135.128) (end 99.568 55.118) (angle 90) (layer Edge.Cuts) (width 0.15))
@@ -1842,12 +1847,9 @@
   (segment (start 96.67 103.1645) (end 96.67 100.204) (width 0.5) (layer F.Cu) (net 15) (tstamp 5A22ED9D))
   (segment (start 92.3417 118.6053) (end 92.3417 106.7943) (width 0.5) (layer F.Cu) (net 15) (tstamp 5A22ED99))
   (segment (start 92.3417 106.7943) (end 96.67 103.1645) (width 0.5) (layer F.Cu) (net 15) (tstamp 5A22ED9B))
-  (segment (start 72.732 123.924) (end 71.2115 123.924) (width 0.5) (layer F.Cu) (net 15))
   (segment (start 69.088 65.1764) (end 71.3105 58.547) (width 0.5) (layer F.Cu) (net 15) (tstamp 5A22E606) (status 20))
   (segment (start 59.6265 109.7675) (end 60.048 109.346) (width 0.25) (layer F.Cu) (net 15) (tstamp 5A22DA30) (status 30))
-  (segment (start 72.732 123.924) (end 72.732 118.6307) (width 0.5) (layer F.Cu) (net 15) (status 10))
   (segment (start 78.5114 52.0446) (end 78.486 52.07) (width 0.5) (layer F.Cu) (net 15) (tstamp 5A22CE20) (status 30))
-  (segment (start 72.732 123.924) (end 72.732 123.483) (width 0.5) (layer F.Cu) (net 15) (status 30))
   (segment (start 85.5853 60.8965) (end 86.0933 60.8965) (width 0.5) (layer F.Cu) (net 15) (status 30))
   (segment (start 91.314 100.204) (end 96.67 100.204) (width 0.5) (layer F.Cu) (net 15) (tstamp 5A22BA9D) (status 20))
   (segment (start 98.4885 86.106) (end 93.726 86.106) (width 0.5) (layer F.Cu) (net 15) (tstamp 5A244D54) (status 20))
@@ -1961,5 +1963,7 @@
   (segment (start 95.0595 133.604) (end 96.3295 132.334) (width 0.5) (layer F.Cu) (net 31) (tstamp 5A245B00))
   (segment (start 79.5655 90.9955) (end 79.5655 89.4715) (width 0.5) (layer F.Cu) (net 32))
   (segment (start 79.5655 89.4715) (end 78.2955 88.2015) (width 0.5) (layer F.Cu) (net 32) (tstamp 5A245916))
+  (segment (start 72.732 123.924) (end 71.2115 123.924) (width 0.5) (layer F.Cu) (net 33))
+  (segment (start 72.732 123.924) (end 72.732 123.483) (width 0.5) (layer F.Cu) (net 33) (status 30))
 
 )
