@@ -115,17 +115,17 @@ $EndComp
 $Comp
 L BARREL_JACK-RESCUE-EATremolo J2
 U 1 1 5A21B006
-P 1850 5600
-F 0 "J2" H 1850 5795 50  0000 C CNN
-F 1 "BARREL_JACK" H 1850 5445 50  0000 C CNN
-F 2 "Connectors:BARREL_JACK" H 1850 5600 50  0001 C CNN
-F 3 "" H 1850 5600 50  0001 C CNN
-	1    1850 5600
+P 1600 6825
+F 0 "J2" H 1600 7020 50  0000 C CNN
+F 1 "BARREL_JACK" H 1600 6670 50  0000 C CNN
+F 2 "Connectors:BARREL_JACK" H 1600 6825 50  0001 C CNN
+F 3 "" H 1600 6825 50  0001 C CNN
+	1    1600 6825
 	1    0    0    1   
 $EndComp
-Text Label 2400 6000 0    60   ~ 0
+Text Label 2150 7225 0    60   ~ 0
 GND
-Text Label 3000 5500 0    60   ~ 0
+Text Label 2750 6725 0    60   ~ 0
 +9V
 $Comp
 L R R1
@@ -400,7 +400,7 @@ L R R4
 U 1 1 5A2238A3
 P 4550 6350
 F 0 "R4" H 4700 6300 50  0000 C CNN
-F 1 "15K" H 4700 6400 50  0000 C CNN
+F 1 "12K" H 4700 6400 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" V 4480 6350 50  0001 C CNN
 F 3 "" H 4550 6350 50  0001 C CNN
 	1    4550 6350
@@ -419,7 +419,7 @@ F 3 "" H 9100 5000 50  0001 C CNN
 	1    9100 5000
 	1    0    0    -1  
 $EndComp
-Text Label 3550 6650 1    60   ~ 0
+Text Label 2850 6350 1    60   ~ 0
 GND
 $Comp
 L SW_3PDT_on_on SW1
@@ -475,16 +475,16 @@ F 3 "" H 9600 4650 50  0001 C CNN
 	1    9600 4650
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2150 5600
+NoConn ~ 1900 6825
 $Comp
 L D_Schottky D2
 U 1 1 5A23FF69
-P 2650 5500
-F 0 "D2" H 2650 5600 50  0000 C CNN
-F 1 "D_Schottky" H 2650 5400 50  0000 C CNN
-F 2 "Diodes_SMD:D_SOD-323" H 2650 5500 50  0001 C CNN
-F 3 "" H 2650 5500 50  0001 C CNN
-	1    2650 5500
+P 2400 6725
+F 0 "D2" H 2400 6825 50  0000 C CNN
+F 1 "D_Schottky" H 2400 6625 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-323" H 2400 6725 50  0001 C CNN
+F 3 "" H 2400 6725 50  0001 C CNN
+	1    2400 6725
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -525,17 +525,19 @@ GND
 $Comp
 L R R16
 U 1 1 5A23D88A
-P 4250 5700
-F 0 "R16" V 4330 5700 50  0000 C CNN
-F 1 "4K7" V 4250 5700 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" V 4180 5700 50  0001 C CNN
-F 3 "" H 4250 5700 50  0001 C CNN
-	1    4250 5700
+P 3775 5700
+F 0 "R16" V 3855 5700 50  0000 C CNN
+F 1 "1K" V 3775 5700 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" V 3705 5700 50  0001 C CNN
+F 3 "" H 3775 5700 50  0001 C CNN
+	1    3775 5700
 	0    1    1    0   
 $EndComp
 NoConn ~ 2350 4500
 Wire Wire Line
-	3800 5700 4100 5700
+	3100 5700 3350 5700
+Wire Wire Line
+	3350 5700 3625 5700
 Wire Wire Line
 	7550 4050 7550 3300
 Wire Wire Line
@@ -558,15 +560,17 @@ Wire Wire Line
 	4700 3250 4900 3250
 Wire Wire Line
 	2100 3050 2400 3050
-Connection ~ 4050 5700
+Connection ~ 3350 5700
 Wire Wire Line
-	4050 5700 4050 5300
+	3350 5700 3350 5300
 Wire Wire Line
 	6700 4050 6700 4150
 Wire Wire Line
-	6700 4050 7550 4050
+	6700 4050 7000 4050
 Wire Wire Line
-	2800 5500 3000 5500
+	7000 4050 7550 4050
+Wire Wire Line
+	2550 6725 2750 6725
 Wire Wire Line
 	6700 4450 6700 5350
 Wire Wire Line
@@ -595,7 +599,9 @@ Wire Wire Line
 Connection ~ 4550 6100
 Connection ~ 5350 6100
 Wire Wire Line
-	5150 6100 5550 6100
+	5150 6100 5350 6100
+Wire Wire Line
+	5350 6100 5550 6100
 Wire Wire Line
 	5350 5350 5350 6100
 Wire Wire Line
@@ -603,23 +609,33 @@ Wire Wire Line
 Wire Wire Line
 	4550 6100 4850 6100
 Wire Wire Line
-	4550 6050 4550 6200
+	4550 6050 4550 6100
+Wire Wire Line
+	4550 6100 4550 6200
 Wire Wire Line
 	4550 5700 4550 5750
 Wire Wire Line
-	4400 5700 4850 5700
+	3925 5700 4550 5700
+Wire Wire Line
+	4550 5700 4850 5700
 Connection ~ 5850 5700
 Wire Wire Line
 	5850 5700 5150 5700
 Wire Wire Line
-	5750 5350 6050 5350
+	5750 5350 5850 5350
+Wire Wire Line
+	5850 5350 6050 5350
 Wire Wire Line
 	5850 6300 5850 6650
 Wire Wire Line
 	2350 4300 3950 4300
 Connection ~ 5850 5350
 Wire Wire Line
-	5850 4300 5850 5900
+	5850 4300 5850 5350
+Wire Wire Line
+	5850 5350 5850 5700
+Wire Wire Line
+	5850 5700 5850 5900
 Wire Wire Line
 	6700 5350 6350 5350
 Wire Wire Line
@@ -643,7 +659,9 @@ Connection ~ 6700 3000
 Wire Wire Line
 	6700 3600 6700 3800
 Wire Wire Line
-	6600 3000 6800 3000
+	6600 3000 6700 3000
+Wire Wire Line
+	6700 3000 6800 3000
 Wire Wire Line
 	6700 3300 6700 3000
 Wire Wire Line
@@ -651,12 +669,18 @@ Wire Wire Line
 Wire Wire Line
 	6200 2900 6200 3000
 Wire Wire Line
-	5700 2700 5900 2700
+	5700 2700 5800 2700
 Wire Wire Line
-	5800 2400 5800 3300
+	5800 2700 5900 2700
+Wire Wire Line
+	5800 2400 5800 2700
+Wire Wire Line
+	5800 2700 5800 3300
 Connection ~ 5800 2700
 Wire Wire Line
-	6200 2300 6200 2500
+	6200 2300 6200 2400
+Wire Wire Line
+	6200 2400 6200 2500
 Wire Wire Line
 	5800 2100 5800 1900
 Wire Wire Line
@@ -670,44 +694,52 @@ Wire Wire Line
 Wire Wire Line
 	4700 3600 4700 3800
 Wire Wire Line
-	4700 3200 4700 3300
+	4700 3200 4700 3250
+Wire Wire Line
+	4700 3250 4700 3300
 Wire Wire Line
 	4200 2250 4200 1900
 Connection ~ 4200 3000
 Wire Wire Line
-	4150 3000 4400 3000
+	4150 3000 4200 3000
+Wire Wire Line
+	4200 3000 4400 3000
 Connection ~ 3700 1650
 Wire Wire Line
 	4200 3600 4200 3800
 Wire Wire Line
-	4200 2550 4200 3300
+	4200 2550 4200 3000
+Wire Wire Line
+	4200 3000 4200 3300
 Wire Wire Line
 	3700 2250 3700 2450
 Wire Wire Line
 	3700 1650 3700 1950
 Wire Wire Line
-	3450 1650 3850 1650
+	3450 1650 3700 1650
 Wire Wire Line
-	2400 5700 2400 6000
+	3700 1650 3850 1650
 Wire Wire Line
-	2150 5700 2400 5700
+	2150 6925 2150 7225
 Wire Wire Line
-	2150 5500 2500 5500
+	1900 6925 2150 6925
+Wire Wire Line
+	1900 6725 2250 6725
 Text Label 7600 5300 1    60   ~ 0
 RATE_P1
 Text Label 7700 5300 1    60   ~ 0
 RATE_P2
 Text Label 7800 5300 1    60   ~ 0
 RATE_P3
-Text Label 4050 5300 3    60   ~ 0
+Text Label 3350 5300 3    60   ~ 0
 RATE_P1
 Wire Wire Line
-	3800 5700 3800 5300
-Text Label 3800 5300 3    60   ~ 0
+	3100 5700 3100 5300
+Text Label 3100 5300 3    60   ~ 0
 RATE_P2
 Wire Wire Line
-	3550 5300 3550 6650
-Text Label 3550 5300 3    60   ~ 0
+	2850 5300 2850 6350
+Text Label 2850 5300 3    60   ~ 0
 RATE_P3
 Text Label 8300 5300 1    60   ~ 0
 VOL_P1
@@ -829,4 +861,12 @@ Wire Wire Line
 	10000 5000 10000 5150
 Wire Wire Line
 	10000 5150 9950 5150
+Text Notes 5375 5175 0    60   ~ 0
+R6 \nPrecision \nvalue. 
+Text Notes 3675 5525 0    60   ~ 0
+VCO Current \nUpper Limit\n
+Text Notes 3800 6675 0    60   ~ 0
+VCO Current \nLower Limit
+Text Notes 3400 6275 0    60   ~ 0
+R16: 1K\nR4: 12K \nVCO Range: \n1.9Hz - 7.8Hz
 $EndSCHEMATC
