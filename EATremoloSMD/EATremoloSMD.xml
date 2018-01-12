@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>H:/Workspace/ElectronicsProjects/EffectsPedals/TremoloPedals/EATremoloSMD/EATremoloSMD.sch</source>
-    <date>06-01-2018 7:35:22 PM</date>
+    <date>12-01-2018 8:35:50 AM</date>
     <tool>Eeschema 4.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -70,98 +70,98 @@
     </comp>
     <comp ref="R1">
       <value>1M</value>
-      <footprint>Resistors_SMD:R_0805</footprint>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21B1F5</tstamp>
     </comp>
     <comp ref="R3">
       <value>1M</value>
-      <footprint>Resistors_SMD:R_0805</footprint>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21B7E2</tstamp>
     </comp>
     <comp ref="C1">
       <value>47nF</value>
-      <footprint>Capacitors_SMD:C_0805</footprint>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21B803</tstamp>
     </comp>
     <comp ref="R2">
       <value>1M</value>
-      <footprint>Resistors_SMD:R_0805</footprint>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21BD65</tstamp>
     </comp>
     <comp ref="R5">
       <value>10K</value>
-      <footprint>Resistors_SMD:R_0805</footprint>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21BEA6</tstamp>
     </comp>
     <comp ref="C5">
       <value>10uF</value>
-      <footprint>Capacitors_SMD:C_0805</footprint>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="CP"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21C6B2</tstamp>
     </comp>
     <comp ref="C6">
       <value>220nF</value>
-      <footprint>Capacitors_SMD:C_0805</footprint>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21C77C</tstamp>
     </comp>
     <comp ref="R8">
       <value>150K</value>
-      <footprint>Resistors_SMD:R_0805</footprint>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21D466</tstamp>
     </comp>
     <comp ref="R10">
       <value>4.7K</value>
-      <footprint>Resistors_SMD:R_0805</footprint>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21D8B9</tstamp>
     </comp>
     <comp ref="R7">
       <value>560K</value>
-      <footprint>Resistors_SMD:R_0805</footprint>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21D9F2</tstamp>
     </comp>
     <comp ref="R11">
       <value>180R</value>
-      <footprint>Resistors_SMD:R_0805</footprint>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21E16D</tstamp>
     </comp>
     <comp ref="R12">
       <value>1.2K</value>
-      <footprint>Resistors_SMD:R_0805</footprint>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21E691</tstamp>
     </comp>
     <comp ref="C9">
       <value>10uF</value>
-      <footprint>Capacitors_SMD:C_0805</footprint>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="CP"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21E897</tstamp>
     </comp>
     <comp ref="C7">
       <value>470nF</value>
-      <footprint>Capacitors_SMD:C_0805</footprint>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21F439</tstamp>
@@ -175,56 +175,56 @@
     </comp>
     <comp ref="R13">
       <value>68k</value>
-      <footprint>Resistors_SMD:R_0805</footprint>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21FED6</tstamp>
     </comp>
     <comp ref="C8">
       <value>470nF</value>
-      <footprint>Capacitors_SMD:C_0805</footprint>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A22016A</tstamp>
     </comp>
     <comp ref="R6">
       <value>2.2M</value>
-      <footprint>Resistors_SMD:R_0805</footprint>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A220B24</tstamp>
     </comp>
     <comp ref="R9">
       <value>10K</value>
-      <footprint>Resistors_SMD:R_0805</footprint>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A220FAF</tstamp>
     </comp>
     <comp ref="C3">
       <value>1uF</value>
-      <footprint>Capacitors_SMD:C_0805</footprint>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="CP"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A222440</tstamp>
     </comp>
     <comp ref="C4">
       <value>1uF</value>
-      <footprint>Capacitors_SMD:C_0805</footprint>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="CP"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A22251D</tstamp>
     </comp>
     <comp ref="C2">
       <value>1uF</value>
-      <footprint>Capacitors_SMD:C_0805</footprint>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="CP"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A2225A5</tstamp>
     </comp>
     <comp ref="R4">
-      <value>15K</value>
-      <footprint>Resistors_SMD:R_0805</footprint>
+      <value>18K</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A2238A3</tstamp>
@@ -259,14 +259,14 @@
     </comp>
     <comp ref="R15">
       <value>100K</value>
-      <footprint>Resistors_SMD:R_0805</footprint>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21FDE8</tstamp>
     </comp>
     <comp ref="R14">
       <value>180K</value>
-      <footprint>Resistors_SMD:R_0805</footprint>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A21FEBC</tstamp>
@@ -279,8 +279,8 @@
       <tstamp>5A21E5AB</tstamp>
     </comp>
     <comp ref="R16">
-      <value>4K7</value>
-      <footprint>Resistors_SMD:R_0805</footprint>
+      <value>1K8</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A23D88A</tstamp>

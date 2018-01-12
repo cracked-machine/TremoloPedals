@@ -400,7 +400,7 @@ L R R4
 U 1 1 5A2238A3
 P 4550 6350
 F 0 "R4" H 4700 6300 50  0000 C CNN
-F 1 "12K" H 4700 6400 50  0000 C CNN
+F 1 "18K" H 4700 6400 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" V 4480 6350 50  0001 C CNN
 F 3 "" H 4550 6350 50  0001 C CNN
 	1    4550 6350
@@ -527,7 +527,7 @@ L R R16
 U 1 1 5A23D88A
 P 3775 5700
 F 0 "R16" V 3855 5700 50  0000 C CNN
-F 1 "1K" V 3775 5700 50  0000 C CNN
+F 1 "1K8" V 3775 5700 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" V 3705 5700 50  0001 C CNN
 F 3 "" H 3775 5700 50  0001 C CNN
 	1    3775 5700
@@ -863,6 +863,10 @@ Wire Wire Line
 	10000 5150 9950 5150
 Text Notes 5375 5175 0    60   ~ 0
 R6 \nPrecision \nvalue. 
-Text Notes 3675 5575 0    60   ~ 0
-Prevents RATE1 \nfrom choking \nVCO current
+Text Notes 3675 5525 0    60   ~ 0
+VCO Current \nUpper Limit\n
+Text Notes 3800 6675 0    60   ~ 0
+VCO Current \nLower Limit
+Text Notes 3400 6275 0    60   ~ 0
+R16: 1K\nR4: 12K \nVCO Range: \n1.9Hz - 7.8Hz
 $EndSCHEMATC
