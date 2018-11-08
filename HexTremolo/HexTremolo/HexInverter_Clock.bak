@@ -1,0 +1,251 @@
+EESchema Schematic File Version 4
+LIBS:HexTremolo-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74HC7014 U_OSC1
+U 1 1 5BF61C70
+P 3100 4000
+F 0 "U_OSC1" H 3100 4314 50  0000 C CNN
+F 1 "74HC7014" H 3100 4225 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3100 4000 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC7014.pdf" H 3100 4000 50  0001 C CNN
+	1    3100 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC7014 U_OSC1
+U 2 1 5BF61C77
+P 4800 4000
+F 0 "U_OSC1" H 4800 4314 50  0000 C CNN
+F 1 "74HC7014" H 4800 4225 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4800 4000 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC7014.pdf" H 4800 4000 50  0001 C CNN
+	2    4800 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4000 2550 4000
+Wire Wire Line
+	2550 5350 5450 5350
+Wire Wire Line
+	5450 5350 5450 4000
+Wire Wire Line
+	5450 4000 5100 4000
+Wire Wire Line
+	4000 4000 4250 4000
+$Comp
+L Device:R_POT P_RATE1
+U 1 1 5BF61C8A
+P 3650 4900
+F 0 "P_RATE1" V 3536 4900 50  0000 C CNN
+F 1 "B10K" V 3447 4900 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical" H 3650 4900 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/15/RK09L-1370814.pdf" H 3650 4900 50  0001 C CNN
+	1    3650 4900
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	3800 4900 4250 4900
+Connection ~ 4250 4000
+Wire Wire Line
+	4250 4000 4500 4000
+Wire Wire Line
+	3650 4750 3650 4600
+$Comp
+L Isolator:4N35 U_OPTO1
+U 1 1 5BF61C95
+P 8700 2800
+F 0 "U_OPTO1" V 8750 3350 50  0000 R CNN
+F 1 "4N35" V 8650 3300 50  0000 R CNN
+F 2 "Package_DIP:SMDIP-6_W9.53mm" H 8500 2600 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/81181/4n35.pdf" H 8700 2800 50  0001 L CNN
+	1    8700 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D_LED1
+U 1 1 5BF61C9C
+P 7200 3400
+F 0 "D_LED1" H 7200 3150 50  0000 C CNN
+F 1 "LED" H 7200 3250 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 7200 3400 50  0001 C CNN
+F 3 "~" H 7200 3400 50  0001 C CNN
+	1    7200 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8600 3400 8600 3100
+Wire Wire Line
+	9100 3400 9100 4300
+Wire Wire Line
+	8800 2500 8800 2400
+Wire Wire Line
+	8800 2400 9100 2400
+NoConn ~ 8600 2500
+$Comp
+L Device:R R_LPF1
+U 1 1 5BF61CAE
+P 6600 3400
+F 0 "R_LPF1" V 6350 3400 50  0000 C CNN
+F 1 "100R" V 6450 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6530 3400 50  0001 C CNN
+F 3 "~" H 6600 3400 50  0001 C CNN
+	1    6600 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP CP_LPF1
+U 1 1 5BF61CB5
+P 8600 3850
+F 0 "CP_LPF1" H 8717 3895 50  0000 L CNN
+F 1 "10uF" H 8717 3806 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 8638 3700 50  0001 C CNN
+F 3 "~" H 8600 3850 50  0001 C CNN
+	1    8600 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 3400 8600 3700
+Wire Wire Line
+	8600 3400 7700 3400
+Connection ~ 8600 3400
+Wire Wire Line
+	6750 3400 6900 3400
+Wire Wire Line
+	8800 3100 8800 3400
+Wire Wire Line
+	8800 3400 9100 3400
+Wire Wire Line
+	9100 2400 9100 3400
+Connection ~ 9100 3400
+Wire Wire Line
+	5450 3500 5450 4000
+Connection ~ 5450 4000
+Wire Wire Line
+	2550 3300 2550 4000
+Connection ~ 2550 4000
+Wire Wire Line
+	3400 4000 3700 4000
+$Comp
+L Device:R R_OSC1
+U 1 1 5BF61CDD
+P 2800 4900
+F 0 "R_OSC1" V 2596 4900 50  0000 C CNN
+F 1 "1K" V 2685 4900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2730 4900 50  0001 C CNN
+F 3 "~" H 2800 4900 50  0001 C CNN
+	1    2800 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 4900 2550 4900
+Connection ~ 2550 4900
+Wire Wire Line
+	2550 4900 2550 5350
+Wire Wire Line
+	2950 4900 3350 4900
+Wire Wire Line
+	4250 4000 4250 4900
+Wire Wire Line
+	2550 4000 2550 4900
+Wire Wire Line
+	3650 4600 3350 4600
+Wire Wire Line
+	3350 4600 3350 4900
+Connection ~ 3350 4900
+Wire Wire Line
+	3350 4900 3500 4900
+Text HLabel 9650 2100 2    50   Input ~ 0
+CLK_OUT
+Wire Wire Line
+	8700 2100 8700 2500
+Wire Wire Line
+	8700 2100 9650 2100
+Wire Wire Line
+	6050 3400 6450 3400
+$Comp
+L Switch:SW_SPDT SW_MODE1
+U 1 1 5BF61CCB
+P 5850 3400
+F 0 "SW_MODE1" H 5700 3150 50  0000 L CNN
+F 1 "SW_SPDT" H 5750 3050 50  0000 L CNN
+F 2 "DailywellSwitches:Dailywell_SPDT" H 5850 3400 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/209/MS-100786-1172382.pdf" H 5850 3400 50  0001 C CNN
+	1    5850 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5450 3500 5650 3500
+Wire Wire Line
+	2550 3300 5650 3300
+Text HLabel 9100 4300 3    50   Input ~ 0
+GND
+Wire Wire Line
+	8600 4000 8600 4300
+Text HLabel 8600 4300 3    50   Input ~ 0
+GND
+$Comp
+L Device:C C_OSC1
+U 1 1 5C186FF7
+P 3850 4000
+F 0 "C_OSC1" V 3598 4000 50  0000 C CNN
+F 1 "22uF" V 3689 4000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3888 3850 50  0001 C CNN
+F 3 "~" H 3850 4000 50  0001 C CNN
+	1    3850 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C_LPFOPT2
+U 1 1 5C18730A
+P 7700 3850
+F 0 "C_LPFOPT2" H 7815 3896 50  0000 L CNN
+F 1 "10uF" H 7815 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7738 3700 50  0001 C CNN
+F 3 "~" H 7700 3850 50  0001 C CNN
+	1    7700 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C_LPFOPT1
+U 1 1 5C18735B
+P 6900 3850
+F 0 "C_LPFOPT1" H 7015 3896 50  0000 L CNN
+F 1 "100nF" H 7015 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6938 3700 50  0001 C CNN
+F 3 "~" H 6900 3850 50  0001 C CNN
+	1    6900 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3700 6900 3400
+Connection ~ 6900 3400
+Wire Wire Line
+	6900 3400 7050 3400
+Wire Wire Line
+	7700 3700 7700 3400
+Connection ~ 7700 3400
+Wire Wire Line
+	7700 3400 7350 3400
+Wire Wire Line
+	7700 4000 7700 4300
+Text HLabel 7700 4300 3    50   Input ~ 0
+GND
+Wire Wire Line
+	6900 4000 6900 4300
+Text HLabel 6900 4300 3    50   Input ~ 0
+GND
+$EndSCHEMATC

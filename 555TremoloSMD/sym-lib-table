@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name 555TremoloSMD-rescue)(type Legacy)(uri ${KIPRJMOD}/555TremoloSMD-rescue.lib)(options "")(descr ""))
+  (lib (name socket_custom)(type Legacy)(uri ${KIPRJMOD}/lib/socket_custom.lib)(options "")(descr ""))
+  (lib (name sw_custom)(type Legacy)(uri ${KIPRJMOD}/lib/sw_custom.lib)(options "")(descr ""))
+)
