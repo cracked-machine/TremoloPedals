@@ -736,4 +736,6 @@ Text Label 8600 10000 1    50   ~ 0
 GND
 Text Label 13950 8200 1    50   ~ 0
 GND
+Text Label 4250 5750 0    50   ~ 0
++5V_OPTO
 $EndSCHEMATC

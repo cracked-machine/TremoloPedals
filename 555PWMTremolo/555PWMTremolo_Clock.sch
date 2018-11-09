@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Isolator:4N35 U_OPTO1
-U 1 1 5BF61C95
-P 8700 2800
-F 0 "U_OPTO1" V 8750 3350 50  0000 R CNN
-F 1 "4N35" V 8650 3300 50  0000 R CNN
-F 2 "Package_DIP:SMDIP-6_W7.62mm" H 8500 2600 50  0001 L CIN
-F 3 "https://www.vishay.com/docs/81181/4n35.pdf" H 8700 2800 50  0001 L CNN
-	1    8700 2800
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:LED D_LED1
 U 1 1 5BF61C9C
 P 7200 3400
@@ -44,7 +33,6 @@ Wire Wire Line
 	8800 2500 8800 2400
 Wire Wire Line
 	8800 2400 9100 2400
-NoConn ~ 8600 2500
 $Comp
 L Device:R R_LPF1
 U 1 1 5BF61CAE
@@ -84,9 +72,9 @@ Connection ~ 9100 3400
 Text HLabel 9650 2100 2    50   Input ~ 0
 CLK_OUT
 Wire Wire Line
-	8700 2100 8700 2500
+	8600 2100 8600 2500
 Wire Wire Line
-	8700 2100 9650 2100
+	8600 2100 9650 2100
 Text HLabel 9100 4300 3    50   Input ~ 0
 GND
 Wire Wire Line
@@ -330,4 +318,15 @@ $EndComp
 Connection ~ 4000 2500
 Wire Wire Line
 	4000 2500 4000 2750
+$Comp
+L Isolator:LTV-357T U_OPTO1
+U 1 1 5BE5F080
+P 8700 2800
+F 0 "U_OPTO1" V 8750 3350 50  0000 R CNN
+F 1 "LTV-357T" V 8650 3350 50  0000 R CNN
+F 2 "Package_SO:SO-4_4.4x2.3mm_P1.27mm" H 8500 2600 50  0001 L CIN
+F 3 "https://www.buerklin.com/medias/sys_master/download/download/h91/ha0/8892020588574.pdf" H 8700 2800 50  0001 L CNN
+	1    8700 2800
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
