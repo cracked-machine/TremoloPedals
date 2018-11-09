@@ -47,60 +47,60 @@ F 3 "https://www.mouser.co.uk/datasheet/2/140/FS5700-1147045.pdf" H 6650 4150 50
 	3    6650 4150
 	1    0    0    -1  
 $EndComp
-Text HLabel 3200 3200 0    50   Input ~ 0
+Text HLabel 2900 4500 0    50   Input ~ 0
 3PDT_2
-Text HLabel 3200 3500 0    50   Input ~ 0
+Text HLabel 2900 4800 0    50   Input ~ 0
 3PDT_5
-Text HLabel 3200 3700 0    50   Input ~ 0
+Text HLabel 3600 4700 2    50   Input ~ 0
 3PDT_7
-Text HLabel 3200 3800 0    50   Input ~ 0
+Text HLabel 3600 4600 2    50   Input ~ 0
 3PDT_8
-Text HLabel 3200 3900 0    50   Input ~ 0
+Text HLabel 3600 4500 2    50   Input ~ 0
 3PDT_9
-Text HLabel 3200 3600 0    50   Input ~ 0
+Text HLabel 3600 4800 2    50   Input ~ 0
 3PDT_6
-Text HLabel 3200 3400 0    50   Input ~ 0
+Text HLabel 2900 4700 0    50   Input ~ 0
 3PDT_4
-Text HLabel 3200 3300 0    50   Input ~ 0
+Text HLabel 2900 4600 0    50   Input ~ 0
 3PDT_3
-Text HLabel 3200 3100 0    50   Input ~ 0
+Text HLabel 2900 4400 0    50   Input ~ 0
 3PDT_1
 Wire Wire Line
-	3200 3200 3600 3200
+	2900 4500 3000 4500
 Wire Wire Line
-	3600 3500 3200 3500
+	3000 4800 2900 4800
 Wire Wire Line
-	3200 3800 3600 3800
+	3600 4600 3500 4600
 Wire Wire Line
-	3600 3900 3200 3900
+	3500 4500 3600 4500
 Wire Wire Line
-	3200 3700 3600 3700
+	3600 4700 3500 4700
 Wire Wire Line
-	3600 3600 3200 3600
+	3500 4800 3600 4800
 Wire Wire Line
-	3200 3400 3600 3400
+	2900 4700 3000 4700
 Wire Wire Line
-	3600 3300 3200 3300
+	3000 4600 2900 4600
 Wire Wire Line
-	3200 3100 3600 3100
+	2900 4400 3000 4400
 Wire Wire Line
-	4450 3100 5100 3100
+	4800 4400 4150 4400
 Wire Wire Line
-	4450 3200 5100 3200
+	4800 4500 4150 4500
 Wire Wire Line
-	4450 3300 5100 3300
+	4800 4600 4150 4600
 Wire Wire Line
-	4450 3400 5100 3400
+	4800 4700 4150 4700
 Wire Wire Line
-	4450 3500 5100 3500
+	4800 4800 4150 4800
 Wire Wire Line
-	4450 3600 5100 3600
+	5300 4800 5800 4800
 Wire Wire Line
-	4450 3700 5100 3700
+	5300 4700 5800 4700
 Wire Wire Line
-	4450 3800 5100 3800
+	5300 4600 5800 4600
 Wire Wire Line
-	4450 3900 5100 3900
+	5300 4500 5800 4500
 Wire Wire Line
 	6450 2950 6150 2950
 Wire Wire Line
@@ -119,23 +119,23 @@ Wire Wire Line
 	6850 3050 7150 3050
 Wire Wire Line
 	6850 2850 7150 2850
-Text Label 5100 3100 2    50   ~ 0
+Text Label 4150 4400 0    50   ~ 0
 3PDT_1_INT
-Text Label 5100 3200 2    50   ~ 0
+Text Label 4150 4500 0    50   ~ 0
 3PDT_2_INT
-Text Label 5100 3300 2    50   ~ 0
+Text Label 4150 4600 0    50   ~ 0
 3PDT_3_INT
-Text Label 5100 3400 2    50   ~ 0
+Text Label 4150 4700 0    50   ~ 0
 3PDT_4_INT
-Text Label 5100 3500 2    50   ~ 0
+Text Label 4150 4800 0    50   ~ 0
 3PDT_5_INT
-Text Label 5100 3600 2    50   ~ 0
+Text Label 5800 4800 2    50   ~ 0
 3PDT_6_INT
-Text Label 5100 3700 2    50   ~ 0
+Text Label 5800 4700 2    50   ~ 0
 3PDT_7_INT
-Text Label 5100 3800 2    50   ~ 0
+Text Label 5800 4600 2    50   ~ 0
 3PDT_8_INT
-Text Label 5100 3900 2    50   ~ 0
+Text Label 5800 4500 2    50   ~ 0
 3PDT_9_INT
 Text Label 6150 2950 2    50   ~ 0
 3PDT_2_INT
@@ -156,25 +156,25 @@ Text Label 7150 4050 0    50   ~ 0
 Text Label 7150 4250 0    50   ~ 0
 3PDT_9_INT
 $Comp
-L Connector_Generic:Conn_01x09 J_MAINTOAUX1
-U 1 1 5BE491D7
-P 3800 3500
-F 0 "J_MAINTOAUX1" H 3350 4150 50  0000 L CNN
-F 1 "Conn_01x09" H 3400 4050 50  0000 L CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x09_P1.27mm_Vertical" H 3800 3500 50  0001 C CNN
-F 3 "~" H 3800 3500 50  0001 C CNN
-	1    3800 3500
+L Connector_Generic:Conn_02x05_Counter_Clockwise J_MAINTOAUX1
+U 1 1 5BE5C9F1
+P 3200 4600
+F 0 "J_MAINTOAUX1" H 3250 4925 50  0000 C CNN
+F 1 "Conn_02x05_Counter_Clockwise" H 3250 4926 50  0001 C CNN
+F 2 "CustomHeaders:IDCHeader_02x05_P2.54mm_Vertical_Counter_Clockwise" H 3200 4600 50  0001 C CNN
+F 3 "~" H 3200 4600 50  0001 C CNN
+	1    3200 4600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x09 J_AUXTOMAIN1
-U 1 1 5BE49202
-P 4250 3500
-F 0 "J_AUXTOMAIN1" H 4150 4150 50  0000 C CNN
-F 1 "Conn_01x09" H 4150 4050 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x09_P1.27mm_Vertical" H 4250 3500 50  0001 C CNN
-F 3 "~" H 4250 3500 50  0001 C CNN
-	1    4250 3500
-	-1   0    0    -1  
+L Connector_Generic:Conn_02x05_Counter_Clockwise J_AUXTOMAIN1
+U 1 1 5BE5CA85
+P 5000 4600
+F 0 "J_AUXTOMAIN1" H 5050 4925 50  0000 C CNN
+F 1 "Conn_02x05_Counter_Clockwise" H 5050 4926 50  0001 C CNN
+F 2 "CustomHeaders:IDCHeader_02x05_P2.54mm_Vertical_Counter_Clockwise" H 5000 4600 50  0001 C CNN
+F 3 "~" H 5000 4600 50  0001 C CNN
+	1    5000 4600
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
