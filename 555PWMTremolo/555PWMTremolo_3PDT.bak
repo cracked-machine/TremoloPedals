@@ -161,7 +161,7 @@ U 1 1 5BE5C9F1
 P 3200 4600
 F 0 "J_MAINTOAUX1" H 3250 4925 50  0000 C CNN
 F 1 "Conn_02x05_Counter_Clockwise" H 3250 4926 50  0001 C CNN
-F 2 "CustomHeaders:IDCHeader_02x05_P2.54mm_Vertical_Clockwise" H 3200 4600 50  0001 C CNN
+F 2 "CustomHeaders:IDCHeader_02x05_P2.54mm_Vertical_Counter_Clockwise" H 3200 4600 50  0001 C CNN
 F 3 "~" H 3200 4600 50  0001 C CNN
 	1    3200 4600
 	1    0    0    -1  
@@ -172,7 +172,7 @@ U 1 1 5BE5CA85
 P 5000 4600
 F 0 "J_AUXTOMAIN1" H 5050 4925 50  0000 C CNN
 F 1 "Conn_02x05_Counter_Clockwise" H 5050 4926 50  0001 C CNN
-F 2 "CustomHeaders:IDCHeader_02x05_P2.54mm_Vertical_Clockwise" H 5000 4600 50  0001 C CNN
+F 2 "CustomHeaders:IDCHeader_02x05_P2.54mm_Vertical_Counter_Clockwise" H 5000 4600 50  0001 C CNN
 F 3 "~" H 5000 4600 50  0001 C CNN
 	1    5000 4600
 	1    0    0    -1  
