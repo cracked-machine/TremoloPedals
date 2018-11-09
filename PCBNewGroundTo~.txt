@@ -1,0 +1,211 @@
+Info: Checking netlist symbol footprint “R6:/5C028D86:Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder”.
+
+Info: Checking netlist symbol footprint “J_IN1:/5BE61397:custom_sockets:6_35MM_JACK_MONO_FlatTop”.
+
+Info: Checking netlist symbol footprint “J_MAINTOAUX1:/5BFCF63F/5BE491D7:Connector_PinHeader_1.27mm:PinHeader_1x09_P1.27mm_Vertical”.
+
+Info: Checking netlist symbol footprint “J_OUT1:/5BE39EEA:custom_sockets:6_35MM_JACK_MONO_FlatTop”.
+
+Info: Checking netlist symbol footprint “J_PWR1:/5BE7895A:Connector_BarrelJack:BarrelJack_Horizontal”.
+
+Info: Checking netlist symbol footprint “P_DEPTH1:/5BE21679:Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical”.
+
+Info: Checking netlist symbol footprint “P_RATE1:/5BF54A3F/5BF61C8A:Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical”.
+
+Info: Checking netlist symbol footprint “P_VOL1:/5BE216FA:Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical”.
+
+Info: Checking netlist symbol footprint “R1:/5BE11469:Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder”.
+
+Info: Checking netlist symbol footprint “R2:/5BE0FDA6:Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder”.
+
+Info: Checking netlist symbol footprint “R3:/5BE175D9:Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder”.
+
+Info: Checking netlist symbol footprint “R4:/5BE144F3:Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder”.
+
+Info: Checking netlist symbol footprint “R5:/5BE16594:Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder”.
+
+Info: Checking netlist symbol footprint “C_BP1:/5C028DB4:Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder”.
+
+Info: Checking netlist symbol footprint “R_GAIN1:/5BE2AB83:Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder”.
+
+Info: Checking netlist symbol footprint “R_LPF1:/5BF54A3F/5BF61CAE:Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder”.
+
+Info: Checking netlist symbol footprint “R_OSC1:/5BF54A3F/5BF61CDD:Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder”.
+
+Info: Checking netlist symbol footprint “SW_EN1:/5BFCF63F/5BFCF869:custom_sw:SW_3PDT_W18MM_L17.3MM_P5.3MM_D2MM”.
+
+Info: Checking netlist symbol footprint “SW_MODE1:/5BF54A3F/5BF61CCB:DailywellSwitches:Dailywell_SPDT”.
+
+Info: Checking netlist symbol footprint “U_BUF1:/5BE1E27D:Package_SO:SOIC-8_3.9x4.9mm_P1.27mm”.
+
+Info: Checking netlist symbol footprint “U_INV1:/5BE0D4DB:Package_SO:SOIC-8_3.9x4.9mm_P1.27mm”.
+
+Info: Checking netlist symbol footprint “U_NREG1:/5BE2DBE2:Package_TO_SOT_SMD:SOT-223-3_TabPin2”.
+
+Info: Checking netlist symbol footprint “U_OPTO1:/5BF54A3F/5BF61C95:Package_DIP:SMDIP-6_W7.62mm”.
+
+Info: Checking netlist symbol footprint “U_OSC1:/5C028D7F:Package_SO:SOIC-14_3.9x8.7mm_P1.27mm”.
+
+Info: Checking netlist symbol footprint “U_PREG1:/5BE0E29B:Package_TO_SOT_SMD:SOT-223-3_TabPin2”.
+
+Info: Checking netlist symbol footprint “C_BP4:/5BED3C3D:Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder”.
+
+Info: Checking netlist symbol footprint “CP_INV1:/5BE0D68C:Capacitor_SMD:CP_Elec_4x5.4”.
+
+Info: Checking netlist symbol footprint “CP_INV2:/5BE0D571:Capacitor_SMD:CP_Elec_4x5.4”.
+
+Info: Checking netlist symbol footprint “C_OSC1:/5BF54A3F/5C186FF7:Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder”.
+
+Info: Checking netlist symbol footprint “CP_LPF1:/5BF54A3F/5BF61CB5:Capacitor_SMD:CP_Elec_4x5.4”.
+
+Info: Checking netlist symbol footprint “C_LPFOPT2:/5BF54A3F/5C18730A:Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder”.
+
+Info: Checking netlist symbol footprint “D_LED1:/5BF54A3F/5BF61C9C:LED_THT:LED_D5.0mm”.
+
+Info: Checking netlist symbol footprint “C_LPFOPT1:/5BF54A3F/5C18735B:Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder”.
+
+Info: Checking netlist symbol footprint “J_AUXTOMAIN1:/5BFCF63F/5BE49202:Connector_PinHeader_1.27mm:PinHeader_1x09_P1.27mm_Vertical”.
+
+Info: Checking netlist symbol footprint “C_BP5:/5BF220BE:Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder”.
+
+Info: Checking netlist symbol footprint “C_BP2:/5C028DBF:Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder”.
+
+Info: Checking netlist symbol footprint “C_BP3:/5BED3C35:Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder”.
+
+Changing footprint “U_OPTO1:/5BF54A3F/5BF61C95” pad “2” net name from “GND” to “~”.
+
+Changing footprint “U_OPTO1:/5BF54A3F/5BF61C95” pad “4” net name from “GND” to “~”.
+
+Changing footprint “U_OPTO1:/5BF54A3F/5BF61C95” pad “5” net name from “/HexInverter_Clock/CLK_OUT” to “/555PWMTremolo_Clock/CLK_OUT”.
+
+Changing footprint “U_OPTO1:/5BF54A3F/5BF61C95” pad “3” net name from “” to “Net-(U_OPTO1-Pad3)”.
+
+Changing footprint “C_BP2:/5C028DBF” pad “2” net name from “GND” to “~”.
+
+Changing footprint “U_OPTO1:/5BF54A3F/5BF61C95” pad “6” net name from “” to “Net-(U_OPTO1-Pad6)”.
+
+Changing footprint “U_INV1:/5BE0D4DB” pad “7” net name from “” to “Net-(U_INV1-Pad7)”.
+
+Changing footprint “U_INV1:/5BE0D4DB” pad “6” net name from “GND” to “~”.
+
+Changing footprint “C_BP1:/5C028DB4” pad “1” net name from “GND” to “~”.
+
+Changing footprint “U_OSC1:/5C028D7F” pad “5” net name from “” to “Net-(U_OSC1-Pad5)”.
+
+Changing footprint “U_INV1:/5BE0D4DB” pad “3” net name from “GND” to “~”.
+
+Changing footprint “C_BP3:/5BED3C35” pad “1” net name from “GND” to “~”.
+
+Changing footprint “U_OSC1:/5C028D7F” pad “8” net name from “” to “Net-(U_OSC1-Pad8)”.
+
+Remove single pad net “Net-(U_OPTO1-Pad6)” on “U_OPTO1” pad “6”
+
+Updating copper zone (net name “GND”) to net name “~”.
+Remove single pad net “Net-(U_OSC1-Pad13)” on “U_OSC1” pad “13”
+
+Remove single pad net “Net-(U_OSC1-Pad12)” on “U_OSC1” pad “12”
+
+Remove single pad net “Net-(U_OSC1-Pad11)” on “U_OSC1” pad “11”
+
+Remove single pad net “Net-(U_OSC1-Pad10)” on “U_OSC1” pad “10”
+
+Remove single pad net “Net-(U_OSC1-Pad9)” on “U_OSC1” pad “9”
+
+Remove single pad net “Net-(U_OSC1-Pad8)” on “U_OSC1” pad “8”
+
+Remove single pad net “Net-(U_OSC1-Pad6)” on “U_OSC1” pad “6”
+
+Remove single pad net “Net-(U_OSC1-Pad5)” on “U_OSC1” pad “5”
+
+Changing footprint “U_OSC1:/5C028D7F” pad “6” net name from “” to “Net-(U_OSC1-Pad6)”.
+
+Remove single pad net “Net-(U_OPTO1-Pad3)” on “U_OPTO1” pad “3”
+
+Remove single pad net “Net-(U_INV1-Pad7)” on “U_INV1” pad “7”
+
+Remove single pad net “/555PWMTremolo_3PDT/3PDT_7” on “J_MAINTOAUX1” pad “7”
+
+Changing footprint “U_OSC1:/5C028D7F” pad “13” net name from “” to “Net-(U_OSC1-Pad13)”.
+
+Changing footprint “U_OSC1:/5C028D7F” pad “12” net name from “” to “Net-(U_OSC1-Pad12)”.
+
+Changing footprint “U_OSC1:/5C028D7F” pad “11” net name from “” to “Net-(U_OSC1-Pad11)”.
+
+Changing footprint “U_OSC1:/5C028D7F” pad “10” net name from “” to “Net-(U_OSC1-Pad10)”.
+
+Changing footprint “U_OSC1:/5C028D7F” pad “9” net name from “” to “Net-(U_OSC1-Pad9)”.
+
+Changing footprint “SW_EN1:/5BFCF63F/5BFCF869” pad “5” net name from “/HexInverter_3PDT/3PDT_5_INT” to “/555PWMTremolo_3PDT/3PDT_5_INT”.
+
+Changing footprint “J_IN1:/5BE61397” pad “3” net name from “GND” to “~”.
+
+Changing footprint “SW_EN1:/5BFCF63F/5BFCF869” pad “9” net name from “/HexInverter_3PDT/3PDT_9_INT” to “/555PWMTremolo_3PDT/3PDT_9_INT”.
+
+Changing footprint “J_PWR1:/5BE7895A” pad “2” net name from “GND” to “~”.
+
+Changing footprint “J_OUT1:/5BE39EEA” pad “4” net name from “GND” to “~”.
+
+Changing footprint “J_OUT1:/5BE39EEA” pad “3” net name from “GND” to “~”.
+
+Changing footprint “J_OUT1:/5BE39EEA” pad “2” net name from “GND” to “~”.
+
+Changing footprint “J_MAINTOAUX1:/5BFCF63F/5BE491D7” pad “7” net name from “” to “/555PWMTremolo_3PDT/3PDT_7”.
+
+Changing footprint “J_AUXTOMAIN1:/5BFCF63F/5BE49202” pad “9” net name from “/HexInverter_3PDT/3PDT_9_INT” to “/555PWMTremolo_3PDT/3PDT_9_INT”.
+
+Changing footprint “J_IN1:/5BE61397” pad “2” net name from “GND” to “~”.
+
+Changing footprint “CP_LPF1:/5BF54A3F/5BF61CB5” pad “2” net name from “GND” to “~”.
+
+Changing footprint “J_IN1:/5BE61397” pad “4” net name from “GND” to “~”.
+
+Changing footprint “J_AUXTOMAIN1:/5BFCF63F/5BE49202” pad “8” net name from “/HexInverter_3PDT/3PDT_8_INT” to “/555PWMTremolo_3PDT/3PDT_8_INT”.
+
+Changing footprint “J_AUXTOMAIN1:/5BFCF63F/5BE49202” pad “1” net name from “/HexInverter_3PDT/3PDT_1_INT” to “/555PWMTremolo_3PDT/3PDT_1_INT”.
+
+Changing footprint “J_AUXTOMAIN1:/5BFCF63F/5BE49202” pad “2” net name from “/HexInverter_3PDT/3PDT_2_INT” to “/555PWMTremolo_3PDT/3PDT_2_INT”.
+
+Changing footprint “J_AUXTOMAIN1:/5BFCF63F/5BE49202” pad “3” net name from “/HexInverter_3PDT/3PDT_3_INT” to “/555PWMTremolo_3PDT/3PDT_3_INT”.
+
+Changing footprint “J_AUXTOMAIN1:/5BFCF63F/5BE49202” pad “4” net name from “/HexInverter_3PDT/3PDT_4_INT” to “/555PWMTremolo_3PDT/3PDT_4_INT”.
+
+Changing footprint “J_AUXTOMAIN1:/5BFCF63F/5BE49202” pad “5” net name from “/HexInverter_3PDT/3PDT_5_INT” to “/555PWMTremolo_3PDT/3PDT_5_INT”.
+
+Changing footprint “J_AUXTOMAIN1:/5BFCF63F/5BE49202” pad “6” net name from “/HexInverter_3PDT/3PDT_6_INT” to “/555PWMTremolo_3PDT/3PDT_6_INT”.
+
+Changing footprint “C_BP4:/5BED3C3D” pad “2” net name from “GND” to “~”.
+
+Changing footprint “SW_EN1:/5BFCF63F/5BFCF869” pad “6” net name from “/HexInverter_3PDT/3PDT_6_INT” to “/555PWMTremolo_3PDT/3PDT_6_INT”.
+
+Changing footprint “SW_EN1:/5BFCF63F/5BFCF869” pad “3” net name from “/HexInverter_3PDT/3PDT_3_INT” to “/555PWMTremolo_3PDT/3PDT_3_INT”.
+
+Changing footprint “SW_EN1:/5BFCF63F/5BFCF869” pad “8” net name from “/HexInverter_3PDT/3PDT_8_INT” to “/555PWMTremolo_3PDT/3PDT_8_INT”.
+
+Changing footprint “J_AUXTOMAIN1:/5BFCF63F/5BE49202” pad “7” net name from “/HexInverter_3PDT/3PDT_7_INT” to “/555PWMTremolo_3PDT/3PDT_7_INT”.
+
+Changing footprint “SW_EN1:/5BFCF63F/5BFCF869” pad “2” net name from “/HexInverter_3PDT/3PDT_2_INT” to “/555PWMTremolo_3PDT/3PDT_2_INT”.
+
+Changing footprint “SW_EN1:/5BFCF63F/5BFCF869” pad “7” net name from “/HexInverter_3PDT/3PDT_7_INT” to “/555PWMTremolo_3PDT/3PDT_7_INT”.
+
+Changing footprint “SW_EN1:/5BFCF63F/5BFCF869” pad “4” net name from “/HexInverter_3PDT/3PDT_4_INT” to “/555PWMTremolo_3PDT/3PDT_4_INT”.
+
+Changing footprint “SW_EN1:/5BFCF63F/5BFCF869” pad “1” net name from “/HexInverter_3PDT/3PDT_1_INT” to “/555PWMTremolo_3PDT/3PDT_1_INT”.
+
+Changing footprint “P_DEPTH1:/5BE21679” pad “3” net name from “/HexInverter_Clock/CLK_OUT” to “/555PWMTremolo_Clock/CLK_OUT”.
+
+Changing footprint “C_BP5:/5BF220BE” pad “1” net name from “GND” to “~”.
+
+Changing footprint “R_GAIN1:/5BE2AB83” pad “2” net name from “GND” to “~”.
+
+Changing footprint “C_LPFOPT1:/5BF54A3F/5C18735B” pad “2” net name from “GND” to “~”.
+
+Changing footprint “C_LPFOPT2:/5BF54A3F/5C18730A” pad “2” net name from “GND” to “~”.
+
+Changing footprint “R3:/5BE175D9” pad “2” net name from “GND” to “~”.
+
+Changing footprint “R1:/5BE11469” pad “2” net name from “GND” to “~”.
+
+Changing footprint “CP_INV2:/5BE0D571” pad “1” net name from “GND” to “~”.
+
+Warning: Footprint of symbol “U_OPTO1” changed: board footprint “Package_DIP:SMDIP-6_W9.53mm”, netlist footprint “Package_DIP:SMDIP-6_W7.62mm”
+

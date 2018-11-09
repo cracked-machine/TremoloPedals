@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L sw_custom:SW_3PDT_on_on SW_EN?
+L sw_custom:SW_3PDT_on_on SW_EN1
 U 1 1 5BFCF869
 P 6650 2950
-F 0 "SW_EN?" H 6650 3235 50  0000 C CNN
+F 0 "SW_EN1" H 6650 3235 50  0000 C CNN
 F 1 "SW_3PDT_on_on" H 6650 3144 50  0000 C CNN
 F 2 "custom_sw:SW_3PDT_W18MM_L17.3MM_P5.3MM_D2MM" H 6650 2950 50  0001 C CNN
 F 3 "https://www.mouser.co.uk/datasheet/2/140/FS5700-1147045.pdf" H 6650 2950 50  0001 C CNN
@@ -26,10 +26,10 @@ F 3 "https://www.mouser.co.uk/datasheet/2/140/FS5700-1147045.pdf" H 6650 2950 50
 	1    0    0    -1  
 $EndComp
 $Comp
-L sw_custom:SW_3PDT_on_on SW_EN?
+L sw_custom:SW_3PDT_on_on SW_EN1
 U 2 1 5BFCF8CC
 P 6650 3550
-F 0 "SW_EN?" H 6650 3835 50  0000 C CNN
+F 0 "SW_EN1" H 6650 3835 50  0000 C CNN
 F 1 "SW_3PDT_on_on" H 6650 3744 50  0000 C CNN
 F 2 "custom_sw:SW_3PDT_W18MM_L17.3MM_P5.3MM_D2MM" H 6650 3550 50  0001 C CNN
 F 3 "https://www.mouser.co.uk/datasheet/2/140/FS5700-1147045.pdf" H 6650 3550 50  0001 C CNN
@@ -37,10 +37,10 @@ F 3 "https://www.mouser.co.uk/datasheet/2/140/FS5700-1147045.pdf" H 6650 3550 50
 	1    0    0    -1  
 $EndComp
 $Comp
-L sw_custom:SW_3PDT_on_on SW_EN?
+L sw_custom:SW_3PDT_on_on SW_EN1
 U 3 1 5BFCF92E
 P 6650 4150
-F 0 "SW_EN?" H 6650 4435 50  0000 C CNN
+F 0 "SW_EN1" H 6650 4435 50  0000 C CNN
 F 1 "SW_3PDT_on_on" H 6650 4344 50  0000 C CNN
 F 2 "custom_sw:SW_3PDT_W18MM_L17.3MM_P5.3MM_D2MM" H 6650 4150 50  0001 C CNN
 F 3 "https://www.mouser.co.uk/datasheet/2/140/FS5700-1147045.pdf" H 6650 4150 50  0001 C CNN
@@ -156,10 +156,10 @@ Text Label 7150 4050 0    50   ~ 0
 Text Label 7150 4250 0    50   ~ 0
 3PDT_9_INT
 $Comp
-L Connector_Generic:Conn_01x09 J_MAINTOAUX?
+L Connector_Generic:Conn_01x09 J_MAINTOAUX1
 U 1 1 5BE491D7
 P 3800 3500
-F 0 "J_MAINTOAUX?" H 3350 4150 50  0000 L CNN
+F 0 "J_MAINTOAUX1" H 3350 4150 50  0000 L CNN
 F 1 "Conn_01x09" H 3400 4050 50  0000 L CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x09_P1.27mm_Vertical" H 3800 3500 50  0001 C CNN
 F 3 "~" H 3800 3500 50  0001 C CNN
@@ -167,10 +167,10 @@ F 3 "~" H 3800 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x09 J_AUXTOMAIN?
+L Connector_Generic:Conn_01x09 J_AUXTOMAIN1
 U 1 1 5BE49202
 P 4250 3500
-F 0 "J_AUXTOMAIN?" H 4150 4150 50  0000 C CNN
+F 0 "J_AUXTOMAIN1" H 4150 4150 50  0000 C CNN
 F 1 "Conn_01x09" H 4150 4050 50  0000 C CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x09_P1.27mm_Vertical" H 4250 3500 50  0001 C CNN
 F 3 "~" H 4250 3500 50  0001 C CNN

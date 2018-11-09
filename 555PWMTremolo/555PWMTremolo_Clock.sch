@@ -156,7 +156,7 @@ U 1 1 5BE6F106
 P 2400 3950
 F 0 "P_OSCON1" H 2850 3900 50  0000 C CNN
 F 1 "B10K" H 2850 4000 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 2400 3950 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical" H 2400 3950 50  0001 C CNN
 F 3 "~" H 2400 3950 50  0001 C CNN
 	1    2400 3950
 	-1   0    0    1   
@@ -238,7 +238,7 @@ U 1 1 5BE76FC9
 P 2400 3150
 F 0 "P_OSCOFF1" H 2900 3300 50  0000 C CNN
 F 1 "B10K" H 2800 3200 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 2400 3150 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical" H 2400 3150 50  0001 C CNN
 F 3 "~" H 2400 3150 50  0001 C CNN
 	1    2400 3150
 	-1   0    0    -1  
@@ -284,7 +284,7 @@ Wire Wire Line
 	2400 2200 4000 2200
 Connection ~ 4000 2200
 Wire Wire Line
-	4000 2200 4000 2750
+	4000 2200 4000 2500
 Wire Wire Line
 	2400 2200 2400 2500
 Wire Wire Line
@@ -303,7 +303,7 @@ U 1 1 5BEBE4C2
 P 5100 2650
 F 0 "C_BP1" H 5215 2695 50  0000 L CNN
 F 1 "100nF" H 5215 2606 50  0000 L CNN
-F 2 "" H 5138 2500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5138 2500 50  0001 C CNN
 F 3 "~" H 5100 2650 50  0001 C CNN
 	1    5100 2650
 	1    0    0    -1  
@@ -316,4 +316,18 @@ Wire Wire Line
 	5100 2800 5100 3200
 Text HLabel 5100 3200 3    50   Input ~ 0
 GND
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5BE575F8
+P 4000 2500
+F 0 "#FLG0103" H 4000 2575 50  0001 C CNN
+F 1 "PWR_FLAG" V 4000 2627 50  0000 L CNN
+F 2 "" H 4000 2500 50  0001 C CNN
+F 3 "~" H 4000 2500 50  0001 C CNN
+	1    4000 2500
+	0    1    1    0   
+$EndComp
+Connection ~ 4000 2500
+Wire Wire Line
+	4000 2500 4000 2750
 $EndSCHEMATC
