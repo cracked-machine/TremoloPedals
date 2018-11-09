@@ -27,12 +27,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21469a.pdf" H 4300 8700 50 
 $EndComp
 Wire Wire Line
 	3800 8500 3650 8500
-Wire Wire Line
-	3650 8500 3650 8000
-Wire Wire Line
-	4700 8000 4700 8500
-Wire Wire Line
-	4700 8500 4600 8500
 $Comp
 L Device:CP CP_INV2
 U 1 1 5BE0D571
@@ -46,9 +40,6 @@ F 3 "~" H 5400 8850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5400 8700 5400 8500
-Wire Wire Line
-	5400 8500 4700 8500
-Connection ~ 4700 8500
 $Comp
 L Device:CP CP_INV1
 U 1 1 5BE0D68C
@@ -98,7 +89,7 @@ F 3 "" H 3550 9950 50  0001 C CNN
 $EndComp
 NoConn ~ 3800 8800
 Wire Wire Line
-	3800 8650 3300 8650
+	3800 8650 3650 8650
 Wire Wire Line
 	3300 8650 3300 8100
 $Comp
@@ -1005,5 +996,10 @@ BYPASS
 Text Notes 900  6950 0    50   ~ 0
 POWER SUPPLY
 Wire Wire Line
-	3650 8000 4700 8000
+	4600 8500 5400 8500
+Wire Wire Line
+	3650 8500 3650 8650
+Connection ~ 3650 8650
+Wire Wire Line
+	3650 8650 3300 8650
 $EndSCHEMATC
