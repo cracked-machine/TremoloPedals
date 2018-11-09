@@ -1,7 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP CLKGND
-K POWER, PWR
-$ENDCMP
-#
-#End Doc Library

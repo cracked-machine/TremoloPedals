@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name sw_custom)(type Legacy)(uri ${KIPRJMOD}/LIBS/sw_custom.lib)(options "")(descr ""))
+  (lib (name socket_custom)(type Legacy)(uri ${KIPRJMOD}/LIBS/socket_custom.lib)(options "")(descr ""))
+)
