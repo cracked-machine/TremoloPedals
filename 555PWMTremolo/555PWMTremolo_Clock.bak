@@ -51,7 +51,15 @@ P 8900 4450
 F 0 "CP_FAST1" H 9017 4495 50  0000 L CNN
 F 1 "22uF" H 9017 4406 50  0000 L CNN
 F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 8938 4300 50  0001 C CNN
-F 3 "~" H 8900 4450 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/445/875105240003-540627.pdf" H 8900 4450 50  0001 C CNN
+F 4 "710-875105240003" H 8900 4450 50  0001 C CNN "MouserNo"
+F 5 "875105240003" H 8900 4450 50  0001 C CNN "Mfr. No:"
+F 6 "Wurth" H 8900 4450 50  0001 C CNN "Mfr:"
+F 7 "Aluminium Organic Polymer Capacitors WCAP-PSLP 10V 22uF 20%" H 8900 4450 50  0001 C CNN "Type"
+F 8 "45mOhms" H 8900 4450 50  0001 C CNN "ESR"
+F 9 "20%" H 8900 4450 50  0001 C CNN "Tolerance"
+F 10 "10 DC" H 8900 4450 50  0001 C CNN "Voltage Rating DC"
+F 11 "4mm" H 8900 4450 50  0001 C CNN "Diameter"
 	1    8900 4450
 	1    0    0    -1  
 $EndComp
@@ -142,7 +150,11 @@ P 2400 3950
 F 0 "P_OSCON1" H 2850 3900 50  0000 C CNN
 F 1 "B10K" H 2850 4000 50  0000 C CNN
 F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical" H 2400 3950 50  0001 C CNN
-F 3 "~" H 2400 3950 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/15/RK09L-1370814.pdf" H 2400 3950 50  0001 C CNN
+F 4 "688-RK09L1140A66" H 2400 3950 50  0001 C CNN "MouserNo"
+F 5 "RK09L1140A66" H 2400 3950 50  0001 C CNN "Mfr. No:"
+F 6 "ALPS" H 2400 3950 50  0001 C CNN "Mfr:"
+F 7 "1GANG LINEAR 20% FLATTED 1TURN" H 2400 3950 50  0001 C CNN "Type"
 	1    2400 3950
 	-1   0    0    1   
 $EndComp
@@ -153,7 +165,11 @@ P 4000 3800
 F 0 "U_OSC1" H 4250 4450 50  0000 C CNN
 F 1 "TLC555" H 4250 4350 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4050 3550 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlc555.pdf" H 4650 3250 50  0001 C CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftlc555" H 4650 3250 50  0001 C CNN
+F 4 "595-TLC555CDR" H 4000 3800 50  0001 C CNN "MouserNo"
+F 5 "TLC555CDR" H 4000 3800 50  0001 C CNN "Mfr. No:"
+F 6 "Texas Instruments" H 4000 3800 50  0001 C CNN "Mfr:"
+F 7 "LinCMOS Clock & Timer IC" H 4000 3800 50  0001 C CNN "Type"
 	1    4000 3800
 	1    0    0    -1  
 $EndComp
@@ -224,7 +240,11 @@ P 2400 3150
 F 0 "P_OSCOFF1" H 2900 3300 50  0000 C CNN
 F 1 "B10K" H 2800 3200 50  0000 C CNN
 F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical" H 2400 3150 50  0001 C CNN
-F 3 "~" H 2400 3150 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/15/RK09L-1370814.pdf" H 2400 3150 50  0001 C CNN
+F 4 "688-RK09L1140A66" H 2400 3150 50  0001 C CNN "MouserNo"
+F 5 "RK09L1140A66" H 2400 3150 50  0001 C CNN "Mfr. No:"
+F 6 "ALPS" H 2400 3150 50  0001 C CNN "Mfr:"
+F 7 "1GANG LINEAR 20% FLATTED 1TURN" H 2400 3150 50  0001 C CNN "Type"
 	1    2400 3150
 	-1   0    0    -1  
 $EndComp
@@ -304,7 +324,11 @@ P 8700 2800
 F 0 "U_OPTO1" V 8750 3350 50  0000 R CNN
 F 1 "LTV-357T" V 8650 3350 50  0000 R CNN
 F 2 "Package_SO:SO-4_4.4x2.3mm_P1.27mm" H 8500 2600 50  0001 L CIN
-F 3 "https://www.buerklin.com/medias/sys_master/download/download/h91/ha0/8892020588574.pdf" H 8700 2800 50  0001 L CNN
+F 3 "https://docs.broadcom.com/docs/av02-0470en" H 8700 2800 50  0001 L CNN
+F 4 "630-ACPL-217-50BE" H 8700 2800 50  0001 C CNN "MouserNo"
+F 5 "ACPL-217-50BE" H 8700 2800 50  0001 C CNN "Mfr. No:"
+F 6 "Broadcom / Avago" H 8700 2800 50  0001 C CNN "Mfr:"
+F 7 "Transistor Output Optocouplers 3000Vrms 50% CTR" H 8700 2800 50  0001 C CNN "Type"
 	1    8700 2800
 	0    -1   -1   0   
 $EndComp
@@ -315,7 +339,11 @@ P 4000 1850
 F 0 "R_OSCLIMIT1" H 4070 1896 50  0000 L CNN
 F 1 "100R" H 4070 1805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3930 1850 50  0001 C CNN
-F 3 "~" H 4000 1850 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/54/rs-a-1222350.pdf" H 4000 1850 50  0001 C CNN
+F 4 "652-CRS0805AFX1000LF" H 4000 1850 50  0001 C CNN "MouserNo"
+F 5 "CRS0805AFX1000LF" H 4000 1850 50  0001 C CNN "Mfr. No:"
+F 6 "Bourns" H 4000 1850 50  0001 C CNN "Mfr:"
+F 7 "Thick Film Resistors - SMD 100 ohm 1% 1/4W TC100" H 4000 1850 50  0001 C CNN "Type"
 	1    4000 1850
 	1    0    0    -1  
 $EndComp
@@ -332,7 +360,11 @@ P 8600 3800
 F 0 "SW_ATTACK1" V 8600 3948 50  0000 L CNN
 F 1 "SW_SPDT" V 8645 3948 50  0001 L CNN
 F 2 "DailywellSwitches:Dailywell_SPDT" H 8600 3800 50  0001 C CNN
-F 3 "" H 8600 3800 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/209/MS-100786-1172382.pdf" H 8600 3800 50  0001 C CNN
+F 4 "108-2MS1T1B1M2QE-EVX" H 8600 3800 50  0001 C CNN "MouserNo"
+F 5 "108-2MS1T1B1M2QE-EVX" H 8600 3800 50  0001 C CNN "Mfr. No:"
+F 6 "Mountain Switch" H 8600 3800 50  0001 C CNN "Mfr:"
+F 7 "TOGGLE SPDT ON-ON PC MOUNT" H 8600 3800 50  0001 C CNN "Type"
 	1    8600 3800
 	0    1    1    0   
 $EndComp
@@ -348,7 +380,15 @@ P 8300 4450
 F 0 "CP_SLOW1" H 7800 4500 50  0000 L CNN
 F 1 "220uF" H 7850 4350 50  0000 L CNN
 F 2 "Capacitor_SMD:CP_Elec_6.3x5.4" H 8338 4300 50  0001 C CNN
-F 3 "~" H 8300 4450 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/315/ABA0000C1184-947404.pdf" H 8300 4450 50  0001 C CNN
+F 4 "667-EEE-FPC221XAP" H 8300 4450 50  0001 C CNN "MouserNo"
+F 5 "EEE-FPC221XAP" H 8300 4450 50  0001 C CNN "Mfr. No:"
+F 6 "Panasonic" H 8300 4450 50  0001 C CNN "Mfr:"
+F 7 "Aluminium Electrolytic Capacitors - SMD  " H 8300 4450 50  0001 C CNN "Type"
+F 8 "6 mm" H 8300 4450 50  0001 C CNN "Diameter"
+F 9 "160 mOhms" H 8300 4450 50  0001 C CNN "ESR"
+F 10 "16 VDC" H 8300 4450 50  0001 C CNN "Voltage Rating DC"
+F 11 "20 %" H 8300 4450 50  0001 C CNN "Tolerance"
 	1    8300 4450
 	1    0    0    -1  
 $EndComp

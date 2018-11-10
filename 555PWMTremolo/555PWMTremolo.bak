@@ -22,6 +22,10 @@ F 0 "U_INV1" H 4200 9900 50  0000 C CNN
 F 1 "TC7662Bx0A" H 4200 9800 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4300 8700 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21469a.pdf" H 4300 8700 50  0001 C CNN
+F 4 "579-TC7660SEOA713" H 4200 8800 50  0001 C CNN "MouserNo"
+F 5 "TC7660SEOA713" H 4200 8800 50  0001 C CNN "Mfr. No:"
+F 6 "Microchip Technology" H 4200 8800 50  0001 C CNN "Mfr:"
+F 7 "Switching Voltage Regulators High Voltage" H 4200 8800 50  0001 C CNN "Type"
 	1    4200 8800
 	1    0    0    -1  
 $EndComp
@@ -89,6 +93,10 @@ F 0 "U_PREG1" H 6750 8939 50  0000 C CNN
 F 1 "LM317_3PinPackage" H 6750 8850 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 6750 8950 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 6750 8700 50  0001 C CNN
+F 4 "595-LM317DCYR" H 6750 8700 50  0001 C CNN "MouserNo"
+F 5 "LM317DCYR" H 6750 8700 50  0001 C CNN "Mfr. No:"
+F 6 "Texas Instruments" H 6750 8700 50  0001 C CNN "Mfr:"
+F 7 "Linear Voltage Regulators 3 Term Adj. Pos." H 6750 8700 50  0001 C CNN "Type"
 	1    6750 8700
 	1    0    0    -1  
 $EndComp
@@ -265,6 +273,10 @@ F 0 "U_BUF1" H 6000 2450 50  0000 C CNN
 F 1 "TL072" H 6000 2350 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5700 2200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5700 2200 50  0001 C CNN
+F 4 "621-TL072SG-13" H 5700 2200 50  0001 C CNN "MouserNo"
+F 5 "TL072SG-13" H 5700 2200 50  0001 C CNN "Mfr. No:"
+F 6 "Diodes Incorporated" H 5700 2200 50  0001 C CNN "Mfr:"
+F 7 "JFET INPUT OP AMP LOW NOISE" H 5700 2200 50  0001 C CNN "Type"
 	1    5700 2200
 	1    0    0    -1  
 $EndComp
@@ -313,6 +325,10 @@ F 0 "P_DEPTH1" H 7850 2350 50  0000 C CNN
 F 1 "B50k" H 7800 2250 50  0000 C CNN
 F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical" H 7550 2450 50  0001 C CNN
 F 3 "https://www.mouser.co.uk/datasheet/2/15/RK09L-1370814.pdf" H 7550 2450 50  0001 C CNN
+F 4 "688-RK09L1140A5P" H 7550 2450 50  0001 C CNN "MouserNo"
+F 5 "RK09L1140A5P" H 7550 2450 50  0001 C CNN "Mfr. No:"
+F 6 "ALPS" H 7550 2450 50  0001 C CNN "Mfr:"
+F 7 "1GANG LINEAR 20% FLATTED 1TURN" H 7550 2450 50  0001 C CNN "Type"
 	1    7550 2450
 	1    0    0    -1  
 $EndComp
@@ -324,6 +340,10 @@ F 0 "P_VOL1" V 10050 3250 50  0000 R CNN
 F 1 "B10K" V 9950 3200 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical" H 10150 3100 50  0001 C CNN
 F 3 "https://www.mouser.co.uk/datasheet/2/15/RK09L-1370814.pdf" H 10150 3100 50  0001 C CNN
+F 4 "688-RK09L1140A66" H 10150 3100 50  0001 C CNN "MouserNo"
+F 5 "RK09L1140A66" H 10150 3100 50  0001 C CNN "Mfr. No:"
+F 6 "ALPS" H 10150 3100 50  0001 C CNN "Mfr:"
+F 7 "1GANG LINEAR 20% FLATTED 1TURN" H 10150 3100 50  0001 C CNN "Type"
 	1    10150 3100
 	0    -1   -1   0   
 $EndComp
@@ -363,6 +383,10 @@ F 0 "U_BUF1" H 10150 2664 50  0000 C CNN
 F 1 "TL072" H 10150 2575 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 10150 2300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 10150 2300 50  0001 C CNN
+F 4 "621-TL072SG-13" H 10150 2300 50  0001 C CNN "MouserNo"
+F 5 "TL072SG-13" H 10150 2300 50  0001 C CNN "Mfr. No:"
+F 6 "Diodes Incorporated" H 10150 2300 50  0001 C CNN "Mfr:"
+F 7 "JFET INPUT OP AMP LOW NOISE" H 10150 2300 50  0001 C CNN "Type"
 	2    10150 2300
 	1    0    0    -1  
 $EndComp
@@ -383,7 +407,11 @@ P 1550 8950
 F 0 "J_PWR1" H 1605 9271 50  0000 C CNN
 F 1 "Jack-DC" H 1605 9182 50  0000 C CNN
 F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1600 8910 50  0001 C CNN
-F 3 "~" H 1600 8910 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/393/rapc722x_cd-371352.pdf" H 1600 8910 50  0001 C CNN
+F 4 "502-RAPC722X" H 1550 8950 50  0001 C CNN "MouserNo"
+F 5 "RAPC722X" H 1550 8950 50  0001 C CNN "Mfr. No:"
+F 6 "Switchcraft" H 1550 8950 50  0001 C CNN "Mfr:"
+F 7 "DC Power Connectors RT ANGL PWK JK PIN D" H 1550 8950 50  0001 C CNN "Type"
 	1    1550 8950
 	1    0    0    -1  
 $EndComp
@@ -511,6 +539,10 @@ F 0 "U_NREG1" H 8600 8458 50  0000 C CNN
 F 1 "LM337_SOT223" H 8600 8549 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 8600 8500 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm337-n.pdf" H 8600 8700 50  0001 C CNN
+F 4 "926-LM337IMP/NOPB" H 8600 8700 50  0001 C CNN "MouserNo"
+F 5 "LM337IMP/NOPB" H 8600 8700 50  0001 C CNN "Mfr. No:"
+F 6 "Texas Instruments" H 8600 8700 50  0001 C CNN "Mfr:"
+F 7 "Linear Voltage Regulators 3-TERMINAL ADJ NEG REG" H 8600 8700 50  0001 C CNN "Type"
 	1    8600 8700
 	1    0    0    1   
 $EndComp
@@ -521,7 +553,11 @@ P 13650 2300
 F 0 "J_OUT1" H 13172 2355 50  0000 R CNN
 F 1 "JACK__MONO_2P_NC" H 13173 2400 50  0001 R CNN
 F 2 "custom_sockets:6_35MM_JACK_MONO_FlatTop" H 13650 2300 50  0001 C CNN
-F 3 "file:///Users/GB080220/Downloads/Drawing+NRJ4HF.pdf" H 13650 2300 50  0001 C CNN
+F 3 "http://www.neutrik.us/en-us/plugs-jacks/slim-jacks/nrj4hf-1" H 13650 2300 50  0001 C CNN
+F 4 "550-10284G" H 13650 2300 50  0001 C CNN "MouserNo"
+F 5 "NRJ4HF-1" H 13650 2300 50  0001 C CNN "Mfr. No:"
+F 6 "Neutrik" H 13650 2300 50  0001 C CNN "Mfr:"
+F 7 "Phone Connectors W/CHASSIS GROUND" H 13650 2300 50  0001 C CNN "Type"
 	1    13650 2300
 	-1   0    0    1   
 $EndComp
@@ -546,7 +582,11 @@ P 2200 2100
 F 0 "J_IN1" H 2000 1900 50  0000 R CNN
 F 1 "JACK__MONO_2P_NC" H 1723 2200 50  0001 R CNN
 F 2 "custom_sockets:6_35MM_JACK_MONO_FlatTop" H 2200 2100 50  0001 C CNN
-F 3 "" H 2200 2100 50  0001 C CNN
+F 3 "http://www.neutrik.us/en-us/plugs-jacks/slim-jacks/nrj4hf-1" H 2200 2100 50  0001 C CNN
+F 4 "550-10284G" H 2200 2100 50  0001 C CNN "MouserNo"
+F 5 "NRJ4HF-1" H 2200 2100 50  0001 C CNN "Mfr. No:"
+F 6 "Neutrik" H 2200 2100 50  0001 C CNN "Mfr:"
+F 7 "Phone Connectors W/CHASSIS GROUND" H 2200 2100 50  0001 C CNN "Type"
 	1    2200 2100
 	1    0    0    1   
 $EndComp
