@@ -2,7 +2,7 @@
 
 ## Opto Tremolo
 
-![](https://github.com/cracked-machine/TremoloPedals/blob/master/555PWMTremolo/docs/3D1.png)
+![](https://github.com/cracked-machine/TremoloPedals/blob/master/555PWMTremolo/docs/3D_TOP_WITHTHT.png)
 
 ### Features
 
