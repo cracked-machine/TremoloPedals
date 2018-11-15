@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/GB080220/workspace/circuits/EffectsPedals/TremoloPedals/555PWMTremolo/555PWMTremolo.sch)
-    (date "Thursday, 15 November 2018 at 11:06:29")
+    (date "Thursday, 15 November 2018 at 11:22:22")
     (tool "Eeschema (5.0.0-3-g5ebb6b6)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -298,7 +298,7 @@
       (sheetpath (names /555PWMTremolo_Clock/) (tstamps /5BF54A3F/))
       (tstamp 5BE6F1FC))
     (comp (ref R_OSCON1)
-      (value 220R)
+      (value 1K)
       (footprint Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
       (datasheet ~)
       (libsource (lib Device) (part R) (description Resistor))
@@ -324,7 +324,7 @@
       (sheetpath (names /555PWMTremolo_Clock/) (tstamps /5BF54A3F/))
       (tstamp 5BE76FC9))
     (comp (ref R_OSCOFF1)
-      (value 220R)
+      (value 1K)
       (footprint Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
       (datasheet ~)
       (libsource (lib Device) (part R) (description Resistor))
