@@ -413,7 +413,7 @@ F 5 "RAPC722X" H 1550 8950 50  0001 C CNN "Mfr. No:"
 F 6 "Switchcraft" H 1550 8950 50  0001 C CNN "Mfr:"
 F 7 "DC Power Connectors RT ANGL PWK JK PIN D" H 1550 8950 50  0001 C CNN "Type"
 	1    1550 8950
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	1850 8850 2250 8850
