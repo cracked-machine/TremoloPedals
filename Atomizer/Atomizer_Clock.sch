@@ -1,0 +1,405 @@
+EESchema Schematic File Version 4
+LIBS:Atomizer-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D_LED1
+U 1 1 5BF61C9C
+P 6600 2700
+F 0 "D_LED1" H 6600 2450 50  0000 C CNN
+F 1 "LED" H 6600 2550 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 6600 2700 50  0001 C CNN
+F 3 "~" H 6600 2700 50  0001 C CNN
+	1    6600 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8600 2700 8600 2400
+Wire Wire Line
+	9600 2700 9600 3600
+Wire Wire Line
+	8800 1800 8800 1700
+Wire Wire Line
+	8800 1700 9600 1700
+$Comp
+L Device:R R_LPF1
+U 1 1 5BF61CAE
+P 6000 2700
+F 0 "R_LPF1" V 5750 2700 50  0000 C CNN
+F 1 "100R" V 5850 2700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5930 2700 50  0001 C CNN
+F 3 "~" H 6000 2700 50  0001 C CNN
+	1    6000 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP CP_FAST1
+U 1 1 5BF61CB5
+P 8900 3750
+F 0 "CP_FAST1" H 9017 3795 50  0000 L CNN
+F 1 "22uF" H 9017 3706 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 8938 3600 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/445/875105240003-540627.pdf" H 8900 3750 50  0001 C CNN
+F 4 "710-875105240003" H 8900 3750 50  0001 C CNN "MouserNo"
+F 5 "875105240003" H 8900 3750 50  0001 C CNN "Mfr. No:"
+F 6 "Wurth" H 8900 3750 50  0001 C CNN "Mfr:"
+F 7 "Aluminium Organic Polymer Capacitors WCAP-PSLP 10V 22uF 20%" H 8900 3750 50  0001 C CNN "Type"
+F 8 "45mOhms" H 8900 3750 50  0001 C CNN "ESR"
+F 9 "20%" H 8900 3750 50  0001 C CNN "Tolerance"
+F 10 "10 DC" H 8900 3750 50  0001 C CNN "Voltage Rating DC"
+F 11 "4mm" H 8900 3750 50  0001 C CNN "Diameter"
+	1    8900 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 3300 8900 3600
+Wire Wire Line
+	8600 2700 7100 2700
+Wire Wire Line
+	6150 2700 6300 2700
+Wire Wire Line
+	8800 2400 8800 2700
+Wire Wire Line
+	8800 2700 9600 2700
+Wire Wire Line
+	9600 1700 9600 2700
+Connection ~ 9600 2700
+Text HLabel 9650 1400 2    50   Input ~ 0
+CLK_OUT
+Wire Wire Line
+	8600 1400 8600 1800
+Wire Wire Line
+	8600 1400 9650 1400
+Text HLabel 9600 3600 3    50   Input ~ 0
+GND
+Text HLabel 8900 4200 3    50   Input ~ 0
+GND
+$Comp
+L Device:C C_LPFOPT2
+U 1 1 5C18730A
+P 7100 3150
+F 0 "C_LPFOPT2" H 7215 3196 50  0000 L CNN
+F 1 "10uF" H 7215 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7138 3000 50  0001 C CNN
+F 3 "~" H 7100 3150 50  0001 C CNN
+	1    7100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C_LPFOPT1
+U 1 1 5C18735B
+P 6300 3150
+F 0 "C_LPFOPT1" H 6415 3196 50  0000 L CNN
+F 1 "100nF" H 6415 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6338 3000 50  0001 C CNN
+F 3 "~" H 6300 3150 50  0001 C CNN
+	1    6300 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3000 6300 2700
+Connection ~ 6300 2700
+Wire Wire Line
+	6300 2700 6450 2700
+Wire Wire Line
+	7100 3000 7100 2700
+Connection ~ 7100 2700
+Wire Wire Line
+	7100 2700 6750 2700
+Wire Wire Line
+	7100 3300 7100 3600
+Text HLabel 7100 3600 3    50   Input ~ 0
+GND
+Wire Wire Line
+	6300 3300 6300 3600
+Text HLabel 6300 3600 3    50   Input ~ 0
+GND
+$Comp
+L Device:R_POT P_OSCON1
+U 1 1 5BE6F106
+P 4650 6650
+F 0 "P_OSCON1" H 4350 6800 50  0000 C CNN
+F 1 "B10K" H 4400 6700 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical" H 4650 6650 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/15/RK09L-1370814.pdf" H 4650 6650 50  0001 C CNN
+F 4 "688-RK09L1140A66" H 4650 6650 50  0001 C CNN "MouserNo"
+F 5 "RK09L1140A66" H 4650 6650 50  0001 C CNN "Mfr. No:"
+F 6 "ALPS" H 4650 6650 50  0001 C CNN "Mfr:"
+F 7 "1GANG LINEAR 20% FLATTED 1TURN" H 4650 6650 50  0001 C CNN "Type"
+	1    4650 6650
+	-1   0    0    1   
+$EndComp
+Text HLabel 2100 5100 3    50   Input ~ 0
+GND
+$Comp
+L Device:R R_OSCON1
+U 1 1 5BE70559
+P 4650 6000
+F 0 "R_OSCON1" H 4950 5950 50  0000 C CNN
+F 1 "1K" H 4850 6050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4580 6000 50  0001 C CNN
+F 3 "~" H 4650 6000 50  0001 C CNN
+	1    4650 6000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2700 3100 4600 3100
+Wire Wire Line
+	4600 2700 5850 2700
+$Comp
+L Device:R_POT P_OSCOFF1
+U 1 1 5BE76FC9
+P 3150 6650
+F 0 "P_OSCOFF1" H 2850 6800 50  0000 C CNN
+F 1 "B10K" H 2950 6700 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical" H 3150 6650 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/15/RK09L-1370814.pdf" H 3150 6650 50  0001 C CNN
+F 4 "688-RK09L1140A66" H 3150 6650 50  0001 C CNN "MouserNo"
+F 5 "RK09L1140A66" H 3150 6650 50  0001 C CNN "Mfr. No:"
+F 6 "ALPS" H 3150 6650 50  0001 C CNN "Mfr:"
+F 7 "1GANG LINEAR 20% FLATTED 1TURN" H 3150 6650 50  0001 C CNN "Type"
+	1    3150 6650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R_OSCOFF1
+U 1 1 5BE76FCF
+P 3150 6000
+F 0 "R_OSCOFF1" H 3450 5950 50  0000 C CNN
+F 1 "1K" H 3300 6050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3080 6000 50  0001 C CNN
+F 3 "~" H 3150 6000 50  0001 C CNN
+	1    3150 6000
+	1    0    0    1   
+$EndComp
+Connection ~ 2100 1700
+Text HLabel 2100 1000 1    50   Input ~ 0
+VCC
+$Comp
+L Device:C C_BP1
+U 1 1 5BEBE4C2
+P 2500 2000
+F 0 "C_BP1" H 2615 2045 50  0000 L CNN
+F 1 "100nF" H 2615 1956 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2538 1850 50  0001 C CNN
+F 3 "~" H 2500 2000 50  0001 C CNN
+	1    2500 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1850 2500 1700
+Wire Wire Line
+	2500 1700 2100 1700
+Wire Wire Line
+	2500 2150 2500 2250
+Text HLabel 2500 2250 3    50   Input ~ 0
+GND
+$Comp
+L Isolator:LTV-357T U_OPTO1
+U 1 1 5BE5F080
+P 8700 2100
+F 0 "U_OPTO1" V 8750 2650 50  0000 R CNN
+F 1 "LTV-357T" V 8650 2650 50  0000 R CNN
+F 2 "Package_SO:SO-4_4.4x2.3mm_P1.27mm" H 8500 1900 50  0001 L CIN
+F 3 "https://docs.broadcom.com/docs/av02-0470en" H 8700 2100 50  0001 L CNN
+F 4 "630-ACPL-217-50BE" H 8700 2100 50  0001 C CNN "MouserNo"
+F 5 "ACPL-217-50BE" H 8700 2100 50  0001 C CNN "Mfr. No:"
+F 6 "Broadcom / Avago" H 8700 2100 50  0001 C CNN "Mfr:"
+F 7 "Transistor Output Optocouplers 3000Vrms 50% CTR" H 8700 2100 50  0001 C CNN "Type"
+	1    8700 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R_OSCLIMIT1
+U 1 1 5BE63342
+P 2100 1350
+F 0 "R_OSCLIMIT1" H 2170 1396 50  0000 L CNN
+F 1 "330R" H 2170 1305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2030 1350 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/54/rs-a-1222350.pdf" H 2100 1350 50  0001 C CNN
+F 4 "652-CRS0805AFX1000LF" H 2100 1350 50  0001 C CNN "MouserNo"
+F 5 "CRS0805AFX1000LF" H 2100 1350 50  0001 C CNN "Mfr. No:"
+F 6 "Bourns" H 2100 1350 50  0001 C CNN "Mfr:"
+F 7 "Thick Film Resistors - SMD 100 ohm 1% 1/4W TC100" H 2100 1350 50  0001 C CNN "Type"
+	1    2100 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1000 2100 1200
+Wire Wire Line
+	2100 1500 2100 1700
+$Comp
+L Switch:SW_SPDT SW_ATTACK1
+U 1 1 5BE6888F
+P 8600 3100
+F 0 "SW_ATTACK1" V 8600 3248 50  0000 L CNN
+F 1 "SW_SPDT" V 8645 3248 50  0001 L CNN
+F 2 "DailywellSwitches:Dailywell_SPDT" H 8600 3100 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/209/MS-100786-1172382.pdf" H 8600 3100 50  0001 C CNN
+F 4 "108-2MS1T1B1M2QE-EVX" H 8600 3100 50  0001 C CNN "MouserNo"
+F 5 "108-2MS1T1B1M2QE-EVX" H 8600 3100 50  0001 C CNN "Mfr. No:"
+F 6 "Mountain Switch" H 8600 3100 50  0001 C CNN "Mfr:"
+F 7 "TOGGLE SPDT ON-ON PC MOUNT" H 8600 3100 50  0001 C CNN "Type"
+	1    8600 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8900 3900 8900 4200
+Wire Wire Line
+	8600 2900 8600 2700
+Connection ~ 8600 2700
+$Comp
+L Device:CP CP_SLOW1
+U 1 1 5BE6F69D
+P 8300 3750
+F 0 "CP_SLOW1" H 7800 3800 50  0000 L CNN
+F 1 "220uF" H 7850 3650 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x5.4" H 8338 3600 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/315/ABA0000C1184-947404.pdf" H 8300 3750 50  0001 C CNN
+F 4 "667-EEE-FPC221XAP" H 8300 3750 50  0001 C CNN "MouserNo"
+F 5 "EEE-FPC221XAP" H 8300 3750 50  0001 C CNN "Mfr. No:"
+F 6 "Panasonic" H 8300 3750 50  0001 C CNN "Mfr:"
+F 7 "Aluminium Electrolytic Capacitors - SMD  " H 8300 3750 50  0001 C CNN "Type"
+F 8 "6 mm" H 8300 3750 50  0001 C CNN "Diameter"
+F 9 "160 mOhms" H 8300 3750 50  0001 C CNN "ESR"
+F 10 "16 VDC" H 8300 3750 50  0001 C CNN "Voltage Rating DC"
+F 11 "20 %" H 8300 3750 50  0001 C CNN "Tolerance"
+	1    8300 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 3600 8500 3300
+Text HLabel 8300 4200 3    50   Input ~ 0
+GND
+Wire Wire Line
+	8300 3900 8300 4200
+Wire Wire Line
+	3000 1850 3000 1700
+Wire Wire Line
+	3000 1700 2500 1700
+Connection ~ 2500 1700
+Wire Wire Line
+	3000 2150 3000 2250
+Text HLabel 3000 2250 3    50   Input ~ 0
+GND
+$Comp
+L Device:C C_BP2
+U 1 1 5BEDE887
+P 3000 2000
+F 0 "C_BP2" H 3115 2046 50  0000 L CNN
+F 1 "10uF" H 3115 1955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3038 1850 50  0001 C CNN
+F 3 "~" H 3000 2000 50  0001 C CNN
+	1    3000 2000
+	1    0    0    -1  
+$EndComp
+Text Notes 6400 3350 0    50   ~ 0
+(Optional)
+Text Notes 7200 3350 0    50   ~ 0
+(Optional)
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85-20SU U_CLK1
+U 1 1 5BFB6DEC
+P 2100 3300
+F 0 "U_CLK1" H 1571 3345 50  0000 R CNN
+F 1 "ATtiny85-20SU" H 1571 3256 50  0000 R CNN
+F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 2100 3300 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 2100 3300 50  0001 C CNN
+	1    2100 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 6800 3150 7150
+Text Label 3400 3100 2    50   ~ 0
+CLKOUT
+Wire Wire Line
+	2100 1700 2100 2700
+Wire Wire Line
+	2100 3900 2100 5100
+Wire Wire Line
+	2700 3000 3400 3000
+Text Label 3400 3000 2    50   ~ 0
+MODEBTN
+Text Label 3400 3400 2    50   ~ 0
+FREQ_ADJ_OFF
+Text Label 3400 3300 2    50   ~ 0
+FREQ_ADJ_ON
+NoConn ~ 2700 3200
+NoConn ~ 2700 3500
+Wire Wire Line
+	4650 6800 4650 7150
+Wire Wire Line
+	3150 6150 3150 6500
+Wire Wire Line
+	4650 6150 4650 6500
+Wire Wire Line
+	2250 6650 3000 6650
+Wire Wire Line
+	2700 3300 3400 3300
+Wire Wire Line
+	3850 6650 4500 6650
+Wire Wire Line
+	3150 5400 3150 5850
+Wire Wire Line
+	4650 5400 4650 5850
+Text HLabel 3150 5400 1    50   Input ~ 0
+VCC
+Text HLabel 4650 5400 1    50   Input ~ 0
+VCC
+Text HLabel 3150 7150 3    50   Input ~ 0
+GND
+Text HLabel 4650 7150 3    50   Input ~ 0
+GND
+$Comp
+L Switch:SW_SPST SW_MODE1
+U 1 1 5BFD81F6
+P 5850 6650
+F 0 "SW_MODE1" V 5805 6747 50  0000 L CNN
+F 1 "SW_SPST" V 5894 6747 50  0000 L CNN
+F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 5850 6650 50  0001 C CNN
+F 3 "" H 5850 6650 50  0001 C CNN
+	1    5850 6650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5850 6450 5850 6150
+Wire Wire Line
+	5850 6850 5850 7100
+Text HLabel 5850 7100 3    50   Input ~ 0
+GND
+$Comp
+L Device:R R_MODE1
+U 1 1 5BFDBAF5
+P 5850 6000
+F 0 "R_MODE1" H 5920 6045 50  0000 L CNN
+F 1 "1K" H 5920 5956 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5780 6000 50  0001 C CNN
+F 3 "~" H 5850 6000 50  0001 C CNN
+	1    5850 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 5850 5850 5200
+Text Label 5850 5200 3    50   ~ 0
+MODEBTN
+Wire Wire Line
+	2700 3400 3400 3400
+Text Label 2250 6650 0    50   ~ 0
+FREQ_ADJ_OFF
+Text Label 3850 6650 0    50   ~ 0
+FREQ_ADJ_ON
+Wire Wire Line
+	4600 3100 4600 2700
+$EndSCHEMATC
