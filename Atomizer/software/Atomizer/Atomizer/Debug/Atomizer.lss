@@ -1,0 +1,720 @@
+
+Atomizer.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         0000033a  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00800060  00800060  000003ae  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          0000000b  00800060  00800060  000003ae  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  000003ae  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000003e0  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000060  00000000  00000000  0000041c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000776  00000000  00000000  0000047c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 000005b9  00000000  00000000  00000bf2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   0000047f  00000000  00000000  000011ab  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  0000015c  00000000  00000000  0000162c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    0000043c  00000000  00000000  00001788  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000002a9  00000000  00000000  00001bc4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000050  00000000  00000000  00001e6d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0e c0       	rjmp	.+28     	; 0x1e <__ctors_end>
+   2:	1d c0       	rjmp	.+58     	; 0x3e <__bad_interrupt>
+   4:	ea c0       	rjmp	.+468    	; 0x1da <__vector_2>
+   6:	90 c0       	rjmp	.+288    	; 0x128 <__vector_3>
+   8:	1a c0       	rjmp	.+52     	; 0x3e <__bad_interrupt>
+   a:	19 c0       	rjmp	.+50     	; 0x3e <__bad_interrupt>
+   c:	18 c0       	rjmp	.+48     	; 0x3e <__bad_interrupt>
+   e:	17 c0       	rjmp	.+46     	; 0x3e <__bad_interrupt>
+  10:	44 c1       	rjmp	.+648    	; 0x29a <__vector_8>
+  12:	15 c0       	rjmp	.+42     	; 0x3e <__bad_interrupt>
+  14:	a2 c0       	rjmp	.+324    	; 0x15a <__vector_10>
+  16:	13 c0       	rjmp	.+38     	; 0x3e <__bad_interrupt>
+  18:	c6 c0       	rjmp	.+396    	; 0x1a6 <__vector_12>
+  1a:	11 c0       	rjmp	.+34     	; 0x3e <__bad_interrupt>
+  1c:	10 c0       	rjmp	.+32     	; 0x3e <__bad_interrupt>
+
+0000001e <__ctors_end>:
+  1e:	11 24       	eor	r1, r1
+  20:	1f be       	out	0x3f, r1	; 63
+  22:	cf e5       	ldi	r28, 0x5F	; 95
+  24:	d2 e0       	ldi	r29, 0x02	; 2
+  26:	de bf       	out	0x3e, r29	; 62
+  28:	cd bf       	out	0x3d, r28	; 61
+
+0000002a <__do_clear_bss>:
+  2a:	20 e0       	ldi	r18, 0x00	; 0
+  2c:	a0 e6       	ldi	r26, 0x60	; 96
+  2e:	b0 e0       	ldi	r27, 0x00	; 0
+  30:	01 c0       	rjmp	.+2      	; 0x34 <.do_clear_bss_start>
+
+00000032 <.do_clear_bss_loop>:
+  32:	1d 92       	st	X+, r1
+
+00000034 <.do_clear_bss_start>:
+  34:	ab 36       	cpi	r26, 0x6B	; 107
+  36:	b2 07       	cpc	r27, r18
+  38:	e1 f7       	brne	.-8      	; 0x32 <.do_clear_bss_loop>
+  3a:	46 d0       	rcall	.+140    	; 0xc8 <main>
+  3c:	7c c1       	rjmp	.+760    	; 0x336 <_exit>
+
+0000003e <__bad_interrupt>:
+  3e:	e0 cf       	rjmp	.-64     	; 0x0 <__vectors>
+
+00000040 <setModeIndicator>:
+	
+}
+
+void setModeIndicator(CONTROLMODE p_currentMode) 
+{
+	currentMode = p_currentMode;
+  40:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <_edata>
+	switch(p_currentMode)
+  44:	81 30       	cpi	r24, 0x01	; 1
+  46:	39 f0       	breq	.+14     	; 0x56 <setModeIndicator+0x16>
+  48:	18 f0       	brcs	.+6      	; 0x50 <setModeIndicator+0x10>
+  4a:	82 30       	cpi	r24, 0x02	; 2
+  4c:	39 f0       	breq	.+14     	; 0x5c <setModeIndicator+0x1c>
+  4e:	08 95       	ret
+	{
+		case NORMAL:
+			// Tri-State mode LED pin (LEDS off)
+			DDRB &= ~(1<<DDB2);
+  50:	ba 98       	cbi	0x17, 2	; 23
+			PORTB &= ~(1<<PB2);
+  52:	c2 98       	cbi	0x18, 2	; 24
+			break;
+  54:	08 95       	ret
+		case SKEW:
+			// Logic one to mode LED pin 
+			DDRB |= (1<<DDB2);
+  56:	ba 9a       	sbi	0x17, 2	; 23
+			PORTB |= (1<<PB2);
+  58:	c2 9a       	sbi	0x18, 2	; 24
+			
+			
+			break;
+  5a:	08 95       	ret
+		
+		case GLITCH:
+			// Logic zero to mode LED pin 
+			DDRB |= (1<<DDB2);
+  5c:	ba 9a       	sbi	0x17, 2	; 23
+			PORTB &= ~(1<<PB2);
+  5e:	c2 98       	cbi	0x18, 2	; 24
+  60:	08 95       	ret
+
+00000062 <resetPWM>:
+	sei();	
+}
+
+void resetPWM() {
+	
+	OCR0A=0x81;		// low duty;	0x42 (66) - 0x81 (129)
+  62:	81 e8       	ldi	r24, 0x81	; 129
+  64:	89 bd       	out	0x29, r24	; 41
+	OCR0B=0x41;		// high duty;	0x01 (1) - 0x41 (65)
+  66:	81 e4       	ldi	r24, 0x41	; 65
+  68:	88 bd       	out	0x28, r24	; 40
+  6a:	08 95       	ret
+
+0000006c <TimerModeEnable>:
+	}
+}
+
+void TimerModeEnable(CONTROLMODE p_currentMode)
+{
+	currentMode = p_currentMode;
+  6c:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <_edata>
+	cli();
+  70:	f8 94       	cli
+	
+	switch(p_currentMode)
+  72:	88 23       	and	r24, r24
+  74:	19 f0       	breq	.+6      	; 0x7c <TimerModeEnable+0x10>
+  76:	81 30       	cpi	r24, 0x01	; 1
+  78:	89 f0       	breq	.+34     	; 0x9c <TimerModeEnable+0x30>
+  7a:	24 c0       	rjmp	.+72     	; 0xc4 <TimerModeEnable+0x58>
+	{
+		case NORMAL:
+			
+			// disable Timer0 output to OC0B (PB1)
+			TCCR0A = 0;
+  7c:	1a bc       	out	0x2a, r1	; 42
+			///////////////////////////////////
+			//// Timer1 CTC  setup
+			///////////////////////////////////
+
+			// Timer/Counter1 is reset to $00 after a compare match with OCR1C register value 
+			TCCR1 |= (1<<CTC1);
+  7e:	80 b7       	in	r24, 0x30	; 48
+  80:	80 68       	ori	r24, 0x80	; 128
+  82:	80 bf       	out	0x30, r24	; 48
+	
+			// enable toggle output on OC1A (PB1) output line.
+			TCCR1 |= (0<<COM1A1) | (1<<COM1A0);
+  84:	80 b7       	in	r24, 0x30	; 48
+  86:	80 61       	ori	r24, 0x10	; 16
+  88:	80 bf       	out	0x30, r24	; 48
+			
+			// Timer/Counter1 Prescale Select PCK/2048
+			TCCR1 |= (1<<CS13) | (1<<CS12) | (0<<CS11) | (0<<CS10);
+  8a:	80 b7       	in	r24, 0x30	; 48
+  8c:	8c 60       	ori	r24, 0x0C	; 12
+  8e:	80 bf       	out	0x30, r24	; 48
+	
+			TIMSK |= (1<<OCIE1A);
+  90:	89 b7       	in	r24, 0x39	; 57
+  92:	80 64       	ori	r24, 0x40	; 64
+  94:	89 bf       	out	0x39, r24	; 57
+	
+			OCR1C =  10;
+  96:	8a e0       	ldi	r24, 0x0A	; 10
+  98:	8d bd       	out	0x2d, r24	; 45
+	
+			break;
+  9a:	14 c0       	rjmp	.+40     	; 0xc4 <TimerModeEnable+0x58>
+			
+		case SKEW:
+			
+			// disable Timer1 output to OC1A (PB1)
+			TCCR1 = 0;
+  9c:	10 be       	out	0x30, r1	; 48
+			///////////////////////////////////
+			//// Timer0 phase PWM setup
+			/////////////////////////////////
+			
+			//Normal port operation, OC0A disconnected
+			TCCR0A |= (0<<COM0A1) | (0<<COM0A0);
+  9e:	8a b5       	in	r24, 0x2a	; 42
+  a0:	8a bd       	out	0x2a, r24	; 42
+			// Enable OC0B (PB1) output. (Clear OC0B on Compare Match, set OC0B at BOTTOM - non-inverting mode)
+			TCCR0A |= (1<<COM0B1) | (0<<COM0B0);
+  a2:	8a b5       	in	r24, 0x2a	; 42
+  a4:	80 62       	ori	r24, 0x20	; 32
+  a6:	8a bd       	out	0x2a, r24	; 42
+			// Mode 5: phase PWM
+			TCCR0A |= (0<<WGM01) | (1<<WGM00);
+  a8:	8a b5       	in	r24, 0x2a	; 42
+  aa:	81 60       	ori	r24, 0x01	; 1
+  ac:	8a bd       	out	0x2a, r24	; 42
+			TCCR0B |= (1<<WGM02);
+  ae:	83 b7       	in	r24, 0x33	; 51
+  b0:	88 60       	ori	r24, 0x08	; 8
+  b2:	83 bf       	out	0x33, r24	; 51
+			// 1024 Prescaler
+			TCCR0B |= (1<<CS02) | (0<<CS01) | (1<<CS00);
+  b4:	83 b7       	in	r24, 0x33	; 51
+  b6:	85 60       	ori	r24, 0x05	; 5
+  b8:	83 bf       	out	0x33, r24	; 51
+	
+			// Timer/Counter0 Output Compare Match A Interrupt Enable
+			TIMSK |= (1<<OCIE0A);
+  ba:	89 b7       	in	r24, 0x39	; 57
+  bc:	80 61       	ori	r24, 0x10	; 16
+  be:	89 bf       	out	0x39, r24	; 57
+	
+			TCNT0=0x00;
+  c0:	12 be       	out	0x32, r1	; 50
+			resetPWM();
+  c2:	cf df       	rcall	.-98     	; 0x62 <resetPWM>
+		
+		case GLITCH:
+			break;
+	}
+	
+	sei();	
+  c4:	78 94       	sei
+  c6:	08 95       	ret
+
+000000c8 <main>:
+static __inline__ void clock_prescale_set(clock_div_t) __attribute__((__always_inline__));
+
+void clock_prescale_set(clock_div_t __x)
+{
+    uint8_t __tmp = _BV(CLKPCE);
+    __asm__ __volatile__ (
+  c8:	94 e0       	ldi	r25, 0x04	; 4
+  ca:	80 e8       	ldi	r24, 0x80	; 128
+  cc:	0f b6       	in	r0, 0x3f	; 63
+  ce:	f8 94       	cli
+  d0:	86 bd       	out	0x26, r24	; 38
+  d2:	96 bd       	out	0x26, r25	; 38
+  d4:	0f be       	out	0x3f, r0	; 63
+	// ** clock_div_16 = 4,
+	// clock_div_32 = 5,
+	
+	clock_prescale_set(4);
+	
+	cli();
+  d6:	f8 94       	cli
+	
+	// pin setup
+	
+	setModeIndicator(currentMode = NORMAL);
+  d8:	10 92 60 00 	sts	0x0060, r1	; 0x800060 <_edata>
+  dc:	80 e0       	ldi	r24, 0x00	; 0
+  de:	b0 df       	rcall	.-160    	; 0x40 <setModeIndicator>
+	
+	// clock signal (output)
+	PORTB |= (1<<PB1);
+  e0:	c1 9a       	sbi	0x18, 1	; 24
+	DDRB |= (1<<DDB1);
+  e2:	b9 9a       	sbi	0x17, 1	; 23
+	
+	// ADC3 (input)
+	PORTB &= ~(1<<PB3);
+  e4:	c3 98       	cbi	0x18, 3	; 24
+	DDRB &= ~(1<<DDB3);
+  e6:	bb 98       	cbi	0x17, 3	; 23
+	///////////////////////////////////
+	//// PCINT setup
+	///////////////////////////////////
+	
+	// set PB0 to input
+	DDRB &= ~(1<<DDB0);
+  e8:	b8 98       	cbi	0x17, 0	; 23
+	// set PB0 pull-up
+	PORTB |= 1<<PB0;
+  ea:	c0 9a       	sbi	0x18, 0	; 24
+	
+	// enable PC Interrupts
+	GIMSK |= (1<<PCIE);
+  ec:	8b b7       	in	r24, 0x3b	; 59
+  ee:	80 62       	ori	r24, 0x20	; 32
+  f0:	8b bf       	out	0x3b, r24	; 59
+	// enable PCINT0 interrupt
+	PCMSK |= (1<<PCINT0);
+  f2:	a8 9a       	sbi	0x15, 0	; 21
+	
+	
+	//currentMode = NORMAL;
+	TimerModeEnable(NORMAL);
+  f4:	80 e0       	ldi	r24, 0x00	; 0
+  f6:	ba df       	rcall	.-140    	; 0x6c <TimerModeEnable>
+	//// ADC setup 
+	///////////////////////////////////
+
+	
+	// VCC used as Voltage Reference, disconnected from PB0 (AREF).
+	ADMUX &= ~((1<<REFS0) | (1<<REFS1));
+  f8:	87 b1       	in	r24, 0x07	; 7
+  fa:	8f 73       	andi	r24, 0x3F	; 63
+  fc:	87 b9       	out	0x07, r24	; 7
+	
+	// ADC Right Adjust Result
+	ADMUX &= ~((1<<ADLAR));
+  fe:	3d 98       	cbi	0x07, 5	; 7
+	// ADC Left Adjust Result
+	//ADMUX |= _ADCLA;
+	
+	// ADC3 selected by default
+	ADMUX |= _ADC3EN;
+ 100:	87 b1       	in	r24, 0x07	; 7
+ 102:	83 60       	ori	r24, 0x03	; 3
+ 104:	87 b9       	out	0x07, r24	; 7
+	
+	// ADC enable,  Auto Trigger Enable,  Interrupt Enable	
+	ADCSRA |= (1<<ADATE) | (1<<ADIE) | (1<<ADEN);
+ 106:	86 b1       	in	r24, 0x06	; 6
+ 108:	88 6a       	ori	r24, 0xA8	; 168
+ 10a:	86 b9       	out	0x06, r24	; 6
+	
+	// ADC prescaler /128 - this is fast enough for our purposes, NOTE: /2 prescaler blocks WDT_vect 
+	ADCSRA |= (1<<ADPS0) | (1<<ADPS1) | (1<<ADPS2);
+ 10c:	86 b1       	in	r24, 0x06	; 6
+ 10e:	87 60       	ori	r24, 0x07	; 7
+ 110:	86 b9       	out	0x06, r24	; 6
+
+	// Single Ended conversions, Auto Trigger Source = Free Running mode
+	ADCSRB = 0;
+ 112:	13 b8       	out	0x03, r1	; 3
+	
+	// ADC Start Conversion
+	ADCSRA |= (1<<ADSC);
+ 114:	36 9a       	sbi	0x06, 6	; 6
+	
+	// setup watchdog to interupt every 1sec
+	WDTCR |= (1<<WDE) | (1<<WDIE);
+ 116:	81 b5       	in	r24, 0x21	; 33
+ 118:	88 64       	ori	r24, 0x48	; 72
+ 11a:	81 bd       	out	0x21, r24	; 33
+	
+	sei();
+ 11c:	78 94       	sei
+	
+	while(1)
+	{
+		cli();
+ 11e:	f8 94       	cli
+		switch(currentMode)
+ 120:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <_edata>
+					
+			case SKEW:
+			
+				break;
+		}
+		sei();
+ 124:	78 94       	sei
+ 126:	fb cf       	rjmp	.-10     	; 0x11e <main+0x56>
+
+00000128 <__vector_3>:
+	OCR0A=0x81;		// low duty;	0x42 (66) - 0x81 (129)
+	OCR0B=0x41;		// high duty;	0x01 (1) - 0x41 (65)
+}
+
+ISR (TIMER1_COMPA_vect)
+{
+ 128:	1f 92       	push	r1
+ 12a:	0f 92       	push	r0
+ 12c:	0f b6       	in	r0, 0x3f	; 63
+ 12e:	0f 92       	push	r0
+ 130:	11 24       	eor	r1, r1
+ 132:	8f 93       	push	r24
+ 134:	9f 93       	push	r25
+	// Normal mode freq adjust
+	OCR1C = (adc2_result / 16); 
+ 136:	80 91 63 00 	lds	r24, 0x0063	; 0x800063 <adc2_result>
+ 13a:	90 91 64 00 	lds	r25, 0x0064	; 0x800064 <adc2_result+0x1>
+ 13e:	92 95       	swap	r25
+ 140:	82 95       	swap	r24
+ 142:	8f 70       	andi	r24, 0x0F	; 15
+ 144:	89 27       	eor	r24, r25
+ 146:	9f 70       	andi	r25, 0x0F	; 15
+ 148:	89 27       	eor	r24, r25
+ 14a:	8d bd       	out	0x2d, r24	; 45
+	
+}
+ 14c:	9f 91       	pop	r25
+ 14e:	8f 91       	pop	r24
+ 150:	0f 90       	pop	r0
+ 152:	0f be       	out	0x3f, r0	; 63
+ 154:	0f 90       	pop	r0
+ 156:	1f 90       	pop	r1
+ 158:	18 95       	reti
+
+0000015a <__vector_10>:
+
+ISR (TIMER0_COMPA_vect)
+{
+ 15a:	1f 92       	push	r1
+ 15c:	0f 92       	push	r0
+ 15e:	0f b6       	in	r0, 0x3f	; 63
+ 160:	0f 92       	push	r0
+ 162:	11 24       	eor	r1, r1
+ 164:	8f 93       	push	r24
+ 166:	9f 93       	push	r25
+	
+	// on/off duty independently adjustable 0-100%
+	//
+	
+	// update low duty (adc3_result mapped 10bit -> 8Bit)
+	OCR0A=0x1 + (adc3_result / 16);
+ 168:	80 91 61 00 	lds	r24, 0x0061	; 0x800061 <adc3_result>
+ 16c:	90 91 62 00 	lds	r25, 0x0062	; 0x800062 <adc3_result+0x1>
+ 170:	92 95       	swap	r25
+ 172:	82 95       	swap	r24
+ 174:	8f 70       	andi	r24, 0x0F	; 15
+ 176:	89 27       	eor	r24, r25
+ 178:	9f 70       	andi	r25, 0x0F	; 15
+ 17a:	89 27       	eor	r24, r25
+ 17c:	8f 5f       	subi	r24, 0xFF	; 255
+ 17e:	89 bd       	out	0x29, r24	; 41
+	
+	// update high duty (adc2_result mapped 10bit -> 8Bit)
+	OCR0B=0x1 + (adc2_result / 16);
+ 180:	80 91 63 00 	lds	r24, 0x0063	; 0x800063 <adc2_result>
+ 184:	90 91 64 00 	lds	r25, 0x0064	; 0x800064 <adc2_result+0x1>
+ 188:	92 95       	swap	r25
+ 18a:	82 95       	swap	r24
+ 18c:	8f 70       	andi	r24, 0x0F	; 15
+ 18e:	89 27       	eor	r24, r25
+ 190:	9f 70       	andi	r25, 0x0F	; 15
+ 192:	89 27       	eor	r24, r25
+ 194:	8f 5f       	subi	r24, 0xFF	; 255
+ 196:	88 bd       	out	0x28, r24	; 40
+
+}
+ 198:	9f 91       	pop	r25
+ 19a:	8f 91       	pop	r24
+ 19c:	0f 90       	pop	r0
+ 19e:	0f be       	out	0x3f, r0	; 63
+ 1a0:	0f 90       	pop	r0
+ 1a2:	1f 90       	pop	r1
+ 1a4:	18 95       	reti
+
+000001a6 <__vector_12>:
+
+ISR (WDT_vect)
+{
+ 1a6:	1f 92       	push	r1
+ 1a8:	0f 92       	push	r0
+ 1aa:	0f b6       	in	r0, 0x3f	; 63
+ 1ac:	0f 92       	push	r0
+ 1ae:	11 24       	eor	r1, r1
+ 1b0:	8f 93       	push	r24
+ 1b2:	9f 93       	push	r25
+	// increment the counter
+	wdcounter++;
+ 1b4:	80 91 69 00 	lds	r24, 0x0069	; 0x800069 <wdcounter>
+ 1b8:	90 91 6a 00 	lds	r25, 0x006A	; 0x80006a <wdcounter+0x1>
+ 1bc:	01 96       	adiw	r24, 0x01	; 1
+ 1be:	90 93 6a 00 	sts	0x006A, r25	; 0x80006a <wdcounter+0x1>
+ 1c2:	80 93 69 00 	sts	0x0069, r24	; 0x800069 <wdcounter>
+	// re-enable the WDG interrupt to prevent device reset.
+	WDTCR |= (1<<WDIE);
+ 1c6:	81 b5       	in	r24, 0x21	; 33
+ 1c8:	80 64       	ori	r24, 0x40	; 64
+ 1ca:	81 bd       	out	0x21, r24	; 33
+}
+ 1cc:	9f 91       	pop	r25
+ 1ce:	8f 91       	pop	r24
+ 1d0:	0f 90       	pop	r0
+ 1d2:	0f be       	out	0x3f, r0	; 63
+ 1d4:	0f 90       	pop	r0
+ 1d6:	1f 90       	pop	r1
+ 1d8:	18 95       	reti
+
+000001da <__vector_2>:
+
+ISR (PCINT0_vect)
+{
+ 1da:	1f 92       	push	r1
+ 1dc:	0f 92       	push	r0
+ 1de:	0f b6       	in	r0, 0x3f	; 63
+ 1e0:	0f 92       	push	r0
+ 1e2:	11 24       	eor	r1, r1
+ 1e4:	cf 92       	push	r12
+ 1e6:	df 92       	push	r13
+ 1e8:	ef 92       	push	r14
+ 1ea:	ff 92       	push	r15
+ 1ec:	2f 93       	push	r18
+ 1ee:	3f 93       	push	r19
+ 1f0:	4f 93       	push	r20
+ 1f2:	5f 93       	push	r21
+ 1f4:	6f 93       	push	r22
+ 1f6:	7f 93       	push	r23
+ 1f8:	8f 93       	push	r24
+ 1fa:	9f 93       	push	r25
+ 1fc:	af 93       	push	r26
+ 1fe:	bf 93       	push	r27
+ 200:	ef 93       	push	r30
+ 202:	ff 93       	push	r31
+	// check for bounce
+	uint32_t interrupt_time = wdcounter;
+ 204:	c0 90 69 00 	lds	r12, 0x0069	; 0x800069 <wdcounter>
+ 208:	d0 90 6a 00 	lds	r13, 0x006A	; 0x80006a <wdcounter+0x1>
+ 20c:	e1 2c       	mov	r14, r1
+ 20e:	f1 2c       	mov	r15, r1
+	if (interrupt_time - pd0_last_interrupt_time > DEBOUNCE_DELAY) 
+ 210:	80 91 65 00 	lds	r24, 0x0065	; 0x800065 <pd0_last_interrupt_time>
+ 214:	90 91 66 00 	lds	r25, 0x0066	; 0x800066 <pd0_last_interrupt_time+0x1>
+ 218:	a0 91 67 00 	lds	r26, 0x0067	; 0x800067 <pd0_last_interrupt_time+0x2>
+ 21c:	b0 91 68 00 	lds	r27, 0x0068	; 0x800068 <pd0_last_interrupt_time+0x3>
+ 220:	a7 01       	movw	r20, r14
+ 222:	96 01       	movw	r18, r12
+ 224:	28 1b       	sub	r18, r24
+ 226:	39 0b       	sbc	r19, r25
+ 228:	4a 0b       	sbc	r20, r26
+ 22a:	5b 0b       	sbc	r21, r27
+ 22c:	2f 31       	cpi	r18, 0x1F	; 31
+ 22e:	31 05       	cpc	r19, r1
+ 230:	41 05       	cpc	r20, r1
+ 232:	51 05       	cpc	r21, r1
+ 234:	e8 f0       	brcs	.+58     	; 0x270 <__stack+0x11>
+	{
+		// toggle the control mode
+		switch(currentMode) 
+ 236:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <_edata>
+ 23a:	81 30       	cpi	r24, 0x01	; 1
+ 23c:	49 f0       	breq	.+18     	; 0x250 <__vector_2+0x76>
+ 23e:	18 f0       	brcs	.+6      	; 0x246 <__vector_2+0x6c>
+ 240:	82 30       	cpi	r24, 0x02	; 2
+ 242:	49 f0       	breq	.+18     	; 0x256 <__vector_2+0x7c>
+ 244:	0d c0       	rjmp	.+26     	; 0x260 <__stack+0x1>
+		{
+			case NORMAL:
+				
+				TimerModeEnable(SKEW);
+ 246:	81 e0       	ldi	r24, 0x01	; 1
+ 248:	11 df       	rcall	.-478    	; 0x6c <TimerModeEnable>
+				
+				setModeIndicator(SKEW);
+ 24a:	81 e0       	ldi	r24, 0x01	; 1
+ 24c:	f9 de       	rcall	.-526    	; 0x40 <setModeIndicator>
+				break;
+ 24e:	08 c0       	rjmp	.+16     	; 0x260 <__stack+0x1>
+			case SKEW:
+				
+				setModeIndicator(GLITCH);
+ 250:	82 e0       	ldi	r24, 0x02	; 2
+ 252:	f6 de       	rcall	.-532    	; 0x40 <setModeIndicator>
+				
+				
+				break;	
+ 254:	05 c0       	rjmp	.+10     	; 0x260 <__stack+0x1>
+			case GLITCH:
+				
+				setModeIndicator(NORMAL);
+ 256:	80 e0       	ldi	r24, 0x00	; 0
+ 258:	f3 de       	rcall	.-538    	; 0x40 <setModeIndicator>
+				TimerModeEnable(NORMAL);
+ 25a:	80 e0       	ldi	r24, 0x00	; 0
+ 25c:	07 df       	rcall	.-498    	; 0x6c <TimerModeEnable>
+				resetPWM();
+ 25e:	01 df       	rcall	.-510    	; 0x62 <resetPWM>
+				
+				
+				break;
+		}
+		// store the tick of the last successful press
+		pd0_last_interrupt_time = interrupt_time;
+ 260:	c0 92 65 00 	sts	0x0065, r12	; 0x800065 <pd0_last_interrupt_time>
+ 264:	d0 92 66 00 	sts	0x0066, r13	; 0x800066 <pd0_last_interrupt_time+0x1>
+ 268:	e0 92 67 00 	sts	0x0067, r14	; 0x800067 <pd0_last_interrupt_time+0x2>
+ 26c:	f0 92 68 00 	sts	0x0068, r15	; 0x800068 <pd0_last_interrupt_time+0x3>
+		
+		
+	}
+
+}
+ 270:	ff 91       	pop	r31
+ 272:	ef 91       	pop	r30
+ 274:	bf 91       	pop	r27
+ 276:	af 91       	pop	r26
+ 278:	9f 91       	pop	r25
+ 27a:	8f 91       	pop	r24
+ 27c:	7f 91       	pop	r23
+ 27e:	6f 91       	pop	r22
+ 280:	5f 91       	pop	r21
+ 282:	4f 91       	pop	r20
+ 284:	3f 91       	pop	r19
+ 286:	2f 91       	pop	r18
+ 288:	ff 90       	pop	r15
+ 28a:	ef 90       	pop	r14
+ 28c:	df 90       	pop	r13
+ 28e:	cf 90       	pop	r12
+ 290:	0f 90       	pop	r0
+ 292:	0f be       	out	0x3f, r0	; 63
+ 294:	0f 90       	pop	r0
+ 296:	1f 90       	pop	r1
+ 298:	18 95       	reti
+
+0000029a <__vector_8>:
+
+ISR (ADC_vect)
+{
+ 29a:	1f 92       	push	r1
+ 29c:	0f 92       	push	r0
+ 29e:	0f b6       	in	r0, 0x3f	; 63
+ 2a0:	0f 92       	push	r0
+ 2a2:	11 24       	eor	r1, r1
+ 2a4:	2f 93       	push	r18
+ 2a6:	3f 93       	push	r19
+ 2a8:	8f 93       	push	r24
+ 2aa:	9f 93       	push	r25
+	// 1.check current adc mux channel
+	// 2.read ADC result
+	// 3.enable the next contiguous mux channel
+	
+	switch(ADMUX) {
+ 2ac:	87 b1       	in	r24, 0x07	; 7
+ 2ae:	82 30       	cpi	r24, 0x02	; 2
+ 2b0:	19 f0       	breq	.+6      	; 0x2b8 <__vector_8+0x1e>
+ 2b2:	83 30       	cpi	r24, 0x03	; 3
+ 2b4:	e9 f0       	breq	.+58     	; 0x2f0 <__vector_8+0x56>
+ 2b6:	35 c0       	rjmp	.+106    	; 0x322 <__vector_8+0x88>
+		
+		// if ADLAR bit set, use switch case mask '_ADCLA | _ADCXEN'
+		// if ADLAR bit cleared, use switch case mask '_ADCXEN'
+		
+		case _ADC2EN:
+		adc2_result = ADCL;				// read 8 LSB
+ 2b8:	84 b1       	in	r24, 0x04	; 4
+ 2ba:	90 e0       	ldi	r25, 0x00	; 0
+ 2bc:	90 93 64 00 	sts	0x0064, r25	; 0x800064 <adc2_result+0x1>
+ 2c0:	80 93 63 00 	sts	0x0063, r24	; 0x800063 <adc2_result>
+		adc2_result += ADCH << 8;		// read 2 MSB, shift them left and add to LSB. Result = 2MSB + 8LSB
+ 2c4:	95 b1       	in	r25, 0x05	; 5
+ 2c6:	20 91 63 00 	lds	r18, 0x0063	; 0x800063 <adc2_result>
+ 2ca:	30 91 64 00 	lds	r19, 0x0064	; 0x800064 <adc2_result+0x1>
+ 2ce:	89 2f       	mov	r24, r25
+ 2d0:	90 e0       	ldi	r25, 0x00	; 0
+ 2d2:	98 2f       	mov	r25, r24
+ 2d4:	88 27       	eor	r24, r24
+ 2d6:	82 0f       	add	r24, r18
+ 2d8:	93 1f       	adc	r25, r19
+ 2da:	90 93 64 00 	sts	0x0064, r25	; 0x800064 <adc2_result+0x1>
+ 2de:	80 93 63 00 	sts	0x0063, r24	; 0x800063 <adc2_result>
+		ADMUX &= _ADCLA | _ADC0EN;		//  clear MUX bits whilst retaining ADC Left Adjust Result
+ 2e2:	87 b1       	in	r24, 0x07	; 7
+ 2e4:	80 72       	andi	r24, 0x20	; 32
+ 2e6:	87 b9       	out	0x07, r24	; 7
+		ADMUX |= _ADC3EN;				// set ADC3 for next check
+ 2e8:	87 b1       	in	r24, 0x07	; 7
+ 2ea:	83 60       	ori	r24, 0x03	; 3
+ 2ec:	87 b9       	out	0x07, r24	; 7
+		break;
+ 2ee:	19 c0       	rjmp	.+50     	; 0x322 <__vector_8+0x88>
+		
+		case _ADC3EN:
+		adc3_result = ADCL;				// read 8 LSB
+ 2f0:	84 b1       	in	r24, 0x04	; 4
+ 2f2:	90 e0       	ldi	r25, 0x00	; 0
+ 2f4:	90 93 62 00 	sts	0x0062, r25	; 0x800062 <adc3_result+0x1>
+ 2f8:	80 93 61 00 	sts	0x0061, r24	; 0x800061 <adc3_result>
+		adc3_result += ADCH << 8;		// read 2 MSB, shift them left and add to LSB. Result = 2MSB + 8LSB
+ 2fc:	95 b1       	in	r25, 0x05	; 5
+ 2fe:	20 91 61 00 	lds	r18, 0x0061	; 0x800061 <adc3_result>
+ 302:	30 91 62 00 	lds	r19, 0x0062	; 0x800062 <adc3_result+0x1>
+ 306:	89 2f       	mov	r24, r25
+ 308:	90 e0       	ldi	r25, 0x00	; 0
+ 30a:	98 2f       	mov	r25, r24
+ 30c:	88 27       	eor	r24, r24
+ 30e:	82 0f       	add	r24, r18
+ 310:	93 1f       	adc	r25, r19
+ 312:	90 93 62 00 	sts	0x0062, r25	; 0x800062 <adc3_result+0x1>
+ 316:	80 93 61 00 	sts	0x0061, r24	; 0x800061 <adc3_result>
+		ADMUX &= _ADCLA | _ADC0EN;		// clear MUX bits whilst retaining ADC Left Adjust Result
+ 31a:	87 b1       	in	r24, 0x07	; 7
+ 31c:	80 72       	andi	r24, 0x20	; 32
+ 31e:	87 b9       	out	0x07, r24	; 7
+		ADMUX |= _ADC2EN;				// set ADC2 for check
+ 320:	39 9a       	sbi	0x07, 1	; 7
+		break;
+		
+	}
+	// Start the next AD conversion
+	ADCSRA|=(1<<ADSC);
+ 322:	36 9a       	sbi	0x06, 6	; 6
+}
+ 324:	9f 91       	pop	r25
+ 326:	8f 91       	pop	r24
+ 328:	3f 91       	pop	r19
+ 32a:	2f 91       	pop	r18
+ 32c:	0f 90       	pop	r0
+ 32e:	0f be       	out	0x3f, r0	; 63
+ 330:	0f 90       	pop	r0
+ 332:	1f 90       	pop	r1
+ 334:	18 95       	reti
+
+00000336 <_exit>:
+ 336:	f8 94       	cli
+
+00000338 <__stop_program>:
+ 338:	ff cf       	rjmp	.-2      	; 0x338 <__stop_program>
