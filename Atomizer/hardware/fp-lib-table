@@ -3,4 +3,5 @@
   (lib (name custom_sw)(type KiCad)(uri ${KIPRJMOD}/LIBS/custom_sw.pretty)(options "")(descr ""))
   (lib (name DailywellSwitches)(type KiCad)(uri ${KIPRJMOD}/LIBS/DailywellSwitches.pretty)(options "")(descr ""))
   (lib (name CustomHeaders)(type KiCad)(uri ${KIPRJMOD}/LIBS/CustomHeaders.pretty)(options "")(descr ""))
+  (lib (name TE_Alcoswitch_Tactile_FSM_RAJ)(type KiCad)(uri ${KIPRJMOD}/LIBS/TE_Alcoswitch_Tactile_FSM_RAJ.pretty)(options "")(descr ""))
 )
