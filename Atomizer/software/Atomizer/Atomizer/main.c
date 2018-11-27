@@ -12,10 +12,12 @@
 #include <avr/sleep.h>      // Supplied AVR Sleep Macros
 #include <avr/power.h>
 
+// sweep
+volatile float weight = 0;
 
 // debounce variables
 volatile unsigned int wdcounter = 0;
-#define DEBOUNCE_DELAY 30 // 1 wdt tick = 16ms
+#define DEBOUNCE_DELAY 60 // 1 wdt tick = 16ms
 uint32_t pd0_last_interrupt_time = 0;
 
 // ADC variables
@@ -29,13 +31,18 @@ volatile unsigned int adc3_result = 0;
 #define _ADC3EN 0x03	// PB3 - MUX(3:0) = 0011; Use bitwise OR to set ADC3 ( e.g. ADMUX |= ADC3EN; )
 
 // PCINT variables
-typedef enum {NORMAL, SKEW, GLITCH} CONTROLMODE;
-volatile CONTROLMODE currentMode = NORMAL;
+typedef enum {NORMAL, SKEW, SWEEP} CONTROLMODE;
+volatile CONTROLMODE currentMode = SWEEP;
+
+// XORSHIFT
+volatile int deadbit;
 
 // function prototypes
 void setModeIndicator(CONTROLMODE p_currentMode);
 void TimerModeEnable(CONTROLMODE p_currentMode);
 void resetPWM();
+uint32_t xorshift32(uint32_t state[static 1]);
+void prng2bit();
 
 int main(void)
 {
@@ -58,17 +65,29 @@ int main(void)
 	
 	cli();
 	
-	// pin setup
+	///////////////////////
+	/////	PIN USAGE
+	///////////////////////
+	///
+	//		PB0 - INPUT  - Mode Button
+	//		PB1 - OUTPUT - Tremolo Clock 
+	//		PB2 - OUTPUT - Mode LEDs
+	//		PB3 - INPUT  - Hi Adjust Pot
+	//		PB4 - INPUT  - Lo Adjust Pot
+	///
+	////////////////////////
 	
-	setModeIndicator(currentMode = NORMAL);
+	
 	
 	// clock signal (output)
 	PORTB |= (1<<PB1);
 	DDRB |= (1<<DDB1);
 	
-	// ADC3 (input)
+	// ADC3+4 (input)
 	PORTB &= ~(1<<PB3);
 	DDRB &= ~(1<<DDB3);
+	PORTB &= ~(1<<PB4);
+	DDRB &= ~(1<<DDB4);
 		
 	///////////////////////////////////
 	//// PCINT setup
@@ -84,8 +103,8 @@ int main(void)
 	// enable PCINT0 interrupt
 	PCMSK |= (1<<PCINT0);
 		
-	//currentMode = NORMAL;
-	TimerModeEnable(NORMAL);
+	setModeIndicator(currentMode = SWEEP);
+	TimerModeEnable(SWEEP);
 	
 
 	///////////////////////////////////
@@ -123,6 +142,8 @@ int main(void)
 	
 	while(1)
 	{
+		//xorshift32(theState);
+		//prng1bit();
 		// idle	
 	}
 	
@@ -131,6 +152,20 @@ int main(void)
 /////////////////////////
 /// FUNCTIONS
 /////////////////////////
+
+void prng1bit()
+{
+	uint8_t start = 0x02;
+    uint8_t a = start;
+     
+    for(int i = 1;; i++) {
+        deadbit = (((a >> 6) ^ (a >> 5)) & 1);
+        a = ((a << 1) | deadbit) & 0x7f;       
+    }
+	
+}
+
+
 
 void resetPWM() {
 	
@@ -148,15 +183,14 @@ void setModeIndicator(CONTROLMODE p_currentMode)
 			DDRB &= ~(1<<DDB2);
 			PORTB &= ~(1<<PB2);
 			break;
+			
 		case SKEW:
 			// Logic one to mode LED pin 
 			DDRB |= (1<<DDB2);
 			PORTB |= (1<<PB2);
-			
-			
 			break;
 		
-		case GLITCH:
+		case SWEEP:
 			// Logic zero to mode LED pin 
 			DDRB |= (1<<DDB2);
 			PORTB &= ~(1<<PB2);
@@ -222,7 +256,33 @@ void TimerModeEnable(CONTROLMODE p_currentMode)
 			
 			break;
 		
-		case GLITCH:
+		case SWEEP:
+		
+			// disable Timer0 output to OC0B (PB1)
+			TCCR0A = 0;
+			
+			///////////////////////////////////
+			//// Timer1 CTC  setup
+			///////////////////////////////////
+
+			// Timer/Counter1 is reset to $00 after a compare match with OCR1C register value
+			TCCR1 |= (1<<CTC1);
+			
+			// enable toggle output on OC1A (PB1) output line.
+			TCCR1 |= (0<<COM1A1) | (1<<COM1A0);
+			
+			// Timer/Counter1 Prescale Select PCK/2048
+			//TCCR1 |= (0<<CS13) | (1<<CS12) | (1<<CS11) | (1<<CS10); // /64 
+			//TCCR1 |= (1<<CS13) | (0<<CS12) | (0<<CS11) | (0<<CS10); // /128
+			TCCR1 |= (1<<CS13) | (0<<CS12) | (0<<CS11) | (1<<CS10); // /256
+			//TCCR1 |= (1<<CS13) | (0<<CS12) | (1<<CS11) | (0<<CS10); // /512
+			//TCCR1 |= (1<<CS13) | (0<<CS12) | (1<<CS11) | (1<<CS10); // /1024
+			//TCCR1 |= (1<<CS13) | (1<<CS12) | (0<<CS11) | (0<<CS10); // /2048
+			
+			TIMSK |= (1<<OCIE1A);
+			
+			OCR1C =  10;
+			
 			break;
 	}
 	
@@ -235,8 +295,22 @@ void TimerModeEnable(CONTROLMODE p_currentMode)
 
 ISR (TIMER1_COMPA_vect)
 {
-	// Normal mode freq adjust
-	OCR1C = (adc2_result / 16); 
+	// Normal/SWEEP mode freq adjust
+	switch(currentMode)
+	{
+		case NORMAL:
+			OCR1C = (adc2_result / 16);
+			break;
+		case SWEEP:
+			OCR1C= (adc2_result / (adc3_result/16)) * weight;
+			weight=weight+0.5;
+			if (OCR1C > (adc2_result)) 
+			{
+				weight = 0;
+			}
+			break;
+	}
+			
 	
 }
 
@@ -278,11 +352,12 @@ ISR (PCINT0_vect)
 
 			case SKEW:
 				
-				setModeIndicator(GLITCH);
-
+				setModeIndicator(SWEEP);
+				TimerModeEnable(SWEEP);
+				resetPWM();
 				break;	
 
-			case GLITCH:
+			case SWEEP:
 				
 				setModeIndicator(NORMAL);
 				TimerModeEnable(NORMAL);
