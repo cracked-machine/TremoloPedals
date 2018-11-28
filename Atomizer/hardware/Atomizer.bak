@@ -762,10 +762,10 @@ Text Label 10150 9100 1    50   ~ 0
 GND
 Text Label 4250 5750 0    50   ~ 0
 +5V_OPTO
-Text Notes 4850 3800 0    146  ~ 0
-3PDT
-Text Notes 7650 4550 0    146  ~ 0
-CLOCK
+Text Notes 4250 3800 0    146  ~ 0
+FOOTSWITCH
+Text Notes 7775 4575 0    146  ~ 0
+LFO
 Wire Notes Line
 	11500 10700 11500 7050
 Wire Notes Line
