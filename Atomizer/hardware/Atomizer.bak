@@ -552,7 +552,7 @@ U 1 1 5BE39EEA
 P 13650 2300
 F 0 "J_OUT1" H 13172 2355 50  0000 R CNN
 F 1 "JACK__MONO_2P_NC" H 13173 2400 50  0001 R CNN
-F 2 "custom_sockets:6_35MM_JACK_MONO_FlatTop" H 13650 2300 50  0001 C CNN
+F 2 "custom_sockets:6_35MM_JACK_MONO_FlatTop_notab" H 13650 2300 50  0001 C CNN
 F 3 "http://www.neutrik.us/en-us/plugs-jacks/slim-jacks/nrj4hf-1" H 13650 2300 50  0001 C CNN
 F 4 "550-10284G" H 13650 2300 50  0001 C CNN "MouserNo"
 F 5 "NRJ4HF-1" H 13650 2300 50  0001 C CNN "Mfr. No:"
@@ -581,7 +581,7 @@ U 1 1 5BE61397
 P 2200 2100
 F 0 "J_IN1" H 2000 1900 50  0000 R CNN
 F 1 "JACK__MONO_2P_NC" H 1723 2200 50  0001 R CNN
-F 2 "custom_sockets:6_35MM_JACK_MONO_FlatTop" H 2200 2100 50  0001 C CNN
+F 2 "custom_sockets:6_35MM_JACK_MONO_FlatTop_notab" H 2200 2100 50  0001 C CNN
 F 3 "http://www.neutrik.us/en-us/plugs-jacks/slim-jacks/nrj4hf-1" H 2200 2100 50  0001 C CNN
 F 4 "550-10284G" H 2200 2100 50  0001 C CNN "MouserNo"
 F 5 "NRJ4HF-1" H 2200 2100 50  0001 C CNN "Mfr. No:"
