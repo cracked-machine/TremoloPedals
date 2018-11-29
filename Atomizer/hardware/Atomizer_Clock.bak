@@ -38,7 +38,7 @@ L Device:R R_LPF1
 U 1 1 5BF61CAE
 P 6000 2600
 F 0 "R_LPF1" V 5750 2600 50  0000 C CNN
-F 1 "100R" V 5850 2600 50  0000 C CNN
+F 1 "1K" V 5850 2600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5930 2600 50  0001 C CNN
 F 3 "~" H 6000 2600 50  0001 C CNN
 	1    6000 2600
@@ -173,25 +173,6 @@ F 7 "Transistor Output Optocouplers 3000Vrms 50% CTR" H 8700 2000 50  0001 C CNN
 	1    8700 2000
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R R_OSCLIMIT1
-U 1 1 5BE63342
-P 4100 1200
-F 0 "R_OSCLIMIT1" H 4170 1246 50  0000 L CNN
-F 1 "330R" H 4170 1155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4030 1200 50  0001 C CNN
-F 3 "https://www.mouser.co.uk/datasheet/2/54/rs-a-1222350.pdf" H 4100 1200 50  0001 C CNN
-F 4 "652-CRS0805AFX1000LF" H 4100 1200 50  0001 C CNN "MouserNo"
-F 5 "CRS0805AFX1000LF" H 4100 1200 50  0001 C CNN "Mfr. No:"
-F 6 "Bourns" H 4100 1200 50  0001 C CNN "Mfr:"
-F 7 "Thick Film Resistors - SMD 100 ohm 1% 1/4W TC100" H 4100 1200 50  0001 C CNN "Type"
-	1    4100 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4100 950  4100 1050
-Wire Wire Line
-	4100 1350 4100 1550
 $Comp
 L Switch:SW_SPDT SW_ATTACK1
 U 1 1 5BE6888F
@@ -480,8 +461,6 @@ F 3 "~" H 1800 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4700 2600 5850 2600
-Wire Wire Line
 	2100 2700 2900 2700
 Wire Wire Line
 	1600 2700 750  2700
@@ -543,4 +522,8 @@ Wire Wire Line
 	6150 2600 6450 2600
 Wire Wire Line
 	5975 5225 7125 5225
+Wire Wire Line
+	4100 950  4100 1550
+Wire Wire Line
+	4700 2600 5850 2600
 $EndSCHEMATC

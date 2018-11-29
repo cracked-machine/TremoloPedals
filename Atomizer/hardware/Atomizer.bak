@@ -792,4 +792,6 @@ Wire Wire Line
 	4650 2550 4650 2850
 Text Label 4650 2850 1    50   ~ 0
 GND
+Text Notes 1450 9675 0    50   ~ 0
+Guitar Fx pedals are \nCentre-Negative
 $EndSCHEMATC
