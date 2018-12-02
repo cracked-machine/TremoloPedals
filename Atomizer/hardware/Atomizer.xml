@@ -1,0 +1,1274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/GB080220/workspace/circuits/EffectsPedals/TremoloPedals/Atomizer/hardware/Atomizer.sch</source>
+    <date>Sunday, 02 December 2018 at 03:35:39</date>
+    <tool>Eeschema (5.0.0-3-g5ebb6b6)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Atomizer.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Atomizer_Clock/" tstamps="/5BF54A3F/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Atomizer_Clock.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Atomizer_3PDT/" tstamps="/5BFCF63F/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Atomizer_3PDT.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U_INV1">
+      <value>TC7662Bx0A</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/21469a.pdf</datasheet>
+      <fields>
+        <field name="Mfr. No:">TC7660SEOA713</field>
+        <field name="Mfr:">Microchip Technology</field>
+        <field name="MouserNo">579-TC7660SEOA713</field>
+        <field name="Type">Switching Voltage Regulators High Voltage</field>
+      </fields>
+      <libsource lib="Converter_DCDC" part="TC7662Bx0A" description="Charge Pump DC-to-DC Converter, 1.5 - 15V, 100mA, SOIC-8"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE0D4DB</tstamp>
+    </comp>
+    <comp ref="CP_INV2">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:CP_Elec_4x5.4</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="CP" description="Polarised capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE0D571</tstamp>
+    </comp>
+    <comp ref="CP_INV1">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:CP_Elec_4x5.4</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="CP" description="Polarised capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE0D68C</tstamp>
+    </comp>
+    <comp ref="U_PREG1">
+      <value>LM317_3PinPackage</value>
+      <footprint>Package_TO_SOT_SMD:SOT-223-3_TabPin2</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm317.pdf</datasheet>
+      <fields>
+        <field name="Mfr. No:">LM317DCYR</field>
+        <field name="Mfr:">Texas Instruments</field>
+        <field name="MouserNo">595-LM317DCYR</field>
+        <field name="Type">Linear Voltage Regulators 3 Term Adj. Pos.</field>
+      </fields>
+      <libsource lib="Regulator_Linear" part="LM317_3PinPackage" description="1A 35V Adjustable Linear Regulator, SOT-89/SOT-223/TO-220/TO-252/TO-263"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE0E29B</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE0FDA6</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE11469</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>270R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE144F3</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>47R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE16594</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE175D9</tstamp>
+    </comp>
+    <comp ref="U_BUF1">
+      <value>TL072</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/tl071.pdf</datasheet>
+      <fields>
+        <field name="Mfr. No:">TL072SG-13</field>
+        <field name="Mfr:">Diodes Incorporated</field>
+        <field name="MouserNo">621-TL072SG-13</field>
+        <field name="Type">JFET INPUT OP AMP LOW NOISE</field>
+      </fields>
+      <libsource lib="Amplifier_Operational" part="TL072" description="Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE1E27D</tstamp>
+    </comp>
+    <comp ref="P_DEPTH1">
+      <value>B50k</value>
+      <footprint>Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/15/RK09L-1370814.pdf</datasheet>
+      <fields>
+        <field name="Mfr. No:">RK09L1140A5P</field>
+        <field name="Mfr:">ALPS</field>
+        <field name="MouserNo">688-RK09L1140A5P</field>
+        <field name="Type">1GANG LINEAR 20% FLATTED 1TURN</field>
+      </fields>
+      <libsource lib="Device" part="R_POT" description="Potentiometer"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE21679</tstamp>
+    </comp>
+    <comp ref="P_VOL1">
+      <value>B10K</value>
+      <footprint>Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/15/RK09L-1370814.pdf</datasheet>
+      <fields>
+        <field name="Mfr. No:">RK09L1140A66</field>
+        <field name="Mfr:">ALPS</field>
+        <field name="MouserNo">688-RK09L1140A66</field>
+        <field name="Type">1GANG LINEAR 20% FLATTED 1TURN</field>
+      </fields>
+      <libsource lib="Device" part="R_POT" description="Potentiometer"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE216FA</tstamp>
+    </comp>
+    <comp ref="R_GAIN1">
+      <value>2K7</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE2AB83</tstamp>
+    </comp>
+    <comp ref="J_PWR1">
+      <value>Jack-DC</value>
+      <footprint>Connector_BarrelJack:BarrelJack_Horizontal</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/393/rapc722x_cd-371352.pdf</datasheet>
+      <fields>
+        <field name="Mfr. No:">RAPC722X</field>
+        <field name="Mfr:">Switchcraft</field>
+        <field name="MouserNo">502-RAPC722X</field>
+        <field name="Type">DC Power Connectors RT ANGL PWK JK PIN D</field>
+      </fields>
+      <libsource lib="Connector" part="Jack-DC" description="DC Barrel Jack"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE7895A</tstamp>
+    </comp>
+    <comp ref="C_BP3">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BED3C35</tstamp>
+    </comp>
+    <comp ref="C_BP4">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BED3C3D</tstamp>
+    </comp>
+    <comp ref="C_BP5">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BF220BE</tstamp>
+    </comp>
+    <comp ref="U_NREG1">
+      <value>LM337_SOT223</value>
+      <footprint>Package_TO_SOT_SMD:SOT-223-3_TabPin2</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm337-n.pdf</datasheet>
+      <fields>
+        <field name="Mfr. No:">LM337IMP/NOPB</field>
+        <field name="Mfr:">Texas Instruments</field>
+        <field name="MouserNo">926-LM337IMP/NOPB</field>
+        <field name="Type">Linear Voltage Regulators 3-TERMINAL ADJ NEG REG</field>
+      </fields>
+      <libsource lib="Regulator_Linear" part="LM337_SOT223" description="Negative 1A 35V Adjustable Linear Regulator, SOT-223"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE2DBE2</tstamp>
+    </comp>
+    <comp ref="J_OUT1">
+      <value>JACK__MONO_2P_NC</value>
+      <footprint>custom_sockets:6_35MM_JACK_MONO_FlatTop_notab</footprint>
+      <datasheet>http://www.neutrik.us/en-us/plugs-jacks/slim-jacks/nrj4hf-1</datasheet>
+      <fields>
+        <field name="Mfr. No:">NRJ4HF-1</field>
+        <field name="Mfr:">Neutrik</field>
+        <field name="MouserNo">550-10284G</field>
+        <field name="Type">Phone Connectors W/CHASSIS GROUND</field>
+      </fields>
+      <libsource lib="socket_custom" part="JACK__MONO_2P_NC" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE39EEA</tstamp>
+    </comp>
+    <comp ref="J_IN1">
+      <value>JACK__MONO_2P_NC</value>
+      <footprint>custom_sockets:6_35MM_JACK_MONO_FlatTop_notab</footprint>
+      <datasheet>http://www.neutrik.us/en-us/plugs-jacks/slim-jacks/nrj4hf-1</datasheet>
+      <fields>
+        <field name="Mfr. No:">NRJ4HF-1</field>
+        <field name="Mfr:">Neutrik</field>
+        <field name="MouserNo">550-10284G</field>
+        <field name="Type">Phone Connectors W/CHASSIS GROUND</field>
+      </fields>
+      <libsource lib="socket_custom" part="JACK__MONO_2P_NC" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE61397</tstamp>
+    </comp>
+    <comp ref="R_PD1">
+      <value>22M</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BFF515B</tstamp>
+    </comp>
+    <comp ref="D_LED1">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D5.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="LED generic"/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5BF61C9C</tstamp>
+    </comp>
+    <comp ref="R_LPF1">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5BF61CAE</tstamp>
+    </comp>
+    <comp ref="CP_FAST1">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:CP_Elec_4x5.4</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/445/875105240003-540627.pdf</datasheet>
+      <fields>
+        <field name="Diameter">4mm</field>
+        <field name="ESR">45mOhms</field>
+        <field name="Mfr. No:">875105240003</field>
+        <field name="Mfr:">Wurth</field>
+        <field name="MouserNo">710-875105240003</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">Aluminium Organic Polymer Capacitors WCAP-PSLP 10V 22uF 20%</field>
+        <field name="Voltage Rating DC">10 DC</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarised capacitor"/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5BF61CB5</tstamp>
+    </comp>
+    <comp ref="P_OSCON1">
+      <value>B10K</value>
+      <footprint>Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/15/RK09L-1370814.pdf</datasheet>
+      <fields>
+        <field name="Mfr. No:">RK09L1140A66</field>
+        <field name="Mfr:">ALPS</field>
+        <field name="MouserNo">688-RK09L1140A66</field>
+        <field name="Type">1GANG LINEAR 20% FLATTED 1TURN</field>
+      </fields>
+      <libsource lib="Device" part="R_POT" description="Potentiometer"/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5BE6F106</tstamp>
+    </comp>
+    <comp ref="R_OSCON1">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5BE70559</tstamp>
+    </comp>
+    <comp ref="P_OSCOFF1">
+      <value>B10K</value>
+      <footprint>Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/15/RK09L-1370814.pdf</datasheet>
+      <fields>
+        <field name="Mfr. No:">RK09L1140A66</field>
+        <field name="Mfr:">ALPS</field>
+        <field name="MouserNo">688-RK09L1140A66</field>
+        <field name="Type">1GANG LINEAR 20% FLATTED 1TURN</field>
+      </fields>
+      <libsource lib="Device" part="R_POT" description="Potentiometer"/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5BE76FC9</tstamp>
+    </comp>
+    <comp ref="R_OSCOFF1">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5BE76FCF</tstamp>
+    </comp>
+    <comp ref="C_BP1">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5BEBE4C2</tstamp>
+    </comp>
+    <comp ref="U_OPTO1">
+      <value>ACPL-217</value>
+      <footprint>Package_SO:SO-4_4.4x2.3mm_P1.27mm</footprint>
+      <datasheet>https://docs-emea.rs-online.com/webdocs/163c/0900766b8163ccc8.pdf</datasheet>
+      <fields>
+        <field name="Mfr. No:">ACPL-217-50BE</field>
+        <field name="Mfr:">Broadcom / Avago</field>
+        <field name="MouserNo">630-ACPL-217-50BE</field>
+        <field name="Type">Transistor Output Optocouplers 3000Vrms 50% CTR</field>
+      </fields>
+      <libsource lib="Isolator" part="LTV-357T" description="DC Optocoupler, Vce 35V, CTR 50%, SO-4"/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5BE5F080</tstamp>
+    </comp>
+    <comp ref="SW_ATTACK1">
+      <value>SW_SPDT</value>
+      <footprint>DailywellSwitches:Dailywell_SPDT</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/209/MS-100786-1172382.pdf</datasheet>
+      <fields>
+        <field name="Mfr. No:">108-2MS1T1B1M2QE-EVX</field>
+        <field name="Mfr:">Mountain Switch</field>
+        <field name="MouserNo">108-2MS1T1B1M2QE-EVX</field>
+        <field name="Type">TOGGLE SPDT ON-ON PC MOUNT</field>
+      </fields>
+      <libsource lib="Switch" part="SW_SPDT" description="Switch, single pole double throw"/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5BE6888F</tstamp>
+    </comp>
+    <comp ref="CP_SLOW1">
+      <value>220uF</value>
+      <footprint>Capacitor_SMD:CP_Elec_6.3x5.4</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/315/ABA0000C1184-947404.pdf</datasheet>
+      <fields>
+        <field name="Diameter">6 mm</field>
+        <field name="ESR">160 mOhms</field>
+        <field name="Mfr. No:">EEE-FPC221XAP</field>
+        <field name="Mfr:">Panasonic</field>
+        <field name="MouserNo">667-EEE-FPC221XAP</field>
+        <field name="Tolerance">20 %</field>
+        <field name="Type">Aluminium Electrolytic Capacitors - SMD  </field>
+        <field name="Voltage Rating DC">16 VDC</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarised capacitor"/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5BE6F69D</tstamp>
+    </comp>
+    <comp ref="C_BP2">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5BEDE887</tstamp>
+    </comp>
+    <comp ref="U_CLK1">
+      <value>ATtiny85-20SU</value>
+      <footprint>Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf</datasheet>
+      <libsource lib="MCU_Microchip_ATtiny" part="ATtiny85-20SU" description="20MHz, 8kB Flash, 512B SRAM, 512B EEPROM, debugWIRE, SOIJ-8"/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5BFB6DEC</tstamp>
+    </comp>
+    <comp ref="R_MODE1">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5BFDBAF5</tstamp>
+    </comp>
+    <comp ref="D_LEDLO1">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="LED generic"/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5BFC1538</tstamp>
+    </comp>
+    <comp ref="D_LEDHI1">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="LED generic"/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5BFC1588</tstamp>
+    </comp>
+    <comp ref="R_MLED1">
+      <value>22K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5BFC269C</tstamp>
+    </comp>
+    <comp ref="D_LO2">
+      <value>1N914_VF1</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5BFC855E</tstamp>
+    </comp>
+    <comp ref="D_LO1">
+      <value>1N914_VF1</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5BFC8500</tstamp>
+    </comp>
+    <comp ref="D_HI2">
+      <value>1N914_VF1</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5BFCED00</tstamp>
+    </comp>
+    <comp ref="D_HI1">
+      <value>1N914_VF1</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5BFCED06</tstamp>
+    </comp>
+    <comp ref="J_ICSP1">
+      <value>Conn_02x03_Odd_Even</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_02x03_Odd_Even" description="Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5C000B21</tstamp>
+    </comp>
+    <comp ref="D_LO3">
+      <value>1N914_VF1</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5C016653</tstamp>
+    </comp>
+    <comp ref="D_HI3">
+      <value>1N914_VF1</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5C0166B1</tstamp>
+    </comp>
+    <comp ref="SW_MODE1">
+      <value>1-1825910-4</value>
+      <footprint>TE_Alcoswitch_Tactile_2-1825910-7:SW_2-1825910-7</footprint>
+      <datasheet>C10</datasheet>
+      <fields>
+        <field name="Field4">TE CONNECTIVITY</field>
+        <field name="Field5">MANUFACTURER RECOMMENDATION</field>
+      </fields>
+      <libsource lib="TE_Alcoswitch_Tactile_1-1825910-4" part="1-1825910-4" description=""/>
+      <sheetpath names="/Atomizer_Clock/" tstamps="/5BF54A3F/"/>
+      <tstamp>5C02509D</tstamp>
+    </comp>
+    <comp ref="SW_EN1">
+      <value>SW_3PDT_on_on</value>
+      <footprint>custom_sw:SW_3PDT_W18MM_L17.3MM_P5.3MM_D2MM</footprint>
+      <datasheet>https://www.mouser.co.uk/datasheet/2/140/FS5700-1147045.pdf</datasheet>
+      <fields>
+        <field name="Mfr. No:">FS57003PLT2B2M2QE</field>
+        <field name="Mfr:">E-Switch</field>
+        <field name="MouserNo">612-FS573PLT2B2M2QE</field>
+        <field name="Type">3PDT ON-ON LATCHING</field>
+      </fields>
+      <libsource lib="sw_custom" part="SW_3PDT_on_on" description=""/>
+      <sheetpath names="/Atomizer_3PDT/" tstamps="/5BFCF63F/"/>
+      <tstamp>5BFCF869</tstamp>
+    </comp>
+    <comp ref="J_MAINTOAUX1">
+      <value>Conn_02x05_Counter_Clockwise</value>
+      <footprint>CustomHeaders:IDCHeader_02x05_P2.54mm_Vertical_Clockwise</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_02x05_Counter_Clockwise" description="Generic connector, double row, 02x05, counter clockwise pin numbering scheme (similar to DIP packge numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Atomizer_3PDT/" tstamps="/5BFCF63F/"/>
+      <tstamp>5BE5C9F1</tstamp>
+    </comp>
+    <comp ref="J_AUXTOMAIN1">
+      <value>Conn_02x05_Counter_Clockwise</value>
+      <footprint>CustomHeaders:IDCHeader_02x05_P2.54mm_Vertical_Counter_Clockwise</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_02x05_Counter_Clockwise" description="Generic connector, double row, 02x05, counter clockwise pin numbering scheme (similar to DIP packge numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Atomizer_3PDT/" tstamps="/5BFCF63F/"/>
+      <tstamp>5BE5CA85</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Amplifier_Operational" part="LM2904">
+      <aliases>
+        <alias>LM358</alias>
+        <alias>AD8620</alias>
+        <alias>LMC6062</alias>
+        <alias>LMC6082</alias>
+        <alias>TL062</alias>
+        <alias>TL072</alias>
+        <alias>TL082</alias>
+        <alias>NE5532</alias>
+        <alias>SA5532</alias>
+        <alias>RC4558</alias>
+        <alias>RC4560</alias>
+        <alias>RC4580</alias>
+        <alias>LMV358</alias>
+        <alias>TS912</alias>
+        <alias>TSV912IDT</alias>
+        <alias>TSV912IST</alias>
+        <alias>TLC272</alias>
+        <alias>TLC277</alias>
+        <alias>MCP602</alias>
+        <alias>OPA2134</alias>
+        <alias>OPA2340</alias>
+        <alias>OPA2376xxD</alias>
+        <alias>OPA2376xxDGK</alias>
+        <alias>MC33078</alias>
+        <alias>MC33178</alias>
+        <alias>LM4562</alias>
+        <alias>OP249</alias>
+        <alias>OP275</alias>
+        <alias>ADA4075-2</alias>
+        <alias>MCP6002-xP</alias>
+        <alias>MCP6002-xSN</alias>
+        <alias>MCP6002-xMS</alias>
+        <alias>LM7332</alias>
+        <alias>OPA2333xxD</alias>
+        <alias>OPA2333xxDGK</alias>
+        <alias>LMC6482</alias>
+        <alias>LT1492</alias>
+        <alias>LTC6081xMS8</alias>
+        <alias>LM6172</alias>
+        <alias>MCP6L92</alias>
+        <alias>NJM2043</alias>
+        <alias>NJM2114</alias>
+        <alias>NJM4556A</alias>
+        <alias>NJM4558</alias>
+        <alias>NJM4559</alias>
+        <alias>NJM4560</alias>
+        <alias>NJM4580</alias>
+        <alias>NJM5532</alias>
+        <alias>ADA4807-2ARM</alias>
+        <alias>OPA2691</alias>
+        <alias>LT6233</alias>
+        <alias>OPA2356xxD</alias>
+        <alias>OPA2356xxDGK</alias>
+        <alias>OPA1612AxD</alias>
+        <alias>MC33172</alias>
+        <alias>OPA1602</alias>
+      </aliases>
+      <description>Dual Operational Amplifiers, DIP-8/SOIC-8/TSSOP-8/VSSOP-8</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm358.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>TO*99*</fp>
+        <fp>OnSemi*Micro8*</fp>
+        <fp>TSSOP*3x3mm*P0.65mm*</fp>
+        <fp>TSSOP*4.4x3mm*P0.65mm*</fp>
+        <fp>MSOP*3x3mm*P0.65mm*</fp>
+        <fp>SSOP*3.9x4.9mm*P0.635mm*</fp>
+        <fp>LFCSP*2x2mm*P0.5mm*</fp>
+        <fp>*SIP*</fp>
+        <fp>SOIC*5.3x6.2mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM2904</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="output"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V-" type="power_in"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="~" type="output"/>
+        <pin num="8" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Barrel_Jack">
+      <aliases>
+        <alias>Jack-DC</alias>
+      </aliases>
+      <description>DC Barrel Jack</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>BarrelJack*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Barrel_Jack</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x03_Odd_Even">
+      <description>Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x03_Odd_Even</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x05_Counter_Clockwise">
+      <description>Generic connector, double row, 02x05, counter clockwise pin numbering scheme (similar to DIP packge numbering), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x05_Counter_Clockwise</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Converter_DCDC" part="TC7662Bx0A">
+      <description>Charge Pump DC-to-DC Converter, 1.5 - 15V, 100mA, SOIC-8</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/21469a.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TC7662Bx0A</field>
+        <field name="Footprint">Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="BOOST" type="input"/>
+        <pin num="2" name="CAP+" type="passive"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="CAP-" type="passive"/>
+        <pin num="5" name="VOUT" type="power_out"/>
+        <pin num="6" name="LV" type="input"/>
+        <pin num="7" name="OSC" type="passive"/>
+        <pin num="8" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="CP">
+      <description>Polarised capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D">
+      <description>Diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>LED generic</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_POT">
+      <description>Potentiometer</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Potentiometer*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">R_POT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Isolator" part="LTV-356T">
+      <aliases>
+        <alias>LTV-357T</alias>
+        <alias>LTV-358T</alias>
+      </aliases>
+      <description>DC Optocoupler, Vce 80V, CTR 50%, SO-4</description>
+      <docs>http://optoelectronics.liteon.com/upload/download/DS70-2001-010/S_110_LTV-356T%2020140520.pdf</docs>
+      <footprints>
+        <fp>SO*4.4x3.6mm*P2.54mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LTV-356T</field>
+        <field name="Footprint">Package_SO:SO-4_4.4x3.6mm_P2.54mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU_Microchip_ATtiny" part="ATtiny25V-10SU">
+      <aliases>
+        <alias>ATtiny25-20SU</alias>
+        <alias>ATtiny45V-10SU</alias>
+        <alias>ATtiny45-20SU</alias>
+        <alias>ATtiny85V-10SU</alias>
+        <alias>ATtiny85-20SU</alias>
+      </aliases>
+      <description>10MHz, 2kB Flash, 128B SRAM, 128B EEPROM, debugWIRE, SOIJ-8</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf</docs>
+      <footprints>
+        <fp>SOIJ*5.3x5.3mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ATtiny25V-10SU</field>
+        <field name="Footprint">Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~RESET~/PB5" type="BiDi"/>
+        <pin num="2" name="XTAL1/PB3" type="BiDi"/>
+        <pin num="3" name="XTAL2/PB4" type="BiDi"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="AREF/PB0" type="BiDi"/>
+        <pin num="6" name="PB1" type="BiDi"/>
+        <pin num="7" name="PB2" type="BiDi"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="LM317_3PinPackage">
+      <aliases>
+        <alias>AZ1117-ADJ</alias>
+      </aliases>
+      <description>1A 35V Adjustable Linear Regulator, SOT-89/SOT-223/TO-220/TO-252/TO-263</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm317.pdf</docs>
+      <footprints>
+        <fp>SOT?223*</fp>
+        <fp>SOT?89*</fp>
+        <fp>TO?220*</fp>
+        <fp>TO?252*</fp>
+        <fp>TO?263*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM317_3PinPackage</field>
+      </fields>
+      <pins>
+        <pin num="1" name="ADJ" type="input"/>
+        <pin num="2" name="VO" type="power_out"/>
+        <pin num="3" name="VI" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="LM337_SOT223">
+      <description>Negative 1A 35V Adjustable Linear Regulator, SOT-223</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm337-n.pdf</docs>
+      <footprints>
+        <fp>SOT?223*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM337_SOT223</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-223-3_TabPin2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="ADJ" type="input"/>
+        <pin num="2" name="VI" type="power_in"/>
+        <pin num="3" name="VO" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_SPDT">
+      <description>Switch, single pole double throw</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_SPDT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TE_Alcoswitch_Tactile_1-1825910-4" part="1-1825910-4">
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">1-1825910-4</field>
+        <field name="Footprint">TE_1-1825910-4</field>
+        <field name="Datasheet">C10</field>
+        <field name="Field4">TE CONNECTIVITY</field>
+        <field name="Field5">MANUFACTURER RECOMMENDATION</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="socket_custom" part="JACK__MONO_2P_NC">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">JACK__MONO_2P_NC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="TIP" type="passive"/>
+        <pin num="2" name="TIP_NC" type="passive"/>
+        <pin num="3" name="SLEEVE_NC" type="passive"/>
+        <pin num="4" name="SLEEVE" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sw_custom" part="SW_3PDT_on_on">
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_3PDT_on_on</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+        <pin num="4" name="A" type="passive"/>
+        <pin num="5" name="B" type="passive"/>
+        <pin num="6" name="C" type="passive"/>
+        <pin num="7" name="A" type="passive"/>
+        <pin num="8" name="B" type="passive"/>
+        <pin num="9" name="C" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Amplifier_Operational">
+      <uri>/Library/Application Support/kicad/library/Amplifier_Operational.lib</uri>
+    </library>
+    <library logical="Connector">
+      <uri>/Library/Application Support/kicad/library/Connector.lib</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>/Library/Application Support/kicad/library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Converter_DCDC">
+      <uri>/Library/Application Support/kicad/library/Converter_DCDC.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/Library/Application Support/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="Isolator">
+      <uri>/Library/Application Support/kicad/library/Isolator.lib</uri>
+    </library>
+    <library logical="MCU_Microchip_ATtiny">
+      <uri>/Library/Application Support/kicad/library/MCU_Microchip_ATtiny.lib</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>/Library/Application Support/kicad/library/Regulator_Linear.lib</uri>
+    </library>
+    <library logical="Switch">
+      <uri>/Library/Application Support/kicad/library/Switch.lib</uri>
+    </library>
+    <library logical="TE_Alcoswitch_Tactile_1-1825910-4">
+      <uri>/Users/GB080220/workspace/circuits/EffectsPedals/TremoloPedals/Atomizer/hardware/LIBS/TE_Alcoswitch_Tactile_1-1825910-4.lib</uri>
+    </library>
+    <library logical="socket_custom">
+      <uri>/Users/GB080220/workspace/circuits/EffectsPedals/TremoloPedals/Atomizer/hardware/LIBS/socket_custom.lib</uri>
+    </library>
+    <library logical="sw_custom">
+      <uri>/Users/GB080220/workspace/circuits/EffectsPedals/TremoloPedals/Atomizer/hardware/LIBS/sw_custom.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(CP_INV1-Pad1)">
+      <node ref="U_INV1" pin="2"/>
+      <node ref="CP_INV1" pin="1"/>
+    </net>
+    <net code="2" name="Net-(U_INV1-Pad7)">
+      <node ref="U_INV1" pin="7"/>
+    </net>
+    <net code="3" name="-9V">
+      <node ref="CP_INV2" pin="2"/>
+      <node ref="U_INV1" pin="5"/>
+      <node ref="U_NREG1" pin="2"/>
+    </net>
+    <net code="4" name="Net-(CP_INV1-Pad2)">
+      <node ref="CP_INV1" pin="2"/>
+      <node ref="U_INV1" pin="4"/>
+    </net>
+    <net code="5" name="Net-(R1-Pad1)">
+      <node ref="R1" pin="1"/>
+      <node ref="R2" pin="2"/>
+      <node ref="U_PREG1" pin="1"/>
+    </net>
+    <net code="6" name="+5V">
+      <node ref="C_BP3" pin="2"/>
+      <node ref="U_PREG1" pin="2"/>
+      <node ref="R2" pin="1"/>
+      <node ref="J_MAINTOAUX1" pin="9"/>
+      <node ref="U_BUF1" pin="8"/>
+    </net>
+    <net code="7" name="-5V">
+      <node ref="C_BP4" pin="1"/>
+      <node ref="R4" pin="2"/>
+      <node ref="U_NREG1" pin="3"/>
+      <node ref="U_BUF1" pin="4"/>
+    </net>
+    <net code="8" name="Net-(R4-Pad1)">
+      <node ref="R4" pin="1"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="9" name="Net-(R3-Pad1)">
+      <node ref="U_NREG1" pin="1"/>
+      <node ref="R5" pin="2"/>
+      <node ref="R3" pin="1"/>
+    </net>
+    <net code="10" name="Net-(P_DEPTH1-Pad1)">
+      <node ref="P_DEPTH1" pin="1"/>
+      <node ref="U_BUF1" pin="1"/>
+      <node ref="U_BUF1" pin="2"/>
+    </net>
+    <net code="11" name="Net-(P_VOL1-Pad1)">
+      <node ref="P_VOL1" pin="1"/>
+      <node ref="P_VOL1" pin="2"/>
+      <node ref="R_GAIN1" pin="1"/>
+      <node ref="U_BUF1" pin="6"/>
+    </net>
+    <net code="12" name="/3PDT_6_EXT">
+      <node ref="U_BUF1" pin="7"/>
+      <node ref="J_MAINTOAUX1" pin="6"/>
+      <node ref="P_VOL1" pin="3"/>
+    </net>
+    <net code="13" name="Net-(P_DEPTH1-Pad2)">
+      <node ref="U_BUF1" pin="5"/>
+      <node ref="P_DEPTH1" pin="2"/>
+    </net>
+    <net code="14" name="+9V">
+      <node ref="U_INV1" pin="1"/>
+      <node ref="U_INV1" pin="8"/>
+      <node ref="U_PREG1" pin="3"/>
+      <node ref="J_PWR1" pin="2"/>
+      <node ref="C_BP5" pin="2"/>
+    </net>
+    <net code="15" name="/3PDT_5_EXT">
+      <node ref="J_MAINTOAUX1" pin="5"/>
+      <node ref="J_OUT1" pin="1"/>
+    </net>
+    <net code="16" name="/3PDT_2_EXT">
+      <node ref="J_MAINTOAUX1" pin="2"/>
+      <node ref="J_IN1" pin="1"/>
+    </net>
+    <net code="17" name="/GND">
+      <node ref="J_IN1" pin="4"/>
+      <node ref="J_IN1" pin="3"/>
+      <node ref="CP_SLOW1" pin="2"/>
+      <node ref="J_IN1" pin="2"/>
+      <node ref="U_OPTO1" pin="3"/>
+      <node ref="U_OPTO1" pin="2"/>
+      <node ref="J_ICSP1" pin="6"/>
+      <node ref="R3" pin="2"/>
+      <node ref="C_BP2" pin="2"/>
+      <node ref="C_BP1" pin="2"/>
+      <node ref="U_INV1" pin="3"/>
+      <node ref="R1" pin="2"/>
+      <node ref="D_HI3" pin="1"/>
+      <node ref="U_INV1" pin="6"/>
+      <node ref="C_BP3" pin="1"/>
+      <node ref="U_CLK1" pin="4"/>
+      <node ref="J_OUT1" pin="4"/>
+      <node ref="SW_MODE1" pin="3"/>
+      <node ref="J_OUT1" pin="3"/>
+      <node ref="J_OUT1" pin="2"/>
+      <node ref="C_BP4" pin="2"/>
+      <node ref="P_OSCOFF1" pin="1"/>
+      <node ref="R_GAIN1" pin="2"/>
+      <node ref="J_PWR1" pin="1"/>
+      <node ref="C_BP5" pin="1"/>
+      <node ref="R_PD1" pin="2"/>
+      <node ref="CP_INV2" pin="1"/>
+      <node ref="CP_FAST1" pin="2"/>
+      <node ref="P_OSCON1" pin="1"/>
+    </net>
+    <net code="18" name="/3PDT_4_EXT">
+      <node ref="J_MAINTOAUX1" pin="1"/>
+      <node ref="J_MAINTOAUX1" pin="4"/>
+    </net>
+    <net code="19" name="/Atomizer_Clock/CLK_OUT">
+      <node ref="U_OPTO1" pin="4"/>
+      <node ref="P_DEPTH1" pin="3"/>
+    </net>
+    <net code="20" name="/Atomizer_3PDT/3PDT_7">
+      <node ref="J_MAINTOAUX1" pin="7"/>
+    </net>
+    <net code="21" name="/3PDT_8_EXT">
+      <node ref="C_BP2" pin="1"/>
+      <node ref="C_BP1" pin="1"/>
+      <node ref="R_OSCOFF1" pin="2"/>
+      <node ref="U_CLK1" pin="8"/>
+      <node ref="R_OSCON1" pin="2"/>
+      <node ref="J_ICSP1" pin="2"/>
+      <node ref="J_MAINTOAUX1" pin="8"/>
+      <node ref="D_LO3" pin="2"/>
+    </net>
+    <net code="22" name="/3PDT_3_EXT">
+      <node ref="R_PD1" pin="1"/>
+      <node ref="J_MAINTOAUX1" pin="3"/>
+      <node ref="U_BUF1" pin="3"/>
+    </net>
+    <net code="23" name="Net-(D_LED1-Pad2)">
+      <node ref="D_LED1" pin="2"/>
+      <node ref="R_LPF1" pin="1"/>
+    </net>
+    <net code="24" name="Net-(CP_FAST1-Pad1)">
+      <node ref="CP_FAST1" pin="1"/>
+      <node ref="SW_ATTACK1" pin="1"/>
+    </net>
+    <net code="25" name="Net-(P_OSCON1-Pad3)">
+      <node ref="P_OSCON1" pin="3"/>
+      <node ref="R_OSCON1" pin="1"/>
+    </net>
+    <net code="26" name="Net-(P_OSCOFF1-Pad3)">
+      <node ref="P_OSCOFF1" pin="3"/>
+      <node ref="R_OSCOFF1" pin="1"/>
+    </net>
+    <net code="27" name="Net-(D_LED1-Pad1)">
+      <node ref="D_LED1" pin="1"/>
+      <node ref="SW_ATTACK1" pin="2"/>
+      <node ref="U_OPTO1" pin="1"/>
+    </net>
+    <net code="28" name="Net-(CP_SLOW1-Pad1)">
+      <node ref="CP_SLOW1" pin="1"/>
+      <node ref="SW_ATTACK1" pin="3"/>
+    </net>
+    <net code="29" name="/Atomizer_Clock/RESET">
+      <node ref="U_CLK1" pin="1"/>
+      <node ref="J_ICSP1" pin="5"/>
+    </net>
+    <net code="30" name="/Atomizer_Clock/MODE_BTN_PIN">
+      <node ref="U_CLK1" pin="5"/>
+      <node ref="R_MODE1" pin="1"/>
+      <node ref="J_ICSP1" pin="4"/>
+    </net>
+    <net code="31" name="/Atomizer_Clock/CLK_OUT_PIN">
+      <node ref="J_ICSP1" pin="1"/>
+      <node ref="R_LPF1" pin="2"/>
+      <node ref="U_CLK1" pin="6"/>
+    </net>
+    <net code="32" name="/Atomizer_Clock/FREQ_ADJ_OFF_PIN">
+      <node ref="U_CLK1" pin="3"/>
+      <node ref="P_OSCOFF1" pin="2"/>
+    </net>
+    <net code="33" name="/Atomizer_Clock/FREQ_ADJ_ON_PIN">
+      <node ref="U_CLK1" pin="2"/>
+      <node ref="P_OSCON1" pin="2"/>
+    </net>
+    <net code="34" name="/Atomizer_Clock/MODE_LED_PIN">
+      <node ref="U_CLK1" pin="7"/>
+      <node ref="R_MLED1" pin="2"/>
+      <node ref="J_ICSP1" pin="3"/>
+    </net>
+    <net code="35" name="Net-(D_LEDLO1-Pad2)">
+      <node ref="D_LO1" pin="1"/>
+      <node ref="D_LEDLO1" pin="2"/>
+    </net>
+    <net code="36" name="Net-(D_HI1-Pad2)">
+      <node ref="D_HI1" pin="2"/>
+      <node ref="D_LEDHI1" pin="1"/>
+    </net>
+    <net code="37" name="Net-(D_LEDHI1-Pad2)">
+      <node ref="D_LEDHI1" pin="2"/>
+      <node ref="R_MLED1" pin="1"/>
+      <node ref="D_LEDLO1" pin="1"/>
+    </net>
+    <net code="38" name="Net-(D_LO1-Pad2)">
+      <node ref="D_LO1" pin="2"/>
+      <node ref="D_LO2" pin="1"/>
+    </net>
+    <net code="39" name="Net-(D_HI1-Pad1)">
+      <node ref="D_HI1" pin="1"/>
+      <node ref="D_HI2" pin="2"/>
+    </net>
+    <net code="40" name="Net-(D_LO2-Pad2)">
+      <node ref="D_LO3" pin="1"/>
+      <node ref="D_LO2" pin="2"/>
+    </net>
+    <net code="41" name="Net-(D_HI2-Pad1)">
+      <node ref="D_HI3" pin="2"/>
+      <node ref="D_HI2" pin="1"/>
+    </net>
+    <net code="42" name="Net-(SW_MODE1-Pad1)">
+      <node ref="SW_MODE1" pin="1"/>
+    </net>
+    <net code="43" name="Net-(R_MODE1-Pad2)">
+      <node ref="R_MODE1" pin="2"/>
+      <node ref="SW_MODE1" pin="2"/>
+    </net>
+    <net code="44" name="Net-(SW_MODE1-Pad4)">
+      <node ref="SW_MODE1" pin="4"/>
+    </net>
+    <net code="45" name="/Atomizer_3PDT/3PDT_1_INT">
+      <node ref="J_AUXTOMAIN1" pin="1"/>
+      <node ref="SW_EN1" pin="1"/>
+    </net>
+    <net code="46" name="/Atomizer_3PDT/3PDT_2_INT">
+      <node ref="J_AUXTOMAIN1" pin="2"/>
+      <node ref="SW_EN1" pin="2"/>
+    </net>
+    <net code="47" name="/Atomizer_3PDT/3PDT_3_INT">
+      <node ref="SW_EN1" pin="3"/>
+      <node ref="J_AUXTOMAIN1" pin="3"/>
+    </net>
+    <net code="48" name="/Atomizer_3PDT/3PDT_4_INT">
+      <node ref="SW_EN1" pin="4"/>
+      <node ref="J_AUXTOMAIN1" pin="4"/>
+    </net>
+    <net code="49" name="/Atomizer_3PDT/3PDT_5_INT">
+      <node ref="SW_EN1" pin="5"/>
+      <node ref="J_AUXTOMAIN1" pin="5"/>
+    </net>
+    <net code="50" name="/Atomizer_3PDT/3PDT_6_INT">
+      <node ref="J_AUXTOMAIN1" pin="6"/>
+      <node ref="SW_EN1" pin="6"/>
+    </net>
+    <net code="51" name="/Atomizer_3PDT/3PDT_7_INT">
+      <node ref="J_AUXTOMAIN1" pin="7"/>
+      <node ref="SW_EN1" pin="7"/>
+    </net>
+    <net code="52" name="/Atomizer_3PDT/3PDT_8_INT">
+      <node ref="J_AUXTOMAIN1" pin="8"/>
+      <node ref="SW_EN1" pin="8"/>
+    </net>
+    <net code="53" name="/Atomizer_3PDT/3PDT_9_INT">
+      <node ref="SW_EN1" pin="9"/>
+      <node ref="J_AUXTOMAIN1" pin="9"/>
+    </net>
+    <net code="54" name="Net-(J_MAINTOAUX1-Pad10)">
+      <node ref="J_MAINTOAUX1" pin="10"/>
+    </net>
+    <net code="55" name="Net-(J_AUXTOMAIN1-Pad10)">
+      <node ref="J_AUXTOMAIN1" pin="10"/>
+    </net>
+  </nets>
+</export>
