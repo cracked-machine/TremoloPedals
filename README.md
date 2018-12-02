@@ -1,5 +1,5 @@
 # TremoloPedals
 
-[Atomizer Tremolo](atomizer/atomizer.md)
+[Atomizer Tremolo](Atomizer/atomizer.md)
 
 
