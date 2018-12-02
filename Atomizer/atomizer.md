@@ -10,6 +10,8 @@
 - Normal, Skew and Sweep modes
 - True bypass
 
-## BOM
+## Sound files
+
+TODO
 
 
