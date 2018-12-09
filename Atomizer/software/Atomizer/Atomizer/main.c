@@ -21,8 +21,8 @@ volatile unsigned int wdcounter = 0;
 uint32_t pd0_last_interrupt_time = 0;
 
 // ADC variables
-volatile unsigned int adc2_result = 0;
-volatile unsigned int adc3_result = 0;
+volatile unsigned int upperpot = 0;		// the top potentiometer
+volatile unsigned int lowerpot = 0;		// the bottom potentiometer
 
 #define _ADCLA 0x20	// ADC Left Adjust Result
 #define _ADC0EN 0x00	// PB5 - MUX(3:0) = 0000; Use bitwise AND to set ADC0 ( e.g. ADMUX &= ADC0EN; )
@@ -32,17 +32,13 @@ volatile unsigned int adc3_result = 0;
 
 // PCINT variables
 typedef enum {NORMAL, SKEW, SWEEP} CONTROLMODE;
-volatile CONTROLMODE currentMode = SWEEP;
+volatile CONTROLMODE currentMode = NORMAL;
 
-// XORSHIFT
-volatile int deadbit;
 
 // function prototypes
 void setModeIndicator(CONTROLMODE p_currentMode);
 void TimerModeEnable(CONTROLMODE p_currentMode);
 void resetPWM();
-uint32_t xorshift32(uint32_t state[static 1]);
-void prng2bit();
 
 int main(void)
 {
@@ -103,8 +99,8 @@ int main(void)
 	// enable PCINT0 interrupt
 	PCMSK |= (1<<PCINT0);
 		
-	setModeIndicator(currentMode = SWEEP);
-	TimerModeEnable(SWEEP);
+	setModeIndicator(currentMode = NORMAL);
+	TimerModeEnable(NORMAL);
 	
 
 	///////////////////////////////////
@@ -142,9 +138,7 @@ int main(void)
 	
 	while(1)
 	{
-		//xorshift32(theState);
-		//prng1bit();
-		// idle	
+		
 	}
 	
 }
@@ -152,20 +146,6 @@ int main(void)
 /////////////////////////
 /// FUNCTIONS
 /////////////////////////
-
-void prng1bit()
-{
-	uint8_t start = 0x02;
-    uint8_t a = start;
-     
-    for(int i = 1;; i++) {
-        deadbit = (((a >> 6) ^ (a >> 5)) & 1);
-        a = ((a << 1) | deadbit) & 0x7f;       
-    }
-	
-}
-
-
 
 void resetPWM() {
 	
@@ -298,13 +278,24 @@ ISR (TIMER1_COMPA_vect)
 	// Normal/SWEEP mode freq adjust
 	switch(currentMode)
 	{
+		// as the pot is turned CW the clock duty will decrease, a duty less than 2 is bad
 		case NORMAL:
-			OCR1C = (adc2_result / 16);
+			if((upperpot / 16) < 2)
+			{
+				OCR1C = 2;
+			}
+			else
+			{
+				OCR1C = (upperpot / 16);
+			}
+			
+			
+			
 			break;
 		case SWEEP:
-			OCR1C= (adc2_result / (adc3_result/16)) * weight;
+			OCR1C= (upperpot / (lowerpot/16)) * weight;
 			weight=weight+0.5;
-			if (OCR1C > (adc2_result)) 
+			if (OCR1C > (upperpot)) 
 			{
 				weight = 0;
 			}
@@ -318,11 +309,30 @@ ISR (TIMER0_COMPA_vect)
 {
 	// Skew mode freq adjust
 	
-	// update low duty (adc3_result mapped 10bit -> 8Bit)
-	OCR0A=0x1 + (adc3_result / 16);
 	
-	// update high duty (adc2_result mapped 10bit -> 8Bit)
-	OCR0B=0x1 + (adc2_result / 16);
+	
+	// update high duty (upperpot mapped 10bit -> 8Bit)
+	if((upperpot / 16) > (lowerpot / 16)) 
+	{
+		// upper pot cannot be more than lower pot
+	}
+	else 
+	{
+		OCR0B=0x1 + (upperpot / 16);
+	}
+	
+	
+	// update low duty (lowerpot mapped 10bit -> 8Bit)
+	if((lowerpot / 16) < (upperpot / 16)) 
+	{
+		// lower pot cannot be less than higher pot
+	}
+	else 
+	{
+		OCR0A=0x1 + (lowerpot / 16);
+	}
+	
+	
 
 }
 
@@ -383,15 +393,15 @@ ISR (ADC_vect)
 		// if ADLAR bit cleared, use switch case mask '_ADCXEN'
 		
 		case _ADC2EN:
-		adc2_result = ADCL;				// read 8 LSB
-		adc2_result += ADCH << 8;		// read 2 MSB, shift them left and add to LSB. Result = 2MSB + 8LSB
+		upperpot = ADCL;				// read 8 LSB
+		upperpot += ADCH << 8;		// read 2 MSB, shift them left 8 positions and add to LSB. Result = 2MSB + 8LSB
 		ADMUX &= _ADCLA | _ADC0EN;		//  clear MUX bits whilst retaining ADC Left Adjust Result
 		ADMUX |= _ADC3EN;				// set ADC3 for next check
 		break;
 		
 		case _ADC3EN:
-		adc3_result = ADCL;				// read 8 LSB
-		adc3_result += ADCH << 8;		// read 2 MSB, shift them left and add to LSB. Result = 2MSB + 8LSB
+		lowerpot = ADCL;				// read 8 LSB
+		lowerpot += ADCH << 8;		// read 2 MSB, shift them left 8 positions and add to LSB. Result = 2MSB + 8LSB
 		ADMUX &= _ADCLA | _ADC0EN;		// clear MUX bits whilst retaining ADC Left Adjust Result
 		ADMUX |= _ADC2EN;				// set ADC2 for check
 		break;
