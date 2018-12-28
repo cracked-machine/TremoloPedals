@@ -16,4 +16,4 @@ TODO
 
 ## Bill of materials
 
-[link](docs/bom.md)
+[link](Atomizer/bom.md)
