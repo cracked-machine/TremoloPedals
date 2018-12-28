@@ -16,4 +16,4 @@ TODO
 
 ## Bill of materials
 
-[link](/bom.md)
+[link](docs/bom.md)
