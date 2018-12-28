@@ -1,3 +1,5 @@
+## Bill of materials
+
 | Customer No | Description | Mouser No | Mfr. No | Manufacturer | RoHS | Order Qty. |
 |:------------:|-----------------------------------------------------------------------------------------------------------------------------------------------|:--------------------:|:--------------------:|:--------------------:|:---------------------------:|:----------:|
 | C_BP2 | Multilayer Ceramic Capacitors MLCC - SMD/SMT 0805 10uF 16volts *Derate Voltage/Temp | 81-GRM21BC81C106KE5K | GRM21BC81C106KE15K | Murata | RoHS Compliant | 1 |
