@@ -1,0 +1,59 @@
+Source,/Users/GB080220/workspace/circuits/EffectsPedals/TremoloPedals/Atomizer/hardware/Atomizer.sch
+Kicad Rev,Eeschema (5.0.0-3-g5ebb6b6)
+Generated Date,Friday, 28 December 2018 at 22:15:21
+
+Title,Not Set
+Company,Not Set
+Revision,Not Set
+Date Issue,Not Set
+
+Reference,Value,Mfr. No:,Mfr:,MouserNo,Package/Case,Type,Diameter,ESR,Tolerance,Voltage Rating DC,Field4,Field5,Library,Library Ref
+U_INV1,TC7662Bx0A,TC7660SEOA713,Microchip Technology,579-TC7660SEOA713,SOIC-8,Switching Voltage Regulators High Voltage,,,,,,,Converter_DCDC,TC7662Bx0A
+CP_INV2,10uF,,,140-VE100M1CTR0405,,,,,,,,,Device,CP
+CP_INV1,10uF,,,140-VE100M1CTR0405,,,,,,,,,Device,CP
+U_PREG1,LM317_3PinPackage,LM317DCYR,Texas Instruments,595-LM317DCYR,SOT-223-4,Linear Voltage Regulators 3 Term Adj. Pos.,,,,,,,Regulator_Linear,LM317_3PinPackage
+R2,330R,,,71-CRCW0805330RFKEAC,0805,1%,,,,,,,Device,R
+R1,1K,,,279-CRGP0805F1K0,0805,1%,,,,,,,Device,R
+R4,270R,,,667-ERJ-6ENF2700V,0805,1%,,,,,,,Device,R
+R5,47R,,,667-ERJ-6ENF47R0V,0805,,,,,,,,Device,R
+R3,1K,,,279-CRGP0805F1K0,0805,,,,,,,,Device,R
+U_BUF1,TL072,TL072SG-13,Diodes Incorporated,621-TL072SG-13,SO-8,JFET INPUT OP AMP LOW NOISE,,,,,,,Amplifier_Operational,TL072
+P_DEPTH1,B50k,RK09L1140A5P,ALPS,688-RK09L1140A5P,,1GANG LINEAR 20% FLATTED 1TURN,,,,,,,Device,R_POT
+P_VOL1,B10K,RK09L1140A66,ALPS,688-RK09L1140A66,,1GANG LINEAR 20% FLATTED 1TURN,,,,,,,Device,R_POT
+R_GAIN1,2K7,,,279-CRGCQ0805F2K7,,,,,,,,,Device,R
+J_PWR1,Jack-DC,RAPC722X,Switchcraft,502-RAPC722X,,DC Power Connectors RT ANGL PWK JK PIN D,,,,,,,Connector,Jack-DC
+C_BP3,100nF,,,710-885012207098,0805,,,,,,,,Device,C
+C_BP4,100nF,,,710-885012207098,0805,,,,,,,,Device,C
+C_BP5,100nF,,,710-885012207098,0805,,,,,,,,Device,C
+U_NREG1,LM337_SOT223,LM337IMP/NOPB,Texas Instruments,926-LM337IMP/NOPB,SOT-223-4,Linear Voltage Regulators 3-TERMINAL ADJ NEG REG,,,,,,,Regulator_Linear,LM337_SOT223
+J_OUT1,JACK__MONO_2P_NC,NRJ4HF-1,Neutrik,550-10284G,,Phone Connectors W/CHASSIS GROUND,,,,,,,socket_custom,JACK__MONO_2P_NC
+J_IN1,JACK__MONO_2P_NC,NRJ4HF-1,Neutrik,550-10284G,,Phone Connectors W/CHASSIS GROUND,,,,,,,socket_custom,JACK__MONO_2P_NC
+R_PD1,22M,,,755-UCR10EVHFSR022,0805,,,,,,,,Device,R
+D_LED1,LED,,,859-LTL-307EE,,,,,,,,,Device,LED
+R_LPF1,1K,,,279-CRGP0805F1K0,0805,1%,,,,,,,Device,R
+CP_FAST1,22uF,875105240003,Wurth,710-875105240003,,Aluminium Organic Polymer Capacitors WCAP-PSLP 10V 22uF 20%,4mm,45mOhms,20%,10 DC,,,Device,CP
+P_OSCON1,B10K,RK09L1140A66,ALPS,688-RK09L1140A66,,1GANG LINEAR 20% FLATTED 1TURN,,,,,,,Device,R_POT
+R_OSCON1,1K,,,279-CRGP0805F1K0,0805,1%,,,,,,,Device,R
+P_OSCOFF1,B10K,RK09L1140A66,ALPS,688-RK09L1140A66,,1GANG LINEAR 20% FLATTED 1TURN,,,,,,,Device,R_POT
+R_OSCOFF1,1K,,,279-CRGP0805F1K0,0805,1%,,,,,,,Device,R
+C_BP1,100nF,,,710-885012207098,0805,,,,,,,,Device,C
+U_OPTO1,ACPL-217,ACPL-217-50BE,Broadcom / Avago,630-ACPL-217-50BE,,Transistor Output Optocouplers 3000Vrms 50% CTR,,,,,,,Isolator,LTV-357T
+SW_ATTACK1,SW_SPDT,108-2MS1T1B1M2QE-EVX,Mountain Switch,108-2MS1T1B1M2QE-EVX,,TOGGLE SPDT ON-ON PC MOUNT,,,,,,,Switch,SW_SPDT
+CP_SLOW1,220uF,EEE-FPC221XAP,Panasonic,667-EEE-FPC221XAP,,Aluminium Electrolytic Capacitors - SMD  ,6 mm,160 mOhms,20 %,16 VDC,,,Device,CP
+C_BP2,10uF,,,81-GRM21BC81C106KE5K,0805,,,,,,,,Device,C
+U_CLK1,ATtiny85-20SU,,,556-ATTINY85-20SU,,,,,,,,,MCU_Microchip_ATtiny,ATtiny85-20SU
+R_MODE1,1K,,,279-CRGP0805F1K0,0805,1%,,,,,,,Device,R
+D_LEDLO1,LED,,,941-C4SMABGFCR2T3451,,,,,,,,,Device,LED
+D_LEDHI1,LED,,,941-C4SMABGFCR2T3451,,,,,,,,,Device,LED
+R_MLED1,22K,,,667-ERJ-6ENF2202V,0805,1%,,,,,,,Device,R
+D_LO2,1N914_VF1,,,821-1N914BWRH,SOD-123,,,,,,,,Device,D
+D_LO1,1N914_VF1,,,821-1N914BWRH,SOD-123,,,,,,,,Device,D
+D_HI2,1N914_VF1,,,821-1N914BWRH,SOD-123,,,,,,,,Device,D
+D_HI1,1N914_VF1,,,821-1N914BWRH,SOD-123,,,,,,,,Device,D
+J_ICSP1,Conn_02x03_Odd_Even,,,538-22-28-4062,,,,,,,,,Connector_Generic,Conn_02x03_Odd_Even
+D_LO3,1N914_VF1,,,821-1N914BWRH,SOD-123,,,,,,,,Device,D
+D_HI3,1N914_VF1,,,821-1N914BWRH,,,,,,,,,Device,D
+SW_MODE1,1-1825910-4,,,506-1-1825910-4,,,,,,,TE CONNECTIVITY,MANUFACTURER RECOMMENDATION,TE_Alcoswitch_Tactile_1-1825910-4,1-1825910-4
+SW_EN1,SW_3PDT_on_on,FS57003PLT2B2M2QE,E-Switch,612-FS573PLT2B2M2QE,,3PDT ON-ON LATCHING,,,,,,,sw_custom,SW_3PDT_on_on
+J_MAINTOAUX1,Conn_02x05_Counter_Clockwise,,,538-22-28-4102,,,,,,,,,Connector_Generic,Conn_02x05_Counter_Clockwise
+J_AUXTOMAIN1,Conn_02x05_Counter_Clockwise,,,538-22-28-4102,,,,,,,,,Connector_Generic,Conn_02x05_Counter_Clockwise

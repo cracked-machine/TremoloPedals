@@ -175,6 +175,7 @@ F 0 "J_MAINTOAUX1" H 3650 3725 50  0000 C CNN
 F 1 "Conn_02x05_Counter_Clockwise" H 3650 3726 50  0001 C CNN
 F 2 "CustomHeaders:IDCHeader_02x05_P2.54mm_Vertical_Clockwise" H 3600 3400 50  0001 C CNN
 F 3 "~" H 3600 3400 50  0001 C CNN
+F 4 "538-22-28-4102" H 3600 3400 50  0001 C CNN "MouserNo"
 	1    3600 3400
 	1    0    0    -1  
 $EndComp
@@ -186,6 +187,7 @@ F 0 "J_AUXTOMAIN1" H 5450 3725 50  0000 C CNN
 F 1 "Conn_02x05_Counter_Clockwise" H 5450 3726 50  0001 C CNN
 F 2 "CustomHeaders:IDCHeader_02x05_P2.54mm_Vertical_Counter_Clockwise" H 5400 3400 50  0001 C CNN
 F 3 "~" H 5400 3400 50  0001 C CNN
+F 4 "538-22-28-4102" H 5400 3400 50  0001 C CNN "MouserNo"
 	1    5400 3400
 	1    0    0    -1  
 $EndComp
