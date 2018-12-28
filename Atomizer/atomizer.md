@@ -10,7 +10,11 @@
 - Normal, Skew and Sweep modes
 - True bypass
 
-## BOM
+## Sound files
+
+TODO
+
+## Bill of materials
 
 | Customer No | Description | Mouser No | Mfr. No | Manufacturer | RoHS | Order Qty. |
 |:------------:|-----------------------------------------------------------------------------------------------------------------------------------------------|:--------------------:|:--------------------:|:--------------------:|:---------------------------:|:----------:|
@@ -47,7 +51,5 @@
 |  | Knobs & Dials S/T Control Knob 6mm Flat to 4.5mm | 5164-1221-J | 1221-J | Davies Molding | RoHS Compliant | 4 |
 |  | Enclosures, Boxes & Cases Diecast Alum Blue 4.40 x 2.38 x 1.06"" | 546-1590BCB | 1590BCB | Hammond | RoHS Compliant | 1 |
 
-## Sound files
 
-TODO
 
