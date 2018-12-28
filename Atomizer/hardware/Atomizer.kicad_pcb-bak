@@ -233,6 +233,11 @@
     (pad 2 thru_hole circle (at -3.25 2.25) (size 1.498 1.498) (drill 0.99) (layers *.Cu *.Mask)
       (net 38 "Net-(R_MODE1-Pad2)"))
     (pad 1 thru_hole rect (at -3.25 -2.25) (size 1.498 1.498) (drill 0.99) (layers *.Cu *.Mask))
+    (model ${KIPRJMOD}/LIBS/3D/c-2-1825910-7-c-3d.stp
+      (offset (xyz 0 0 13))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 -90))
+    )
   )
 
   (module custom_sockets:6_35MM_JACK_MONO_FlatTop_notab (layer B.Cu) (tedit 5BFF5D43) (tstamp 5C22B2A7)

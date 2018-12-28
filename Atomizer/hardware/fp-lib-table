@@ -5,4 +5,5 @@
   (lib (name CustomHeaders)(type KiCad)(uri ${KIPRJMOD}/LIBS/CustomHeaders.pretty)(options "")(descr ""))
   (lib (name TE_Alcoswitch_Tactile_1-1825910-4)(type Legacy)(uri ${KIPRJMOD}/LIBS/TE_Alcoswitch_Tactile_1-1825910-4.mod)(options "")(descr ""))
   (lib (name TE_Alcoswitch_Tactile_2-1825910-7)(type Legacy)(uri ${KIPRJMOD}/LIBS/TE_Alcoswitch_Tactile_2-1825910-7.mod)(options "")(descr ""))
+  (lib (name TE_1-1825910-4)(type KiCad)(uri ${KIPRJMOD}/LIBS/TE_1-1825910-4.pretty)(options "")(descr ""))
 )
