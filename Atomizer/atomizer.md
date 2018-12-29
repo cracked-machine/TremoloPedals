@@ -18,6 +18,3 @@
 
 TODO
 
-## Bill of materials
-
-[link](bom.md)
