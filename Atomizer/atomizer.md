@@ -10,6 +10,8 @@
 - Normal, Skew and Sweep modes
 - True bypass
 
+9VDC, center negative, 30mA
+
 ## Sound files
 
 TODO
