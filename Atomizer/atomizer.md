@@ -10,6 +10,8 @@
 - Normal, Skew and Sweep modes
 - True bypass
 
+## Power Requirements
+
 9VDC, center negative, 30mA
 
 ## Sound files
