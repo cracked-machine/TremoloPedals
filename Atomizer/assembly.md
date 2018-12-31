@@ -1,10 +1,9 @@
 
 ## Assembly Instructions
 
-1. Solder the power supply components first including the DC barrel jack. 
-2. Test the 9VDC at the barrel jack is outputing +/-5VDC at R2 and R4 respectively.
-3. Continue with the rest:
-
+- Solder the power supply components first including the DC barrel jack. 
+- Test the 9VDC at the barrel jack is outputing +/-5VDC at R2 and R4 respectively.
+- Continue with the rest:
   - Solder the other 0805 resistors and capacitors
   - Solder the SOD123 diodes
   - Solder the remaining IC parts: ATTINY mcu, TLo72 opamp and optocoupler
