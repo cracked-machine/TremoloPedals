@@ -19,6 +19,10 @@ This uses Atmel ICE to download the firmware to the target.
 
 - Connect the assembled footswitch PCB to the assembled main PCB using 2x5 IDC ribbon cable. 
 Note the orientation of the cable.
+
+![footswitch pcb](docs/AtomizerIDC1.jpg)
+![main pcb](docs/AtomizerIDC2.jpg)
+
 - Connect the DC jack on the assembled main PCB to a power source (pref. lab supply). 
 - Switch on power source.
 
