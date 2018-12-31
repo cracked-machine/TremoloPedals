@@ -23,7 +23,7 @@ Note the orientation of the cable.
 |Footswitch PCB (top view)| Main PCB (bottom view) |
 |:-----------------------:|:----------------------:|
 | <img src="docs/AtomizerIDC1.jpg" alt="footswitch pcb text" width="200" height="120"> |
- <img src="docs/AtomizerIDC2.jpg" alt="main pcb" width="200" height="120">
+ <img src="docs/AtomizerIDC2.jpg" alt="main pcb" width="200" height="120"> |
 
 
 - Connect the DC jack on the assembled main PCB to a power source (pref. lab supply). 
