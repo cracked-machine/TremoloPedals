@@ -52,21 +52,7 @@ void resetPWM();
 
 int main(void)
 {
-	// 
-	// Setup Main CLK Freq
-	//
-	// MIN_TM1_Freq = 8000000(CLK) / 1024(TM1_PRESCALER) / 256(8BitPWM) = 30.5Hz
-	// Required Min_Tremolo_Freq < 3Hz
-	// MIN_TM1_Freq / 16 = 1.9Hz
-	//
-	// void clock_prescale_set(clock_div_t)
-	// clock_div_1 = 0,
-	// clock_div_2 = 1,
-	// clock_div_4 = 2,
-	// clock_div_8 = 3,
-	// ** clock_div_16 = 4,
-	// clock_div_32 = 5,
-	
+	// set the MCU clock low enough to run at ~3Hz	
 	clock_prescale_set(4);
 	
 	cli();
@@ -149,7 +135,7 @@ int main(void)
 	
 	while(1)
 	{
-		
+		// wait for interrupts
 	}
 	
 }
