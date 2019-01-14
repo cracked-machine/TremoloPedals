@@ -31,6 +31,10 @@ volatile unsigned int lowerpot = 0;		// the bottom potentiometer
 #define _ADC3EN 0x03	// PB3 - MUX(3:0) = 0011; Use bitwise OR to set ADC3 ( e.g. ADMUX |= ADC3EN; )
 
 // PCINT variables
+// NORMAL	=	Synchronized-duty Tremolo (lowerpot does nothing)
+// SKEW		=	PWM Tremolo (on/off duties controlled by upper/lower pots)
+// SWEEP	=	Time-sweep Tremolo (sweep speed and duration controlled by upper/lower pots)
+
 typedef enum {NORMAL, SKEW, SWEEP} CONTROLMODE;
 volatile CONTROLMODE currentMode = NORMAL;
 
@@ -293,12 +297,19 @@ ISR (TIMER1_COMPA_vect)
 			
 			break;
 		case SWEEP:
+			//prevents MCU reset
+			if(upperpot < 50) 
+			{
+				upperpot = 100;
+			}
+			
 			OCR1C= (upperpot / (lowerpot/16)) * weight;
 			weight=weight+0.5;
-			if (OCR1C > (upperpot)) 
+			if (OCR1C > (upperpot))
 			{
 				weight = 0;
 			}
+			
 			break;
 	}
 			
