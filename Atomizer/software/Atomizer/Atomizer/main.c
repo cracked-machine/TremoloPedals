@@ -15,6 +15,10 @@
 // sweep
 volatile float weight = 0;
 
+// fade
+volatile float fade = 20;
+volatile int fadeup = 0;
+
 // debounce variables
 volatile unsigned int wdcounter = 0;
 #define DEBOUNCE_DELAY 60 // 1 wdt tick = 16ms
@@ -33,10 +37,12 @@ volatile unsigned int lowerpot = 0;		// the bottom potentiometer
 // PCINT variables
 // NORMAL	=	Synchronized-duty Tremolo (lowerpot does nothing)
 // SKEW		=	PWM Tremolo (on/off duties controlled by upper/lower pots)
-// SWEEP	=	Time-sweep Tremolo (sweep speed and duration controlled by upper/lower pots)
+// SWEEP	=	Time-varied-sweep Tremolo (sweep speed and sweep duration controlled by upper/lower pots)
+// FADE		=	sweeps duty of PWM (upperpot). ABANDONED; tremolo circuit too choppy for fade effect to be musically pleasing
 
-typedef enum {NORMAL, SKEW, SWEEP} CONTROLMODE;
+typedef enum {NORMAL, SKEW, SWEEP /*,FADE*/} CONTROLMODE;
 volatile CONTROLMODE currentMode = NORMAL;
+
 
 
 // function prototypes
@@ -104,6 +110,7 @@ int main(void)
 	PCMSK |= (1<<PCINT0);
 		
 	setModeIndicator(currentMode = NORMAL);
+	
 	TimerModeEnable(NORMAL);
 	
 
@@ -179,6 +186,10 @@ void setModeIndicator(CONTROLMODE p_currentMode)
 			DDRB |= (1<<DDB2);
 			PORTB &= ~(1<<PB2);
 			break;
+		/* abandoned *see top*
+		case FADE:
+			break;
+		*/
 	}
 }
 
@@ -268,6 +279,34 @@ void TimerModeEnable(CONTROLMODE p_currentMode)
 			OCR1C =  10;
 			
 			break;
+			/*  abandoned *see top*
+			case FADE:
+			
+			// disable Timer1 output to OC1A (PB1)
+			TCCR1 = 0;
+			
+			///////////////////////////////////
+			//// Timer0 phase PWM setup
+			/////////////////////////////////
+			
+			//Normal port operation, OC0A disconnected
+			TCCR0A |= (0<<COM0A1) | (0<<COM0A0);
+			// Enable OC0B (PB1) output. (Clear OC0B on Compare Match, set OC0B at BOTTOM - non-inverting mode)
+			TCCR0A |= (1<<COM0B1) | (0<<COM0B0);
+			// Mode 5: phase PWM
+			TCCR0A |= (0<<WGM01) | (1<<WGM00);
+			TCCR0B |= (1<<WGM02);
+			// 1024 Prescaler
+			TCCR0B |= (1<<CS02) | (0<<CS01) | (1<<CS00);
+			
+			// Timer/Counter0 Output Compare Match A Interrupt Enable
+			TIMSK |= (1<<OCIE0A);
+			
+			TCNT0=0x00;
+			resetPWM();
+			
+			break;
+			*/
 	}
 	
 	sei();	
@@ -311,6 +350,15 @@ ISR (TIMER1_COMPA_vect)
 			}
 			
 			break;
+		
+		//unused modes in this interrupt	
+		case SKEW:
+			break;
+			
+		/* abandoned *see top*
+		case FADE:
+			break;
+		*/
 	}
 			
 	
@@ -318,31 +366,62 @@ ISR (TIMER1_COMPA_vect)
 
 ISR (TIMER0_COMPA_vect)
 {
-	// Skew mode freq adjust
 	
-	
-	
-	// update high duty (upperpot mapped 10bit -> 8Bit)
-	if((upperpot / 16) > (lowerpot / 16)) 
+	switch(currentMode)
 	{
-		// upper pot cannot be more than lower pot
-	}
-	else 
-	{
-		OCR0B=0x1 + (upperpot / 16);
-	}
+		// SKEW mode: user can control both duties of timer PWM (translates to tremolo PWM)
+		case SKEW:
+			// Skew mode freq adjust
+	
+			// update high duty (upperpot mapped 10bit -> 8Bit)
+			if((upperpot / 16) > (lowerpot / 16)) 
+			{
+				// upper pot cannot be more than lower pot
+			}
+			else 
+			{
+				OCR0B=0x1 + (upperpot / 16);
+			}
 	
 	
-	// update low duty (lowerpot mapped 10bit -> 8Bit)
-	if((lowerpot / 16) < (upperpot / 16)) 
-	{
-		// lower pot cannot be less than higher pot
-	}
-	else 
-	{
-		OCR0A=0x1 + (lowerpot / 16);
-	}
+			// update low duty (lowerpot mapped 10bit -> 8Bit)
+			if((lowerpot / 16) < (upperpot / 16)) 
+			{
+				// lower pot cannot be less than higher pot
+			}
+			else 
+			{
+				OCR0A=0x1 + (lowerpot / 16);
+			}
+			break;
+		
+		/*	abandoned *see top*
+		
+		case FADE:
+				
+				if(fade < 0)
+					fadeup = 1;
+				else if (fade > 10)
+					fadeup = 0;
+					
+				if(fadeup)
+					OCR0B= (fade=fade+0.2);
+				else if(!fadeup)
+					OCR0B= (fade=fade-0.2);
+					
+						
+				OCR0A=0x1 + (lowerpot / 16);
+
+			break;
+		*/	
+		
+		//unused modes in this interrupt
+		case SWEEP:
+			break;
+		case NORMAL:
+			break;
 	
+	}
 	
 
 }
@@ -385,6 +464,10 @@ ISR (PCINT0_vect)
 				resetPWM();
 				
 				break;
+			/* abandoned *see top*
+			case FADE:
+				break;
+			*/
 		}
 		// store the tick of the last successful press
 		pd0_last_interrupt_time = interrupt_time;
