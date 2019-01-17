@@ -1,9 +1,5 @@
 ### Atomizer Tremolo Pedal
 
-[![Watch the demo](docs/Atomizer.gif)](https://www.instagram.com/p/BsmGDgeASrn/)
-
-![3d](docs/BoardLayout_3DRenderings/Populated.png)
-
 ## Features
 
 - Adjustable mix and output gain
@@ -16,7 +12,7 @@
 
 9VDC, center negative, 30mA
 
-## Sound files
+## Watch the demo!
 
-TODO
+[![Watch the demo](docs/Atomizer.gif)](https://www.instagram.com/p/BsmGDgeASrn/)
 
