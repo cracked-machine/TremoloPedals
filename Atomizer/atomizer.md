@@ -1,6 +1,6 @@
 ### Atomizer Tremolo Pedal
 
-[short video demo](https://www.instagram.com/p/BsmGDgeASrn/)
+![docs/Atomizer.gif](https://www.instagram.com/p/BsmGDgeASrn/)
 
 ![3d](docs/BoardLayout_3DRenderings/Populated.png)
 
