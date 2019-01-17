@@ -12,7 +12,7 @@
 
 9VDC, center negative, 30mA
 
-## Watch the demo!
+## listen to an audio clip!
 
 [![Watch the demo](docs/Atomizer.gif)](https://www.instagram.com/p/BsmGDgeASrn/)
 
