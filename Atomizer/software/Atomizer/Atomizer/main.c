@@ -21,7 +21,7 @@ volatile int fadeup = 0;
 
 // debounce variables
 volatile unsigned int wdcounter = 0;
-#define DEBOUNCE_DELAY 60 // 1 wdt tick = 16ms
+#define DEBOUNCE_DELAY 100 // 1 wdt tick = 16ms
 uint32_t pd0_last_interrupt_time = 0;
 
 // ADC variables
@@ -40,8 +40,17 @@ volatile unsigned int lowerpot = 0;		// the bottom potentiometer
 // SWEEP	=	Time-varied-sweep Tremolo (sweep speed and sweep duration controlled by upper/lower pots)
 // FADE		=	sweeps duty of PWM (upperpot). ABANDONED; tremolo circuit too choppy for fade effect to be musically pleasing
 
+
+unsigned char initState = 10;	// initialised to invalid mode to catch bad EEPROM read
 typedef enum {NORMAL, SKEW, SWEEP /*,FADE*/} CONTROLMODE;
 volatile CONTROLMODE currentMode = NORMAL;
+
+//EEPROM address locations for non-volatile state retrieval
+unsigned char modeAddress = 0;
+unsigned char pot1LowAddress = 1;
+unsigned char pot1HighAddress = 2;
+unsigned char pot2LowAddress = 3;
+unsigned char pot2HighAddress = 4;
 
 
 
@@ -49,6 +58,8 @@ volatile CONTROLMODE currentMode = NORMAL;
 void setModeIndicator(CONTROLMODE p_currentMode);
 void TimerModeEnable(CONTROLMODE p_currentMode);
 void resetPWM();
+unsigned char EEPROM_read(unsigned char ucAddress);
+void EEPROM_write(unsigned char ucAddress, unsigned char ucData);
 
 int main(void)
 {
@@ -94,10 +105,21 @@ int main(void)
 	GIMSK |= (1<<PCIE);
 	// enable PCINT0 interrupt
 	PCMSK |= (1<<PCINT0);
-		
-	setModeIndicator(currentMode = NORMAL);
 	
-	TimerModeEnable(NORMAL);
+	initState = EEPROM_read(modeAddress);	
+	if ((initState > -1) && (initState < 3))
+	{
+		setModeIndicator(currentMode = initState);
+		TimerModeEnable(initState);
+		
+		
+	}
+	else 
+	{
+		setModeIndicator(currentMode = NORMAL);
+		TimerModeEnable(currentMode);
+	}
+	
 	
 
 	///////////////////////////////////
@@ -136,6 +158,21 @@ int main(void)
 	while(1)
 	{
 		// wait for interrupts
+		
+		//EEPROM_write(modeAddress, currentMode);
+		
+		EEPROM_write(pot1LowAddress, 0);
+		EEPROM_write(pot1HighAddress, 0);
+		
+		EEPROM_write(pot2LowAddress, 0);
+		EEPROM_write(pot2HighAddress, 0);
+		
+		/*EEPROM_write(pot1LowAddress, upperpot);
+		EEPROM_write(pot1HighAddress, upperpot >> 8);
+		
+		EEPROM_write(pot2LowAddress, lowerpot);
+		EEPROM_write(pot2HighAddress, lowerpot >> 8);
+		*/
 	}
 	
 }
@@ -143,6 +180,38 @@ int main(void)
 /////////////////////////
 /// FUNCTIONS
 /////////////////////////
+
+unsigned char EEPROM_read(unsigned char ucAddress)
+{
+	/* Wait for completion of previous write */
+	while(EECR & (1<<EEPE))
+	;
+	/* Set up address register */
+	EEARL = ucAddress;
+	/* Start eeprom read by writing EERE */
+	EECR |= (1<<EERE);
+	/* Return data from data register */
+	return EEDR;
+}
+
+void EEPROM_write(unsigned char ucAddress, unsigned char ucData)
+{
+	/* Wait for completion of previous write */
+	while(EECR & (1<<EEPE))
+	;
+	/* Erase and write in one operation (atomic operation) */
+	EECR |= (0<<EEPM1) | (0<<EEPM0);
+	
+	/* Set up address and data registers */
+	EEARL = ucAddress;
+	EEDR = ucData;
+	
+	/* Write logical one to EEMWE */
+	EECR |= (1<<EEMPE);
+	/* Start eeprom write by setting EEWE */
+	EECR |= (1<<EEPE);
+}
+
 
 void resetPWM() {
 	
@@ -416,6 +485,7 @@ ISR (WDT_vect)
 {
 	// increment the counter
 	wdcounter++;
+	
 	// re-enable the WDG interrupt to prevent device reset.
 	WDTCR |= (1<<WDIE);
 }
@@ -457,7 +527,9 @@ ISR (PCINT0_vect)
 		}
 		// store the tick of the last successful press
 		pd0_last_interrupt_time = interrupt_time;
-	
+		
+		// write the new mode selection to EEPROM
+		EEPROM_write(modeAddress, currentMode);
 	}
 }
 
