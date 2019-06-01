@@ -5,12 +5,12 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 3
-Title ""
-Date ""
-Rev ""
+Title "Atomizer FX pedal"
+Date "2019-06-01"
+Rev "B"
 Comp ""
-Comment1 ""
-Comment2 ""
+Comment1 "Design by Chris Sutton"
+Comment2 "Optical Tremolo with digital timer"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -285,17 +285,17 @@ Wire Wire Line
 $Comp
 L Amplifier_Operational:TL072 U_BUF1
 U 1 1 5BE1E27D
-P 5700 2200
-F 0 "U_BUF1" H 6000 2450 50  0000 C CNN
-F 1 "TL072" H 6000 2350 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5700 2200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5700 2200 50  0001 C CNN
-F 4 "621-TL072SG-13" H 5700 2200 50  0001 C CNN "MouserNo"
-F 5 "TL072SG-13" H 5700 2200 50  0001 C CNN "Mfr. No:"
-F 6 "Diodes Incorporated" H 5700 2200 50  0001 C CNN "Mfr:"
-F 7 "JFET INPUT OP AMP LOW NOISE" H 5700 2200 50  0001 C CNN "Type"
-F 8 "SO-8" H 5700 2200 50  0001 C CNN "Package/Case"
-	1    5700 2200
+P 6200 2200
+F 0 "U_BUF1" H 6500 2450 50  0000 C CNN
+F 1 "TL072" H 6500 2350 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6200 2200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6200 2200 50  0001 C CNN
+F 4 "621-TL072SG-13" H 6200 2200 50  0001 C CNN "MouserNo"
+F 5 "TL072SG-13" H 6200 2200 50  0001 C CNN "Mfr. No:"
+F 6 "Diodes Incorporated" H 6200 2200 50  0001 C CNN "Mfr:"
+F 7 "JFET INPUT OP AMP LOW NOISE" H 6200 2200 50  0001 C CNN "Type"
+F 8 "SO-8" H 6200 2200 50  0001 C CNN "Package/Case"
+	1    6200 2200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -411,15 +411,15 @@ F 8 "SO-8" H 10150 2300 50  0001 C CNN "Package/Case"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6000 2200 6100 2200
+	6500 2200 6600 2200
 Wire Wire Line
-	5400 2300 5300 2300
+	5900 2300 5800 2300
 Wire Wire Line
-	5300 2300 5300 2550
+	5800 2300 5800 2550
 Wire Wire Line
-	5300 2550 6100 2550
+	5800 2550 6600 2550
 Wire Wire Line
-	6100 2550 6100 2200
+	6600 2550 6600 2200
 $Comp
 L Connector:Jack-DC J_PWR1
 U 1 1 5BE7895A
@@ -555,8 +555,8 @@ Connection ~ 3300 8650
 Wire Wire Line
 	3300 9300 3300 9950
 Wire Wire Line
-	7550 2200 6100 2200
-Connection ~ 6100 2200
+	7550 2200 6600 2200
+Connection ~ 6600 2200
 $Comp
 L Regulator_Linear:LM337_SOT223 U_NREG1
 U 1 1 5BE2DBE2
@@ -634,16 +634,11 @@ Wire Wire Line
 Wire Wire Line
 	13200 2200 12650 2200
 Wire Wire Line
-	11850 2300 10700 2300
-Connection ~ 10700 2300
-Wire Wire Line
-	11850 2100 10600 2100
+	12300 2100 10600 2100
 Wire Wire Line
 	10600 2100 10600 1600
 Wire Wire Line
 	3100 2000 2650 2000
-Wire Wire Line
-	3900 2100 4650 2100
 Wire Wire Line
 	3900 1900 5100 1900
 Wire Wire Line
@@ -710,9 +705,9 @@ Wire Wire Line
 	4850 5550 4250 5550
 Text Label 12650 2200 0    50   ~ 0
 3PDT_5_EXT
-Text Label 11850 2100 2    50   ~ 0
+Text Label 12300 2100 2    50   ~ 0
 3PDT_4_EXT
-Text Label 11850 2300 2    50   ~ 0
+Text Label 12300 2300 2    50   ~ 0
 3PDT_6_EXT
 Text Label 4250 4750 0    50   ~ 0
 3PDT_4_EXT
@@ -802,25 +797,63 @@ Wire Notes Line
 $Comp
 L Device:R R_PD1
 U 1 1 5BFF515B
-P 4650 2400
-F 0 "R_PD1" H 4720 2445 50  0000 L CNN
-F 1 "22M" H 4720 2356 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4580 2400 50  0001 C CNN
-F 3 "~" H 4650 2400 50  0001 C CNN
-F 4 "755-UCR10EVHFSR022" H 4650 2400 50  0001 C CNN "MouserNo"
-F 5 "0805" H 4650 2400 50  0001 C CNN "Package/Case"
-	1    4650 2400
+P 5100 2400
+F 0 "R_PD1" H 5170 2445 50  0000 L CNN
+F 1 "1M" H 5170 2356 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5030 2400 50  0001 C CNN
+F 3 "~" H 5100 2400 50  0001 C CNN
+F 4 "755-UCR10EVHFSR022" H 5100 2400 50  0001 C CNN "MouserNo"
+F 5 "0805" H 5100 2400 50  0001 C CNN "Package/Case"
+	1    5100 2400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4650 2250 4650 2100
-Connection ~ 4650 2100
+	5100 2250 5100 2100
 Wire Wire Line
-	4650 2100 5400 2100
-Wire Wire Line
-	4650 2550 4650 2850
-Text Label 4650 2850 1    50   ~ 0
+	5100 2550 5100 2850
+Text Label 5100 2850 1    50   ~ 0
 GND
 Text Notes 1450 9675 0    50   ~ 0
 Guitar Fx pedals are \nCentre-Negative
+$Comp
+L Device:C C1
+U 1 1 5CF35DED
+P 11050 2300
+F 0 "C1" V 10850 2300 50  0000 C CNN
+F 1 "1uF" V 10750 2300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11088 2150 50  0001 C CNN
+F 3 "~" H 11050 2300 50  0001 C CNN
+	1    11050 2300
+	0    1    -1   0   
+$EndComp
+Connection ~ 5100 2100
+Wire Wire Line
+	5100 2100 5900 2100
+Wire Wire Line
+	3900 2100 5100 2100
+$Comp
+L Device:R R6
+U 1 1 5CF5D952
+P 11400 2550
+F 0 "R6" H 11470 2595 50  0000 L CNN
+F 1 "100K" H 11470 2506 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 11330 2550 50  0001 C CNN
+F 3 "~" H 11400 2550 50  0001 C CNN
+	1    11400 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11400 2400 11400 2300
+Wire Wire Line
+	11400 2300 11200 2300
+Wire Wire Line
+	10900 2300 10700 2300
+Connection ~ 10700 2300
+Wire Wire Line
+	11400 2300 12300 2300
+Connection ~ 11400 2300
+Wire Wire Line
+	11400 2700 11400 3000
+Text Label 11400 3000 1    50   ~ 0
+GND
 $EndSCHEMATC
