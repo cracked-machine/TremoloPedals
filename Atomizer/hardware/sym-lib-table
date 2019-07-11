@@ -2,4 +2,5 @@
   (lib (name sw_custom)(type Legacy)(uri ${KIPRJMOD}/LIBS/sw_custom.lib)(options "")(descr ""))
   (lib (name socket_custom)(type Legacy)(uri ${KIPRJMOD}/LIBS/socket_custom.lib)(options "")(descr ""))
   (lib (name TE_Alcoswitch_Tactile_1-1825910-4)(type Legacy)(uri ${KIPRJMOD}/LIBS/TE_Alcoswitch_Tactile_1-1825910-4.lib)(options "")(descr ""))
+  (lib (name Atomizer-rescue)(type Legacy)(uri ${KIPRJMOD}/Atomizer-rescue.lib)(options "")(descr ""))
 )
