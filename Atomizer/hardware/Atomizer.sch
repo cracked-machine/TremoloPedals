@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Atomizer-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Converter_DCDC:TC7662Bx0A U_INV1
+L Atomizer-rescue:TC7662Bx0A-Converter_DCDC U_INV1
 U 1 1 5BE0D4DB
 P 4200 8800
 F 0 "U_INV1" H 4200 9900 50  0000 C CNN

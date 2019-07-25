@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Atomizer-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -253,7 +253,7 @@ F 5 "0805" H 5000 1725 50  0001 C CNN "Package/Case"
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCU_Microchip_ATtiny:ATtiny85-20SU U_CLK1
+L Atomizer-rescue:ATtiny85-20SU-MCU_Microchip_ATtiny U_CLK1
 U 1 1 5BFB6DEC
 P 4100 2800
 F 0 "U_CLK1" H 3850 3675 50  0000 R CNN
